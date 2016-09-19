@@ -1,6 +1,6 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
-
+@import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
 
 /* Reset */
 
@@ -3096,6 +3096,15 @@
 
 
 	/*NEW Anim*/
+.console{
+		font-family: 'Inconsolata', monospace;
+		margin: 0 0.25em;
+}
+
+#smconsole{
+	font-size: 1.2em;
+}
+
 	a.icon{
 		border-radius: 200px;
 		border-width: 0.5px;
