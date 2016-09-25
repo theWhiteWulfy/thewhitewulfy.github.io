@@ -1,6 +1,53 @@
-@import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
-@import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
+/*
+=====================================================================
+*   Porto v2.5 Base Stylesheet
+*   Alok(oxyenyos@gmail.com)
+*   09-21-2016
+=====================================================================
+
+TOC:
+a. Webfonts and Icon fonts
+b. Reset
+	1. Box Model
+	2. Containers
+	3. Grid
+c. Default Styles
+   	1. Basic
+   	2. Section/Article
+   	3. Form
+   	4. Box
+   	5. Icon
+   	6. Image
+   	7. List
+   	8. Table
+   	9. Button
+d.  Parts
+	1. Features
+	2. Header
+	3. Wrapper
+	4. Main
+	5. one
+	6. Footer
+e.	Sizes
+	1. XLarge
+	2. Large
+	3. Medium
+	4. Small
+	5. XSmall
+f.	Others
+   	1. Clearing
+   	2. Flipper
+   	3. Selection
+   	4. Flex Slider
+
+=====================================================================  */
+
+
+/*fonts*/
+
+	@import url("font-awesome.min.css");
+	@import url("http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+	@import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
 
 /* Reset */
 
@@ -1982,8 +2029,6 @@
 			display: none;
 		}
 
-
-
 /* Image */
 
 	.image {
@@ -2298,8 +2343,9 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background-color: #a5a5a5;
+			background-color: #d05e5e;
 			color: #ffffff !important;
+
 		}
 
 		input[type="submit"]:active,
@@ -2381,7 +2427,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #4acaa8;
+			
 			color: #ffffff !important;
 		}
 
@@ -2389,7 +2435,11 @@
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #5ed0b1;
+				background-color: #5ea7d0;
+			}
+
+			input[type-"reset"].special:hover{
+				background-color: #d05e5e;
 			}
 
 			input[type="submit"].special:active,
@@ -2515,7 +2565,7 @@
 
 			#header > header p {
 				color: #d1f1e9;
-				font-style: italic;
+				font-style: normal;
 				margin: 1em 0 0 0;
 			}
 
@@ -2599,27 +2649,34 @@
 			border-top: 0;
 		}
 
-/* One */
+/* intro */
 
-	#one:before {
+	#intro:before {
 		background-image: url("../../images/banner.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: cover;
 		content: '';
 		display: block;
-		height: 20em;
+		height: 28em;
 		width: 100%;
+	}
+
+	#intro{
+		background-image: url('../../images/banner.jpg');
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 /* Footer */
 
 	#footer {
-		background: #fafafa;
+		background: #222222;
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
-		padding: 4em 0 2em 0;
+		
 	}
 
 		#footer .copyright {
@@ -2631,7 +2688,7 @@
 			#footer .copyright li {
 				border-left: solid 1px #d4d4d4;
 				display: inline-block;
-				font-size: 0.8em;
+				font-size: 1.1em;
 				margin-left: 1em;
 				padding-left: 1em;
 			}
@@ -2852,7 +2909,7 @@
 					#titleBar .toggle:before {
 						background: #4acaa8;
 						color: #ffffff;
-						content: '\f0c9';
+						content: '\f292';
 						display: block;
 						font-size: 18px;
 						height: 44px;
@@ -3091,33 +3148,149 @@
 
 	}
 
-
-
-
-
-	/*NEW Anim*/
-.console{
-		font-family: 'Inconsolata', monospace;
-		margin: 0 0.25em;
-}
-
-#smconsole{
-	font-size: 1.2em;
-}
-
-	a.icon{
-		border-radius: 200px;
-		border-width: 0.5px;
-		border-style: solid;
-		border-color: #ffffff;
-		padding: 15px;
+/*Clearing*/
+	.console{
+			font-family: 'Inconsolata', monospace;
+			margin: 0 0.25em;
 	}
-	.icons{
-  li{
-    &:hover{
-	    		color: #ffffff;
-	    		@include transition(all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86));
-          @include transform(scale(1.5));
-    }
-  }
+
+	#smconsole{
+		font-size: 1.2em;
+	}
+
+		a.icon{
+			border-radius: 200px;
+			border-width: 0.5px;
+			border-style: solid;
+			border-color: #ffffff;
+			padding: 15px;
+		}
+		.icons{
+	  li{
+	    &:hover{
+		    		color: #ffffff;
+		    		@include transition(all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86));
+	          @include transform(scale(1.5));
+	    }
+	  }
+	}
+
+/*Flipper*/
+	.flipper {
+	    position:relative;
+	    overflow:hidden;
+	    float:left;  
+	}
+
+	ul.flipper {
+		list-style: none;
+		margin: 0 0 0 0;
+		padding-left: 0;
+	}
+
+	.flipper figure {
+	   	 position:relative;
+	     cursor:pointer;
+	    }
+	.flipper figure img {
+	    display:block;
+	    position:relative;
+	    
+	}
+	.flipper figure figcaption {
+	    display:block;
+	    position:absolute;
+	    z-index:5;
+	    -webkit-box-sizing:border-box;
+	    -moz-box-sizing:border-box;
+	    box-sizing:border-box;
+	}
+	.flipper figure h3 {
+	    font-size:20px;
+	    text-align:left;
+	}
+	.flipper figure p {
+	    display:block;
+	    font-family:'Lato';
+	    font-size:12px;
+	    margin:0;
+	    color:#fff;
+	    text-align:center
+	    ;
+	}
+	.flipper figure figcaption {
+	    top:0;
+	    left:0;
+	    width:100%;
+	    height:100%;
+	    padding:29px 44px;
+	    background-color:rgba(26,76,110,0.5);
+	    border-radius: 100px;
+	    text-align:center;
+	    backface-visibility:hidden;
+	    -webkit-transform:rotateY(-180deg);
+	    -moz-transform:rotateY(-180deg);
+	    transform:rotateY(-180deg);
+	    -webkit-transition:all .5s;
+	    -moz-transition:all .5s;
+	    transition:all .5s;
+	}
+	.flipper figure img {
+	    backface-visibility:hidden;
+	    -webkit-transition:all .5s;
+	    -moz-transition:all .5s;
+	    transition:all .5s;
+	}
+	.flipper figure:hover img,figure.hover img {
+	    -webkit-transform:rotateY(180deg);
+	    -moz-transform:rotateY(180deg);
+	    transform:rotateY(180deg);
+	}
+	.flipper figure:hover figcaption,figure.hover figcaption {
+	    -webkit-transform:rotateY(0);
+	    -moz-transform:rotateY(0);
+	    transform:rotateY(0);
+	}	
+
+/*Selection*/
+	::selection       {background: #4acaa8; color: #fff; }
+	::-moz-selection  {background: #4acaa8; color: #fff; }
+	img::selection       {background: #4acaa8;}
+	img::-moz-selection  {background: #4acaa8;}
+	body {-webkit-tap-highlight-color: #4acaa8;}
+
+
+
+	#journal::selection     {background: #4acaa8; color: #000000; }
+	#journal::-moz-selection   {background: #4acaa8; color: #000000; }
+
+	#reg::selection      {background: #4acaa8; color: #000000; }
+	#reg::-moz-selection    {background: #4acaa8; color: #000000; }
+
+/*Typewriter*/
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 7em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(74,202,168,.75);
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-250%); 
+
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(14) 0.6s 0.9 normal both,
+             blinkTextCursor 500ms steps(14) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width:7em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(74,202,168,.75);}
+  to{border-right-color: transparent;}
 }

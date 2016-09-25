@@ -1,0 +1,84 @@
+$items : home, music, messages, places, bookmark;
+$colors : #1ba5cd, #1ab254, #fec72e, #fa7d39, #ee5656;
+$white : #f8f7f2;
+$black : #030f01;
+
+$size : 100px;
+$spacing : 225%;
+
+$transition: .75s;
+$easing : cubic-bezier(.39,1.52,.46,.92);
+
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500';
+
+html { background: $white; }
+
+.menu, .button {
+	width: $size;
+	height: $size;
+	user-select: none;
+}
+
+.menu {
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	transition: transform $transition*1.5 $easing;
+	transform: scale3d(1,1,1);
+	transform-origin: top left;	
+	cursor: pointer;
+}
+
+.button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	mix-blend-mode: multiply;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 33%;
+	font: #{$size/4}/#{$size} Alegreya Sans, sans-serif;
+	transition: transform $transition $easing;
+	will-change: transform; // I'm a little shocked how much this improves performance -- Chrome 52
+
+	
+	&.closed { transform: translate3d(0,0,0) !important; }
+}
+
+.main {
+	color: $black;
+	text-align: center;
+	mix-blend-mode: normal;
+	line-height: $size;
+	box-shadow: 0 0 0 5px rgba($black, .1);
+	transition: border-color $transition, color $transition;
+	will-change: color, border-color, background;
+	
+	.closed & {
+		color: $white;
+		box-shadow: 0 0 0 5px rgba($black, 0);
+	}
+}
+		
+$coords : 0 1, .382683 .92388, .707107 .707107, .92388 .382683, 1 0;
+$closed_coords : 0 -.5, .475528 -.154508, .293893 .404508, -.293893 .404508, -.475528 -.154508;
+
+@for $i from 1 through length($items) {
+	.#{nth($items, $i)} {
+		$open_x : nth(nth($coords, $i), 2) * $spacing;
+		$open_y : nth(nth($coords, $i), 1) * $spacing;
+		$closed_x : nth(nth($closed_coords, $i), 1) * 10%;
+		$closed_y : nth(nth($closed_coords, $i), 2) * 10%;
+		background-color: nth($colors, $i);	
+		top: $open_y;
+		left: $open_x;
+		background-image: url(http://bennettfeely.com/cdpn/#{nth($items, $i)}.svg);
+		transition-duration: ($i/length($items) * $transition) + $transition/2;
+		
+		.closed & {
+			transform: 
+				translate3d(-$open_x + $closed_x * 2, -$open_y + $closed_y * 2, 0) rotate(-180deg);
+		}
+	}
+}

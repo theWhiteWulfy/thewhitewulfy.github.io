@@ -10,14 +10,27 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
-
+		
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="PHOTATO" /></span>
+					<span class="image avatar">	
+					
+					<!--	<img src="images/avatar.jpg" alt="PHOTATO" />	-->		
+						<ul class="flipper">
+						    <li>
+						        <figure>
+						           <img src="images/avatar2.jpg" alt="PHOTATO" />
+						            <figcaption>
+						                <p class="fa-heart">Hey!</p>
+						            </figcaption>
+						        </figure>
+						    </li>
+						</ul>
+						
+					</span>
 					<h1 id="logo"><a href="#">Alok Prateek</a></h1>
-					<p>I once ate a computer for dinner<br>
-					and now I can code.</p>
+					<p class="console">intelligence made visible.</p>
 				</header>
 				<nav id="nav">
 					<ul>
@@ -44,10 +57,18 @@
 					<div id="main">
 
 						<!-- One -->
-							<section id="one">
+							<section id="intro">
 								<div class="container">
 									<header class="major console">
-										<h2>hello world!</h2>
+										<h2 class="line-1 anim-typewriter">hello world!</h2>
+									</header>
+								</div>
+							</section>
+							<section id="one">
+								
+								<div class="container">
+									<header class="major console">
+										
 										<p id="smconsole">I'm a front end web designer/developer and graphic artist.<br>Unskilled in everything that doesn't lead to clean &amp; functional websites.</p>
 									</header>
 									<p>I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me walking my dog Zoe in the park or playing games on my Android.</p>
@@ -77,6 +98,20 @@
 									<p>Over the years I hit my head on every wall and learnt what not to do. Instead of this, I can present before you all the projects that I've done.</p>
 									<div class="features">
 										<article>
+											<a href="polygon.html" class="image"><img src="images/star.png" alt="" /></a>
+											<div class="inner">
+												<h4>Star Wars Polygon Characters</h4>
+												<p>I created these to show-off my skills in CSS.</p>
+											</div>
+										</article>
+										<article>
+											<a href="chess.html" class="image"><img src="images/chess.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>3D chess Rendering using JavaScript</h4>
+												<p>I created these to show-off my skills in CSS and Javascript.</p>
+											</div>
+										</article>
+										<article>
 											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Side Projects</h4>
@@ -104,6 +139,7 @@
 												<p>I created these to show-off my skills in college and to earn some grades.</p>
 											</div>
 										</article>
+										
 									</div>
 								</div>
 							</section>
@@ -112,17 +148,26 @@
 							<section id="four">
 								<div class="container">
 									<h3 class="console">Send Me a Pigeon</h3>
-									<p>I'm Currently available for work. If you have a project that you'd like to discuss, then please email me via the form below.<br>If you'd like to talk about anything else you can find me on social networks (Actually I'm on many, but I don't use all of them). A good ol' fashioned mail is always welcome, because I like reading and writing long Mails as I don't have much time for writing shorter replies.</p>
+									<p>I'm currently <b>available</b> for work. If you have a project that you'd like to discuss, then please email me via the form below.<br>If you'd like to talk about anything else you can find me on social networks (Actually I'm on many, but I don't use all of them). A good ol' fashioned mail is always welcome, because I like reading and writing long Mails as I don't have much time for writing shorter replies.</p>
+									
 									<form method="post" action="#">
 										<div class="row uniform">
-											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+											<div class="6u 12u(xsmall)">
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="6u 12u(xsmall)">
+												<input type="email" name="email" id="email" placeholder="Email" />
+											</div>
 										</div>
 										<div class="row uniform">
-											<div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+											<div class="12u">
+												<input type="text" name="subject" id="subject" placeholder="Subject" />
+											</div>
 										</div>
 										<div class="row uniform">
-											<div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+											<div class="12u">
+												<textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
+											</div>
 										</div>
 										<div class="row uniform">
 											<div class="12u">
@@ -142,7 +187,8 @@
 					<section id="footer">
 						<div class="container">
 							<ul class="copyright">
-								<li>&copy; All tasty rights served hot.</li><li>Design:Alok Prateek</li>
+								<li>&copy; All tasty rights served hot.</li>
+								<li>Made with <span class="fa-heart" style="color:red;"></span> by Alok Prateek.</li>
 							</ul>
 						</div>
 					</section>
@@ -151,12 +197,14 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			
 			<script src="assets/js/jquery.scrollzer.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			
 
 	</body>
 </html>
