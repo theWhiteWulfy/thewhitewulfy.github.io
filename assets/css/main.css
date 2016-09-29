@@ -2652,7 +2652,9 @@ f.	Others
 /* intro */
 
 	#intro:before {
-		background-image: url("../../images/banner.jpg");
+		/*background-image: url("../../images/banner.jpg");*/
+		background-color: #222222;
+		animation: squishy 35s ease-in 5s 1 alternate infinite;
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -2663,10 +2665,47 @@ f.	Others
 	}
 
 	#intro{
-		background-image: url('../../images/banner.jpg');
+		/*background-image: url('../../images/banner.jpg');*/
+		background-color: #222222;
+		animation: squishy 35s ease-in 5s 1 alternate infinite;
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: cover;
+	}
+	@keyframes squishy {
+		from {
+			background-color: #c62828;
+		}
+		10% {
+			background-color: #6A1B9A;
+		}
+		20% {
+			background-color: #0277BD;
+		}
+		30% {
+			background-color: #00695C;
+		}
+		40% {
+			background-color: #558B2F;
+		}
+		50% {
+			background-color: #F9A825;
+		}
+		60% {
+			background-color: #FF8F00;
+		}
+		70% {
+			background-color: #D84315;
+		}
+		80% {
+			background-color: #4527A0;
+		}
+		90% {
+			background-color: #558B2F;
+		}
+		to {
+			background-color: #EF6C00;
+		}
 	}
 
 /* Footer */
@@ -3223,7 +3262,7 @@ f.	Others
 	    left:0;
 	    width:100%;
 	    height:100%;
-	    padding:29px 44px;
+	    
 	    background-color:rgba(26,76,110,0.5);
 	    border-radius: 100px;
 	    text-align:center;
@@ -3234,6 +3273,11 @@ f.	Others
 	    -webkit-transition:all .5s;
 	    -moz-transition:all .5s;
 	    transition:all .5s;
+	}
+	.flipper figure figcaption p{
+		font-family: fontawesome, sans-serif;
+		padding:10px 5px;
+		font-size: 14px;
 	}
 	.flipper figure img {
 	    backface-visibility:hidden;
@@ -3281,10 +3325,10 @@ f.	Others
 
 }
 
-/* Animation */
+/*COVER Animation */
 .anim-typewriter{
-  animation: typewriter 2s steps(14) 0.6s 0.9 normal both,
-             blinkTextCursor 500ms steps(14) infinite normal;
+  animation: typewriter 4s steps(14) 2s 0.9 normal both,
+             blinkTextCursor 500ms steps(4) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
@@ -3292,5 +3336,6 @@ f.	Others
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(74,202,168,.75);}
+  70%{border-right-color: transparent;}
   to{border-right-color: transparent;}
 }
