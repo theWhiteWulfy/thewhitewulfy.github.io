@@ -2652,7 +2652,7 @@ f.	Others
 /* intro */
 
 	#intro:before {
-		/*background-image: url("../../images/banner.jpg");*/
+		
 		background-color: #222222;
 		animation: squishy 35s ease-in 5s 1 alternate infinite;
 		background-position: top right;
@@ -2665,7 +2665,7 @@ f.	Others
 	}
 
 	#intro{
-		/*background-image: url('../../images/banner.jpg');*/
+		
 		background-color: #222222;
 		animation: squishy 35s ease-in 5s 1 alternate infinite;
 		background-position: top right;
