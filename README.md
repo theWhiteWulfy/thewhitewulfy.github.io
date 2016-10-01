@@ -9,6 +9,7 @@ _____________________________________________________________________
 3. Typing Anim with CSS
 4. css and js experiments
 _____________________________________________________________________
+
 ### Upcoming
 1. Double Avatar using flip 
 2. background color transition, behind typewriter or side panel
@@ -16,11 +17,13 @@ _____________________________________________________________________
 4. Improve Content
 5. Design and add favicon.
 _____________________________________________________________________
+
 ### List of known Bugs
 1. Polygon menu doesnt center properly on mobile
 2. About me is checked even on intro section
 3. font awesome, doesnt work in footer 
 _____________________________________________________________________
+
 
 ### Technologies Used
 * Jekyll
