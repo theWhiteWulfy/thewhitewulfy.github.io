@@ -1,0 +1,8 @@
+assets/fonts/* linguist-vendored
+assets/sass/* linguist-vendored
+assets/sass/main.scss linguist-vendored=false
+assets/js/* linguist-vendored
+assets/js/main.js linguist-vendored=false
+assets/js/util.js linguist-vendored=false
+assets/css/font-awesome.min.css linguist-vendored=true
+project-docs/* linguist-documentation
