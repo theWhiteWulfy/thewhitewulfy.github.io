@@ -1,7 +1,9 @@
-# Alok Prateek
-## oxyenyos.github.io
-(C) Alok Prateek, 2016
-My Portfolio Site
+# [Alok Prateek](https://oxyenyos.github.io)
+### oxyenyos.github.io
+###(C) Alok Prateek, 2016
+==================================================================
+
+##My Portfolio Site
 
 
 ### Features Added
@@ -22,8 +24,8 @@ My Portfolio Site
 2. About me is checked even on intro section
 3. font awesome, doesnt work in footer 
 
+_____________________________________________________________________
 
-# [Alok Prateek](http://thomasvaeth.com/)
 ### Technologies Used
 * Jekyll
 * HTML
@@ -31,11 +33,3 @@ My Portfolio Site
 * JavaScript
   - jQuery.js
   - Scrolly.js
-
-### Screenshots
-Home/Blog View
-![Blog](https://github.com/thomasvaeth/thomasvaeth.github.io/blob/master/_screenshots/screenshot-1.png "Desktop screenshot")
-Portfolio View
-![Portfolio](https://github.com/thomasvaeth/thomasvaeth.github.io/blob/master/_screenshots/screenshot-2.png "Desktop screenshot")
-About View
-![About](https://github.com/thomasvaeth/thomasvaeth.github.io/blob/master/_screenshots/screenshot-3.png "Desktop screenshot")
