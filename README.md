@@ -10,11 +10,11 @@ _____________________________________________________________________
 4. css and js experiments
 
 ### Upcoming
-1. Double Avatar using flip 
+1. Double Avatar using flip -- removed
 2. background color transition, behind typewriter or side panel
 3. Improve Typography
 4. Improve Content
-5. Design and add favicon.
+5. Design and add favicon. -- done
 
 ### List of known Bugs
 1. Polygon menu doesnt center properly on mobile
