@@ -48,6 +48,7 @@ f.	Others
 	@import url("font-awesome.min.css");
 	@import url("http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 	@import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
+	@import 'http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css';
 
 /* Reset */
 
@@ -3201,7 +3202,6 @@ f.	Others
 			border-radius: 200px;
 			border-width: 0.5px;
 			border-style: solid;
-			border-color: #ffffff;
 			padding: 15px;
 		}
 		.icons{
@@ -3312,30 +3312,83 @@ f.	Others
 	#reg::-moz-selection    {background: #4acaa8; color: #000000; }
 
 /*Typewriter*/
-.line-1{
-    position: relative;
-    top: 50%;  
-    width: 7em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(74,202,168,.75);
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-250%); 
+	.line-1{
+	    position: relative;
+	    top: 50%;  
+	    width: 7em;
+	    margin: 0 auto;
+	    border-right: 2px solid rgba(74,202,168,.75);
+	    text-align: left;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    transform: translateY(-250%); 
 
-}
+	}
 
 /*COVER Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(14) 2s 0.9 normal both,
-             blinkTextCursor 500ms steps(4) infinite normal;
+	.anim-typewriter{
+	  animation: typewriter 4s steps(14) 2s 0.9 normal both,
+	             blinkTextCursor 500ms steps(4) infinite normal;
+	}
+	@keyframes typewriter{
+	  from{width: 0;}
+	  to{width:7em;}
+	}
+	@keyframes blinkTextCursor{
+	  from{border-right-color: rgba(74,202,168,.75);}
+	  70%{border-right-color: transparent;}
+	  to{border-right-color: transparent;}
+	}
+
+.devicon-list{
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	font-size: 70px;
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width:7em;}
+.devicon-list li {
+    display: inline-block;
+    margin: 0.2em;
+    position: relative;
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(74,202,168,.75);}
-  70%{border-right-color: transparent;}
-  to{border-right-color: transparent;}
+
+.devicon-list li i:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 0.9em;
+    top: 1.1em;
+    left: 0.25em;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Inconsolata", monospace;
+    content: attr(title);
+    float: bottom;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: auto;
+    width: 8em;
+    height: max-content;
+    
 }
+/*
+.devicon-list li i:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    top: 40px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Inconsolata", monospace;
+    content: attr(title);
+    float: bottom;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: auto;
+    width: auto;
+    height: max-content;
+    
+}
+*/
