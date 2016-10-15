@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /assets/
+Allow: /sitemap.htm
+Sitemap: https://oxyenyos.github.io/sitemap.xml

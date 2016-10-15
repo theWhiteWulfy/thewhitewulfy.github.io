@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, helvetica !important;
+  font-weight: light;
+}
+
+.desktop, body {
+  background: #008080;
+  height: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.desktop.windowsXP, body.windowsXP {
+  background-image: url(http://www.winbeta.org/sites/default/files/news/xpbliss.jpg);
+  background-size: cover;
+}
+
+.dock {
+  background: #c0c0c0;
+  height: 38px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 2px solid #efefef;
+  padding: 3px;
+  z-index: 1000;
+}
+
+.dock-time {
+  border-top: 2px solid #666;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #666;
+  float: right;
+  padding: 5px 15px 5px 35px;
+  font-size: 14px;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gnome-audio-volume-high.svg/120px-Gnome-audio-volume-high.svg.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+.start-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  line-height: 25px;
+  font-weight: bold;
+  padding-left: 31px;
+  padding-right: 7px;
+  height: 29px;
+  background-image: url("http://vignette4.wikia.nocookie.net/logopedia/images/b/b3/Windows_logo_(Pre-XP)_alt._color.svg.png/revision/latest?cb=20160311145452");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 5px center;
+  background-color: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+}
+.start-btn.active {
+  border-top: 2px solid #222;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #222;
+}
+
+.start-menu {
+  position: absolute;
+  bottom: 38px;
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  font-size: 14px;
+  display: none;
+}
+.start-menu.open {
+  display: block;
+}
+.start-menu .title-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 37px;
+  height: 100%;
+  background: -webkit-linear-gradient(#000184 60%, #0f80cd);
+  background: linear-gradient(#000184 60%, #0f80cd);
+}
+.start-menu .title-container .title {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: white;
+  top: 430px;
+  left: -51px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.start-menu .title-container .title span {
+  font-weight: 100;
+}
+.start-menu hr {
+  margin: 0 4px 0 40px;
+}
+.start-menu ul {
+  margin: 0;
+  padding: 0;
+}
+.start-menu ul li {
+  padding: 18px 100px 18px 100px;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: 48px center;
+  background-size: 33px;
+}
+.start-menu ul li.windows-update {
+  background-image: url(https://68.media.tumblr.com/f33cc852028056f5c3f41daa4ba007c3/tumblr_odq9qssnET1vgs7gco1_75sq.png);
+}
+.start-menu ul li.programs {
+  background-image: url(https://66.media.tumblr.com/49ed6c0ebac47753e08e85c230d97d03/tumblr_odqaag4zd41vgs7gco2_75sq.png);
+}
+.start-menu ul li.favorites {
+  background-image: url(https://66.media.tumblr.com/2d4a1593f0a13df6d507304708e11a7f/tumblr_odqaag4zd41vgs7gco1_75sq.png);
+}
+.start-menu ul li.documents {
+  background-image: url(https://66.media.tumblr.com/6ee194172c15584561b951ff258d9d1d/tumblr_odqaag4zd41vgs7gco3_75sq.png);
+}
+.start-menu ul li.settings {
+  background-image: url(https://66.media.tumblr.com/83833fe1b6ac3b482a89ff02aad3ed15/tumblr_odqaag4zd41vgs7gco9_75sq.png);
+}
+.start-menu ul li.find {
+  background-image: url(https://68.media.tumblr.com/d4f271116e0f67b79c64f2a1aac6488e/tumblr_odqaag4zd41vgs7gco8_75sq.png);
+}
+.start-menu ul li.help {
+  background-image: url(https://67.media.tumblr.com/f269281536842a64ec1a35479ca8fdd3/tumblr_odqaag4zd41vgs7gco5_75sq.png);
+}
+.start-menu ul li.run {
+  background-image: url(https://66.media.tumblr.com/4ff9a932e9ba9b4736ddc63fae12b4fb/tumblr_odqay8HODs1vgs7gco1_75sq.png);
+}
+.start-menu ul li.log-off {
+  background-image: url(https://66.media.tumblr.com/1439f4d5c4bd20dcf6b98916a7cfb24e/tumblr_odqaag4zd41vgs7gco6_75sq.png);
+}
+.start-menu ul li.shut-down {
+  background-image: url(https://66.media.tumblr.com/1f29d811f6e2bb3f8fbe912057fc6e58/tumblr_odqaag4zd41vgs7gco10_75sq.png);
+}
+.start-menu ul li:hover {
+  background-color: #000184;
+  color: white;
+  cursor: pointer;
+}
+
+.window-container {
+  text-align: center;
+  position: relative;
+}
+
+.window {
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  margin: 20px auto;
+  background: #c0c0c0;
+  background-image: url(https://67.media.tumblr.com/35e35ebc731bd19de75af73ae904ecd4/tumblr_n8gxp1JWwO1r6zgh0o1_500.gif);
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: 15px 55px;
+  display: inline-block;
+  position: relative;
+  bottom: 230px;
+}
+
+.window-title {
+  position: relative;
+  background: -webkit-linear-gradient(0deg, #000184, #0f80cd);
+  background: linear-gradient(90deg, #000184, #0f80cd);
+  padding: 4px 6px 5px;
+  color: white;
+  font-size: 15px;
+  margin-right: 2px;
+  text-align: left;
+}
+.window-title:hover {
+  cursor: move;
+}
+
+.window-body {
+  padding: 18px 90px 20px 100px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.desktop-icons {
+  margin: 20px;
+  text-align: center;
+  width: 100px;
+}
+.desktop-icons .icon {
+  display: block;
+  margin-bottom: 20px;
+}
+.desktop-icons img {
+  display: block;
+  margin: 5px auto;
+}
+.desktop-icons p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  margin: 0;
+}
+
+input[type=checkbox]:not(old),
+input[type=radio]:not(old) {
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio]:not(old) + label {
+  display: inline-block;
+  margin-left: -2em;
+  line-height: 1.5em;
+}
+
+input[type=checkbox]:not(old) + label > span,
+input[type=radio]:not(old) + label > span {
+  display: inline-block;
+  width: 0.875em;
+  height: 0.875em;
+  margin: 0.25em 0.5em 0.25em 0.25em;
+  border-radius: 50%;
+  border-bottom: 2px solid #eee;
+  border-right: 2px solid #eee;
+  border-left: 2px solid #333;
+  border-top: 2px solid #333;
+  background: white;
+  vertical-align: bottom;
+}
+
+input[type=radio]:not(old):checked + label > span:before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: black;
+  display: block;
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+}
+
+.window-button-row {
+  margin: 10px 20px 12px;
+  float: right;
+}
+
+.btn {
+  margin: 0;
+  line-height: 1;
+  display: inline-block;
+  padding: 5px 25px;
+  width: 100px;
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+.btn.primary {
+  border-top: 2px solid #444;
+  border-left: 2px solid #444;
+  box-shadow: inset 1px 1px white, inset -1px -1px #777;
+}
+
+.btn-close {
+  font-size: 12px;
+  color: black;
+  background: #c0c0c0;
+  display: inline-block;
+  width: 23px;
+  height: 20px;
+  text-align: center;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  line-height: 16px;
+  font-family: helvetica;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: black;
+  z-index: 1001;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.overlay.on {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.my-documents {
+  width: 100px;
+}
+.my-documents img {
+  max-width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.power-button {
+  -webkit-animation: power-button-glow 3s infinite ease-in-out;
+          animation: power-button-glow 3s infinite ease-in-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  width: 200px;
+}
+.power-button:hover {
+  cusor: pointer;
+}
+.power-button.on {
+  -webkit-animation: power-button-turning-on 2s forwards ease-in;
+          animation: power-button-turning-on 2s forwards ease-in;
+  fill: green;
+}
+
+@-webkit-keyframes power-button-glow {
+  0% {
+    fill: #444;
+  }
+  50% {
+    fill: orange;
+  }
+  100% {
+    fill: #444;
+  }
+}
+
+@keyframes power-button-glow {
+  0% {
+    fill: #444;
+  }
+  50% {
+    fill: orange;
+  }
+  100% {
+    fill: #444;
+  }
+}
+@-webkit-keyframes power-button-turning-on {
+  0% {
+    fill: #444;
+  }
+  10% {
+    fill: #004c00;
+  }
+  100% {
+    fill: #00FF00;
+  }
+}
+@keyframes power-button-turning-on {
+  0% {
+    fill: #444;
+  }
+  10% {
+    fill: #004c00;
+  }
+  100% {
+    fill: #00FF00;
+  }
+}
+.svg-container {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.turn-on-computer:hover {
+  cursor: pointer;
+}
