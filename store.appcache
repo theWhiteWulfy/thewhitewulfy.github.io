@@ -1,0 +1,22 @@
+CACHE MANIFEST
+# v1 2016-10-30
+/assets/css/font-awesome.min.css
+/assets/css/hint.base.css
+/assets/css/hint.css
+/assets/css/ie8.css
+
+/assets/js/jquery.min.js
+/assets/js/jquery.scrolly.min.js
+/assets/js/jquery.scrollzer.min.js
+/assets/js/main.js
+/assets/js/skel.min.js
+/assets/js/util.js
+/assets/js/ie/html5shiv.js
+/assets/js/ie/respond.min.js
+
+/assets/sass/ie8.scss
+/assets/sass/main.scss
+/assets/sass/libs/_functions.scss
+/assets/sass/libs/_mixins.scss
+/assets/sass/libs/_skel.scss
+/assets/sass/libs/_vars.scss
