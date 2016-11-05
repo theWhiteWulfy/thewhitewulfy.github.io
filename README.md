@@ -1,30 +1,26 @@
-#[Alok Prateek](https://oxyenyos.github.io)
+#[Alok Prateek](http://alokprateek.ml)
 ####(C) Alok Prateek, 2016
 _____________________________________________________________________
 ##My Portfolio Site
-_____________________________________________________________________
-### Features Added
-1. Polygon Experiment
-2. Chess Board
-3. Typing Anim with CSS
-4. css and js experiments
 
-### Upcoming
-1. Double Avatar using flip -- removed
-2. background color transition, behind typewriter or side panel
-3. Improve Typography
-4. Improve Content
-5. Design and add favicon. -- done
+Hello, there! I am Alok Prateek, a computer science student from Delhi, India.
+I am intrested in front-end design, I like the ways in which visual aids elegantly help to convey a message across the audience.
+For this site I've used static content to demonstrate my experiments with these technologies.
+I've designed the site in three parts:
+	*The main portfolio page:* this was built using HTML5 and JS
+	*The blog:* This is based off a theme [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll) by [Dean Attali](http://deanattali.com)
+	*The experiments:* These are mostly css and js based which I designed over many years, some for competions and some for fun.
 
-### List of known Bugs
-1. Polygon menu doesnt center properly on mobile
-2. About me is checked even on intro section
-3. font awesome, doesnt work in footer 
+
 
 ### Technologies Used
-* Jekyll
 * HTML
 * CSS
 * JavaScript
   - jQuery.js
   - Scrolly.js
+
+### List of known Bugs
+1. Polygon menu doesnt center properly on mobile
+2. About me is checked even on intro section
+3. some devicons dont show up.

@@ -21,10 +21,10 @@
 		<meta name="description" content="Portfolio Site of Alok Prateek, a front-end designer from Delhi, India.">
 		<meta name="google" content="notranslate">
 		<meta property="og:title" content="Alok Prateek | Oxyenyos">
-		<meta property="og:url" content="http://alokprateek.com">
+		<meta property="og:url" content="http://alokprateek.ml">
 		<meta property="og:site_name" content="Alok Prateek">
 		<meta property="og:description" content="Portfolio Site of Alok Prateek, a front-end designer from Delhi, India.">
-		<meta property="og:img" content="Alok Prateek">
+		<meta property="og:img" content="/avatar2.png">
 	</head>
 	<body>
 		
@@ -91,6 +91,9 @@
 										<p id="smconsole">Hey there!<br>I'm a front end web designer/developer and graphic artist.<br>Based in 'Dilli' I've a city with a heart as my inspiration.</p>
 									</header>
 									<p>I enjoy turning the less ordinary problems into simple, beautiful and intuitive interface designs, that is delight to the user. When I'm not coding or pushing pixels, you could find me taking my dog, Zoe for a walk in the park. I also play a game - Marvel Contest Of The Champions whenever I'm free.</p>
+									<p>Read more about me and my worldviews on my blog</p>
+
+									<p align="center"><a class="btn-draw" href="blog.alokprateek.ml"><span>My Blog</span></a></p>
 								</div>
 							</section>
 
@@ -151,49 +154,49 @@
 											<a href="experiment/polygon.html" class="image"><img src="images/star.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Star Wars Polygon Characters</h4>
-												<p>I created these as a fan art for star wars. This project uses no images. But instead involved creating polygons and manipulating them using css. JS is only used to switch b/w figures</p>
+												<p>I created these as a fan art for star wars. This project DOESN'T use images. But instead this project involved creating polygons and manipulating them using css. JS is only used to switch b/w figures</p>
 											</div>
 										</article>
 										<article>
-											<a href="experiment/chess.html" class="image"><img src="images/chess.jpg" alt="" /></a>
+											<a href="experiment/chess.html" class="image"><img src="images/pic01.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>3D chess Rendering using JavaScript</h4>
-												<p>Kang conquered time, and deleted this line and put this here.</p>
+												<p>This Project was built for a interschool competion which involved creating a interactable object using JS. I created chessboard because of my very limited knowledge of JS and also it could ddo much more in less. Surprisingly this little expriment won me the second prize.</p>
 											</div>
 										</article>
 										<article>
 											<a href="experiment/spiral.html" class="image"><img src="images/pic01.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Spiral Generator using JavaScript</h4>
-												<p>Kang conquered time, and deleted this line and put this here.</p>
+												<p>This project helps to create sprirals based on values entered by the user. There is also option to render random spirals.</p>
 											</div>
 										</article>
 										<article>
 											<a href="experiment/strek.html" class="image"><img src="images/pic01.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>8 Bit USS Enterprise Spacecraft using CSS</h4>
-												<p>Kang conquered time, and deleted this line and put this here.</p>
+												<p>Another animation that I created purely using CSS</p>
 											</div>
 										</article>
 										<article>
 											<a href="experiment/spacegame.html" class="image"><img src="images/pic01.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Space game using ONLY CSS</h4>
-												<p>Kang conquered time, and deleted this line and put this here.</p>
+												<p>This is a rip-off of a cheap space invaders clone. The original one used shabby JS code which was hard to understand and did nothing noticable. I removed all of JS and tried to do it using only CSS. I succeded. Partially. Two things still dont work well. Play to find out.</p>
 											</div>
 										</article>
 										<article>
 											<a href="experiment/dance.html" class="image"><img src="images/pic01.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Dance of robots</h4>
-												<p>Kang conquered time, and deleted this line and put this here.</p>
+												<p>This one is my favorite. This project was built mainly on JS, in which I explored diffrent aspects of JS to fairly advanced level. And the end ouput was also pleasing. At the start each robot acts together, but after 180 seconds or manual intervention, the break away and dance separately.</p>
 											</div>
 										</article>
 										<article>
 											<a href="experiment/daylife.html" class="image"><img src="images/pic01.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Story of My Life</h4>
-												<p>Kang conquered time, and deleted this line and put this here.</p>
+												<p>An infinite animation seqence made in CSS. I made this to experiment with css animation property.</p>
 											</div>
 										</article>
 										
@@ -209,12 +212,14 @@
 									<p>I'm currently <b>available</b> for work. If you have a project that you'd like to discuss, then please email me via the form below.<br>If you'd like to talk about anything else you can find me on social networks (Actually I'm on many, but I don't use all of them). A good ol' fashioned mail is always welcome, because I like reading and writing long Mails as I don't have much time for writing shorter replies.</p>
 									
 									<form method="POST" action="https://formspree.io/oxyenyos@gmail.com">
+										<input type="hidden" name="_next" value="//alokprateek.ml/thanks.html" />
 										<div class="row uniform">
 											<div class="6u 12u(xsmall)">
 												<input type="text" name="name" id="name" placeholder="Name" />
 											</div>
 											<div class="6u 12u(xsmall)">
-												<input type="email" name="email" id="email" placeholder="Email" />
+												<input type="email" name="email" name="_replyto" id="email" placeholder="Email" />
+												
 											</div>
 										</div>
 										<div class="row uniform">
@@ -226,6 +231,7 @@
 										<div class="row uniform">
 											<div class="12u">
 												<textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
+												<input type="text" name="_gotcha" style="display:none" />
 											</div>
 										</div>
 										<div class="row uniform">
