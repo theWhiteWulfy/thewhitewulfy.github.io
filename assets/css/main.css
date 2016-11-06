@@ -3290,7 +3290,7 @@ f.	Others
 	    transition:all .5s;
 	}
 	.flipper figure figcaption p{
-		font-family: fontawesome, sans-serif;
+		font-family: FontAwesome, sans-serif;
 		padding:10px 5px;
 		font-size: 14px;
 	}

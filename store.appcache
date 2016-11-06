@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v1.1 2016-11-05
+# v1.2 2016-11-06
 /assets/css/font-awesome.min.css
 /assets/css/hint.base.css
 /assets/css/hint.css
@@ -20,3 +20,6 @@ CACHE MANIFEST
 /assets/sass/libs/_mixins.scss
 /assets/sass/libs/_skel.scss
 /assets/sass/libs/_vars.scss
+
+/404.html
+/thanks.html
