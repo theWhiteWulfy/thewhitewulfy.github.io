@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets" 
+        xmlns:gap = "http://phonegap.com/ns/1.0" 
+        xmlns:android = "http://schemas.android.com/apk/res/android" 
+        
+        id          = "com.oxyenyos.portfolio"
+        versionCode = "5"
+        version     = "0.2.0" >
+
+
+  <name>Mobile Portfolio</name>
+
+  <description>
+     An app to view the Mobile portfolio of Alok Prateek, a freelance web developer from New Delhi, India.
+  </description>
+
+  <author href="http://alokprateek.ml" email="oxyenyos@gmail.com">
+      Alok Prateek
+  </author>
+
+  <splash src="splash.png" />
+  <icon src="icon.png" />
+  <preference name="orientation" value="landscape" />
+  <preference name="fullscreen" value="true" />
+
+  <access origin="http://alokprateek.ml" subdomains="true" />
+
+  <platform name="ios">
+    <preference name="target-device" value="universal" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="exit-on-suspend" value="true" />
+    <preference name="deployment-target" value="5.0" />
+
+
+    <icon  src="res/icons/ios/icon-small.png" width="29" height="29" />
+    <icon  src="res/icons/ios/icon-small-2x.png" width="58" height="58" />
+    <icon  src="res/icons/ios/icon-40.png" width="40" height="40" />
+    <icon  src="res/icons/ios/icon-40-2x.png" width="80" height="80" />
+    <icon  src="res/icons/ios/icon-50.png" width="50" height="50" />
+    <icon  src="res/icons/ios/icon-50-2x.png" width="100" height="100" />
+    <icon  src="res/icons/ios/icon.png" width="57" height="57" />
+    <icon  src="res/icons/ios/icon-2x.png" width="114" height="114" />
+    <icon  src="res/icons/ios/icon-60.png" width="60" height="60" />
+    <icon  src="res/icons/ios/icon-60-2x.png" width="120" height="120" />
+    <icon  src="res/icons/ios/icon-60-3x.png" width="180" height="180" />
+    <icon  src="res/icons/ios/icon-72.png" width="72" height="72" />
+    <icon  src="res/icons/ios/icon-72-2x.png" width="144" height="144" />
+    <icon  src="res/icons/ios/icon-76.png" width="76" height="76" />
+    <icon  src="res/icons/ios/icon-76-2x.png" width="152" height="152" />
+
+    <splash  src="res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
+    <splash  src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" />
+    <splash  src="res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136" />
+    <splash  src="res/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334" />
+    <splash  src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208" />
+    <splash  src="res/screens/ios/screen-ipad-portrait.png" width="768" height="1024" />
+    <splash  src="res/screens/ios/screen-ipad-portrait-2x.png" width="1536" height="2048" />
+
+  
+  </platform>
+
+  <platform name="android">
+    <preference name="android-build-tool" value="ant|gradle" />
+    <preference name="android-minSdkVersion" value="10" />
+    <preference name="android-maxSdkVersion" value="25" />
+    <preference name="android-targetSdkVersion" value="18" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+
+    <icon  qualifier="ldpi" src="res/icons/android/icon-36-ldpi.png"/>
+    <icon  qualifier="mdpi" src="res/icons/android/icon-48-mdpi.png"/>
+    <icon  qualifier="hdpi" src="res/icons/android/icon-72-hdpi.png"/>
+    <icon  qualifier="xhdpi" src="res/icons/android/icon-96-xhdpi.png"/>
+    <icon  qualifier="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png"/>
+    <icon  qualifier="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png"/>
+
+    <splash  qualifier="ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
+    <splash  qualifier="mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
+    <splash  qualifier="hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
+    <splash  qualifier="xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
+
+  </platform>
+</widget>
