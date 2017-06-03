@@ -1617,7 +1617,7 @@ f.	Others
 
 		a:hover :not(.btn-draw){
 			border-bottom-color: transparent;
-			color: #f74770 !important;
+			/*color: #f74770;*/
 		}
 
 	strong, b {
@@ -2588,7 +2588,7 @@ f.	Others
 			}
 
 				#header > footer .icons li a {
-					color: #b6e9dc;
+					color: #ffffff;
 				}
 
 		#header > nav {
@@ -2728,11 +2728,11 @@ f.	Others
 		}
 
 			#footer .copyright li {
-				border-left: solid 1px #d4d4d4;
 				display: inline-block;
 				font-size: 1.1em;
-				margin-left: 1em;
+				align-content: center;
 				padding-left: 1em;
+				padding-bottom: 0.8em;
 			}
 
 				#footer .copyright li:first-child {
@@ -2743,6 +2743,7 @@ f.	Others
 
 				#footer .copyright li a {
 					color: inherit;
+					text-decoration: none;
 				}
 
 /* XLarge */
@@ -3097,7 +3098,6 @@ f.	Others
 					border-left: 0;
 					display: block;
 					line-height: 1.75em;
-					margin: 0.75em 0 0 0;
 					padding-left: 0;
 				}
 

@@ -4,14 +4,14 @@
         xmlns:android = "http://schemas.android.com/apk/res/android" 
         
         id          = "com.oxyenyos.portfolio"
-        versionCode = "5"
-        version     = "0.2.0" >
+        versionCode = "6"
+        version     = "0.3.0" >
 
 
-  <name>Mobile Portfolio</name>
+  <name>My Portfolio</name>
 
   <description>
-     An app to view the Mobile portfolio of Alok Prateek, a freelance web developer from New Delhi, India.
+     Hey mate! Thanks for installing this app. Well it won't give you freebies but it could show you my portfolio and you might read some of my posts on my blog. Since this is offline web app, you need access to wifi or mobile data when using  it first time around. Cheers!
   </description>
 
   <author href="http://alokprateek.ml" email="oxyenyos@gmail.com">
