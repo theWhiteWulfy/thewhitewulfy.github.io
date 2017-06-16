@@ -4,14 +4,14 @@
         xmlns:android = "http://schemas.android.com/apk/res/android" 
         
         id          = "com.oxyenyos.portfolio"
-        versionCode = "6"
-        version     = "0.3.0" >
+        versionCode = "7"
+        version     = "0.4.0" >
 
 
   <name>My Portfolio</name>
 
   <description>
-     Hey mate! Thanks for installing this app. Well it won't give you freebies but it could show you my portfolio and you might read some of my posts on my blog. Since this is offline web app, you need access to wifi or mobile data when using  it first time around. Cheers!
+     Hey mate! Thanks for installing this app. Well it won't give you freebies but it could show you my portfolio and you might read some of my posts on my blog. Since this is offline web app, you need access to wifi or mobile data only when using it for the first time around. Cheers!
   </description>
 
   <author href="http://alokprateek.ml" email="oxyenyos@gmail.com">

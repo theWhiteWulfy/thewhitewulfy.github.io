@@ -2515,7 +2515,8 @@ f.	Others
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: linear-gradient(150deg,#f74770,#f96c8d);
+		/*background: linear-gradient(150deg,#f74770,#f96c8d);*/
+		background-color: #f74770;
 		color: #d1f1e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2605,7 +2606,7 @@ f.	Others
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #f96c8d;
+					/*border-top: solid 2px #f96c8d;*/
 					display: block;
 					padding: 0;
 				}
@@ -2714,7 +2715,7 @@ f.	Others
 /* Footer */
 
 	#footer {
-		background: #222222;
+		background: #333333;
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
@@ -2732,8 +2733,7 @@ f.	Others
 				font-size: 1.1em;
 				align-content: center;
 				padding-left: 1em;
-				padding-bottom: 0.8em;
-			}
+				}
 
 				#footer .copyright li:first-child {
 					border-left: 0;
@@ -3451,4 +3451,70 @@ f.	Others
 	}
 	a.btn-draw span :hover{
 		color: #fff !important;
+	}
+
+	/*color pick*/
+	.color-picker {
+	  width: 100%;
+	  background-color: #222222;
+	  padding: 0 0 30px 0; 
+	}
+
+	.base-colors,
+	.varied-colors {
+	  overflow: hidden;
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-align: center;
+	      -ms-flex-align: center;
+	          align-items: center;
+	  -webkit-box-pack: center;
+	      -ms-flex-pack: center;
+	          justify-content: center;
+	  width: 100%;
+	}
+
+	.color,
+	.color-var {
+	  float: left;
+	  border-radius: 50%;
+	  cursor: pointer;	    
+	}
+
+	.color {
+	  -webkit-transition: all .4s;
+	  transition: all .2s;
+	  width: 25px;
+	  height: 25px;
+	  margin: 20px;
+	  border-width: 2px;
+	  border-style: solid;
+	  border-color: #eee; 
+	}
+	.color.active {
+	  -webkit-transform: scale(1.7, 1.7);
+	          transform: scale(1.7, 1.7);
+	          border-width: 0px;
+	}
+
+	.color-var {
+	  -webkit-transform: scale(0, 0);
+	          transform: scale(0, 0);
+	  width: 40px;
+	  height: 40px;
+	  margin: 10px;
+	  border-width: 2px;
+	  border-style: solid;
+	  border-color: #eee; 
+	}
+	.color-var.visible {
+		-webkit-transition: all .4s;
+	  -webkit-transform: scale(1, 1);
+	          transform: scale(1, 1);
+	}
+	.color-var.active {
+	  -webkit-transform: scale(1.4, 1.4);
+	          transform: scale(1.4, 1.4);
+	          border-width: 0px;
 	}
