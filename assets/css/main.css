@@ -2664,7 +2664,6 @@ f.	Others
 		background-size: cover;
 		content: '';
 		display: block;
-		height: 28em;
 		width: 100%;
 	}
 
@@ -3327,9 +3326,19 @@ f.	Others
 	#reg::-moz-selection    {background: #f74770; color: #000000; }
 
 /*Typewriter*/
-	#intro div.container {	height: 20em;}
+	#intro div.container {	
+		display: flex;
+		flex-direction: column;
+		margin-left: 0;
+		margin-right: 0;    
+		margin-top: 0;    
+		padding-top: 0;
+		width: 100%; 	
+		position: relative;
+	}
 	.line-1{
 	    position: relative;
+	    flex-grow: 1;
 	    top: 50%;  
 	    width: 7em;
 	    margin: 0 auto;
@@ -3518,3 +3527,5 @@ f.	Others
 	          transform: scale(1.4, 1.4);
 	          border-width: 0px;
 	}
+
+	

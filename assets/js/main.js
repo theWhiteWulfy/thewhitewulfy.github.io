@@ -120,7 +120,7 @@ var colorPicker = (function() {
 			[231, 76, 60]
 		],
 		lightModifier: 20,
-		darkModifier: 0,
+		darkModifier: 5,
 		transitionDuration: 200,
 		transitionDelay: 25,
 		variationTotal: 7
@@ -276,3 +276,14 @@ var colorPicker = (function() {
 })();
 
 colorPicker.init();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  particleground(document.getElementById('particles'), {
+    dotColor: '#5cbdaa',
+    lineColor: '#5cbdaa',
+    density: '6000'
+  });
+  var intro = document.getElementByClass('console');
+  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
+}, false);
