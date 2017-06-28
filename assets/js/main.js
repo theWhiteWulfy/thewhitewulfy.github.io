@@ -209,6 +209,24 @@ var colorPicker = (function() {
 		$("#header").css({
 			"background-color": "rgb(" + state.activeColor + ")"
 		});
+		$("header.major h2").css({
+			"color": "rgb(" + state.activeColor + ")"
+		});
+
+		$("ul.feature-icons li:before").css({
+			"background-color": "rgb(" + state.activeColor + ")"
+		});		
+		$("#header > nav ul li a.active").css({
+			"color": "rgb(" + state.activeColor + ")"
+		});
+		$("a.icon:hover").css({
+		    "border-bottom-color": "rgb(" + state.activeColor + ")",
+		    "color": "rgb(" + state.activeColor + ")",
+		    "border-color": "rgb(" + state.activeColor + ")"
+		});
+		$(".devicon-list li i:hover").css({
+			"color": "rgb(" + state.activeColor + ")"
+		});
 	}
 
 	function createVariations(color, callback) {
