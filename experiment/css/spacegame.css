@@ -54,8 +54,8 @@ html:after {
 	width: 400px;
 	height: 600px;
 	margin: 0 auto;
-	background: #69c url(http://nojsgame.majorov.su/bg.jpg);
-	cursor: url('http://nojsgame.majorov.su/r2.png') 35 0,pointer;
+	background: #69c url(https://nojsgame.majorov.su/bg.jpg);
+	cursor: url('https://nojsgame.majorov.su/r2.png') 35 0,pointer;
 	text-align: center;
 	position: relative;
 }
@@ -97,25 +97,25 @@ html:after {
 	position: absolute;
 	top: -50%;
 	left: 0;
-	background: url(http://nojsgame.majorov.su/e6.png);
+	background: url(https://nojsgame.majorov.su/e6.png);
 }
 
 .enemy_t1 {
 	height: 48px;
 	width: 48px;
-	background: url(http://nojsgame.majorov.su/e4.png);
+	background: url(https://nojsgame.majorov.su/e4.png);
 }
 
 .enemy_t2 {
 	height: 64px;
 	width: 64px;
-	background: url(http://nojsgame.majorov.su/e2.png);
+	background: url(https://nojsgame.majorov.su/e2.png);
 }
 
 .enemy_t3 {
 	height: 128px;
 	width: 128px;
-	background: url(http://nojsgame.majorov.su/e3.png);
+	background: url(https://nojsgame.majorov.su/e3.png);
 }
 
 .bonus {
@@ -124,14 +124,14 @@ html:after {
 	position: absolute;
 	top: -10%;
 	left: 0;
-	background-image: url(http://nojsgame.majorov.su/b1.png);
+	background-image: url(https://nojsgame.majorov.su/b1.png);
 	-moz-appearance: button;
 	-webkit-appearance: button;
 	appearance: button;
 }
 
 .bonus:checked {
-	background-image: url('http://nojsgame.majorov.su/b2.png') !important;
+	background-image: url('https://nojsgame.majorov.su/b2.png') !important;
 	width: 24px;
 	height: 24px;
 	position: static;

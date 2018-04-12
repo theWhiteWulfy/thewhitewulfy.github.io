@@ -38,6 +38,7 @@ e.	Others
    	5. Button
    	6. Color Picker
 f.  Search
+g.  Photogallery
 
 =====================================================================  */
 
@@ -45,9 +46,9 @@ f.  Search
 /*fonts*/
 
 	@import url("font-awesome.min.css");
-	@import url("http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+	@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 	@import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
-	@import 'http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css';
+	@import 'https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css';
 
 
 /* Basic */
@@ -2294,3 +2295,5 @@ f.  Search
 		padding: 0.5em;
 	}
 }
+
+
