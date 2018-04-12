@@ -4,8 +4,8 @@
         xmlns:android = "http://schemas.android.com/apk/res/android" 
         
         id          = "com.oxyenyos.portfolio"
-        versionCode = "8"
-        version     = "0.4.5" >
+        versionCode = "9"
+        version     = "0.4.7" >
 
 
   <name>My Portfolio</name>
