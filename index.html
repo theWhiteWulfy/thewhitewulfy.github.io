@@ -28,7 +28,7 @@
 		<meta property="og:img" content="/avatar2.png">
 		<script>document.documentElement.className = 'js';</script>
 	</head>
-	<body>
+	<body itemscope itemtype="https://schema.org/Person">
 		<svg class="hidden">
 			<defs>
 				<symbol id="icon-search" viewBox="0 0 24 24">
@@ -51,7 +51,7 @@
 						<ul class="flipper">
 						    <li>
 						        <figure>
-						           <img src="images/avatar2.png" alt="My Ugly Photo" />
+						           <img src="images/avatar2.png" alt="My Ugly Photo" itemprop="image" />
 						            <figcaption>
 						            	
 						            </figcaption>
@@ -60,7 +60,7 @@
 						</ul>
 						
 					</span>
-					<h1 id="logo"><a href="#">Alok Prateek</a></h1>
+					<h1 id="logo"><a href="#" itemprop="name">Alok Prateek</a></h1>
 					<p class="console">intelligence made visible.</p>
 				</header>
 				<nav id="nav">
@@ -103,7 +103,7 @@
 								
 								<div class="container">
 									<header class="major">
-										<p id="smconsole">Hello there!<br>I'm Alok Prateek, a front end web designer and graphic artist.</p>
+										<p id="smconsole">Hello there!<br>I'm <span itemprop="name">Alok Prateek</span>, a front end web designer and graphic artist.</p>
 									</header>
 									<p>I enjoy turning the less ordinary problems into simple, beautiful and intuitive designs, that is delight to the user. When I'm not coding or pushing pixels, you could find me taking my dog, Zoe for a walk in the park. I also play an addictive game - Marvel Contest Of The Champions whenever I'm free.</p>
 									
@@ -144,10 +144,11 @@
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="bash">			<i class="devicons devicons-terminal">			</i></li>
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="jQuery">		<i class="devicons devicons-jquery">			</i></li>
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Node.JS">		<i class="devicons devicons-nodejs_small">		</i></li>
-										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Git">			<i class="devicons devicons-git">				</i></li>
+										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Git">			<i class="devicons devicons-git">							</i></li>
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Java">			<i class="devicons devicons-java">				</i></li>
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Android">		<i class="devicons devicons-android">			</i></li>
-										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Kraken.JS">	<i class="devicons devicons-krakenjs_badge">	</i></li>
+										
+										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="PHP">			<i class="devicons devicons-php">							</i></li>
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="jQuery UI">	<i class="devicons devicons-jquery_ui">			</i></li>
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Photoshop">	<i class="devicons devicons-photoshop">			</i></li>
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Illustrator">	<i class="devicons devicons-illustrator">		</i></li>
@@ -156,7 +157,7 @@
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="SASS"><i class="devicons devicons-sass"></i></li>
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Ruby"><i class="devicons devicons-ruby"></i></li>
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Rails"><i class="devicons devicons-ruby_on_rails"></i></li>
-										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="PHP"><i class="devicons devicons-php"></i></li>
+										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Kraken.JS">	<i class="devicons devicons-krakenjs_badge">	</i></li>
 										-->
 									</ul>
 									<p align="center"><a class="btn-draw" href="/blog/cv"><span>Curriculum Vitae</span></a></p>
@@ -304,8 +305,7 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			
+			<script src="assets/js/jquery.min.js"></script>			
 			<script src="assets/js/jquery.scrollzer.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
@@ -325,6 +325,47 @@
 			  ga('send', 'pageview');
 
 			</script>
-
+			<script type="application/ld+json">
+				{
+				  "@context": "http://schema.org",
+				  "@type": "Person",
+				  "address": {
+				    "@type": "PostalAddress",
+				    "streetAddress": "B-231, Sector MU-1, Greater Noida",
+				    "postOfficeBoxNumber": "201310",
+				    "addressLocality": "Gautam Buddha Nagar",
+				    "addressRegion": "Uttar Pradesh",
+				    "postalCode": "201310",
+				    "addressCountry": "India"
+				  },
+				  "alumniOf": {
+				    "@type": "Organization",
+				    "name": "Delhi Public School Greater Noida"
+				  },
+				  "birthDate": "1995-06-02",
+				  "height":  [
+			        { "@type": "Distance",
+			          "name": "1850 mm"
+			        }
+			      ],
+			      "email": "mailto:oxyenyos@gmail.com",
+				  "image": "avatar2.png",
+				  "jobTitle": "Web Developer",
+				  "name": "Alok Prateek",
+				  "telephone": "(+91) 9968-03-5588",
+				  "url": "https://alokprateek.ml",
+				  "birthPlace": "Delhi",
+				  "homeLocation": "Greater Noida",
+				  "memberOf": "Student Council",
+				  "nationality": "Indian",
+				  "seeks": "Job",
+				  "weight":   [
+			        {
+			          "@type": "QuantitativeValue",
+			          "name": "80 kg"
+			        }
+			      ]
+				}
+				</script>
 	</body>
 </html>
