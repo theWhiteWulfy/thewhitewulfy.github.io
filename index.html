@@ -3,7 +3,6 @@
 <html manifest="store.appcache" lang="en" class="no-js">
 	<head>
 		<title>Alok</title>
-
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,13 +20,15 @@
 		<meta name="author" content="Alok Prateek">
 		<meta name="description" content="Portfolio Site of Alok Prateek, a front-end designer from Delhi, India.">
 		<meta name="google" content="notranslate">
-		<meta property="og:title" content="Alok Prateek">
-		<meta property="og:url" content="https://alokprateek.ml">
-		<meta property="og:site_name" content="Alok Prateek">
-		<meta property="og:description" content="Portfolio Site of Alok Prateek, a front-end designer from Delhi, India.">
-		<meta property="og:img" content="/avatar2.png">
+		<meta property="og:title" name="title" content="Alok Prateek">
+		<meta property="og:url" name="url" content="https://alokprateek.ml">
+		<meta property="og:site_name" name="sit_name" content="Alok Prateek">
+		<meta property="og:description" name="aboutSite" content="Portfolio Site of Alok Prateek, a front-end designer from Delhi, India.">
+		<meta property="og:img" name="img" content="/avatar2.png">
+		<meta name="theme-color" content="#f74770"/>
 		<script>document.documentElement.className = 'js';</script>
 	</head>
+
 	<body itemscope itemtype="https://schema.org/Person">
 		<svg class="hidden">
 			<defs>
@@ -41,28 +42,26 @@
 				</symbol>
 			</defs>
 		</svg>
-		<!-- Header -->
+		<!-- Header Begin-->
 			<section id="header">
-				<header main-wrap>
-					
-					<span class="image avatar">	
-					
-					<!--Flipper-->		
+				<header main-wrap>					
+					<div class="image avatar">					
+					 <!--Flipper-->		
 						<ul class="flipper">
 						    <li>
 						        <figure>
 						           <img src="images/avatar2.png" alt="My Ugly Photo" itemprop="image" />
-						            <figcaption>
+						            	<figcaption>
 						            	
-						            </figcaption>
+						            	</figcaption>
 						        </figure>
 						    </li>
-						</ul>
-						
-					</span>
+						</ul>						
+					</div>
 					<h1 id="logo"><a href="#" itemprop="name">Alok Prateek</a></h1>
 					<p class="console">intelligence made visible.</p>
 				</header>
+
 				<nav id="nav">
 					<ul>
 						<li><a href="#one">Who am I?</a></li>
@@ -71,6 +70,7 @@
 						<li><a href="#four">Send a Pigeon</a></li>
 					</ul>
 				</nav>
+
 				<footer>
 					<ul class="icons">
 						<li class="search-wrap">
@@ -84,14 +84,11 @@
 					</ul>
 				</footer>
 			</section>
-
-		<!-- Wrapper -->
+		<!--Header End-->
+		<!-- Wrapper Begin-->
 			<div id="wrapper">
-
 				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
+					<div id="main">						
 							<section id="intro">
 								<div class="container">
 									<header class="major console">
@@ -99,6 +96,7 @@
 									</header>
 								</div>
 							</section>
+						 <!-- One -->
 							<section id="one">
 								
 								<div class="container">
@@ -113,11 +111,10 @@
 
 									<p>Let me have another chance to enlighten and entertain you with my words. For this just...</p>
 
-									<p align="center"><a class="btn-draw" href="/blog/"><span>Read My Blog</span></a></p>
+									<p style="text-align:center;"><a class="btn-draw" href="/blog/"><span>Read My Blog</span></a></p>
 								</div>
 							</section>
-
-						<!-- Two -->
+						 <!-- Two -->
 							<section id="two">
 								<div class="container">
 									<h3 class="console">Things I Can Do</h3>
@@ -153,18 +150,11 @@
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Photoshop">	<i class="devicons devicons-photoshop">			</i></li>
 										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Illustrator">	<i class="devicons devicons-illustrator">		</i></li>
 										
-										<!--
-										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="SASS"><i class="devicons devicons-sass"></i></li>
-										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Ruby"><i class="devicons devicons-ruby"></i></li>
-										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Rails"><i class="devicons devicons-ruby_on_rails"></i></li>
-										<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Kraken.JS">	<i class="devicons devicons-krakenjs_badge">	</i></li>
-										-->
 									</ul>
-									<p align="center"><a class="btn-draw" href="/blog/cv"><span>Curriculum Vitae</span></a></p>
+									<p style="text-align:center;"><a class="btn-draw" href="/blog/cv"><span>Curriculum Vitae</span></a></p>
 								</div>
 							</section>
-
-						<!-- Three -->
+						 <!-- Three -->
 							<section id="three">
 								<div class="container">
 									<h3 class="console">A Few Accomplishments</h3>
@@ -226,8 +216,7 @@
 									
 								</div>
 							</section>
-
-						<!-- Four -->
+						 <!-- Four -->
 							<section id="four">
 								<div class="container">
 									<h3 class="console">Send Me a Pigeon</h3>
@@ -240,7 +229,7 @@
 												<input type="text" name="name" id="name" placeholder="Name" />
 											</div>
 											<div class="6u 12u(xsmall)">
-												<input type="email" name="email" name="_replyto" id="email" placeholder="Email" />
+												<input type="email" name="_replyto" id="email" placeholder="Email" />
 												
 											</div>
 										</div>
@@ -267,63 +256,78 @@
 									</form>
 								</div>
 							</section>
+						 <!-- Footer -->
+							<section id="footer">
+								<p></p>										
+								<div class="copyright align-center">
+									Made with <span class="fa-heart" style="color:red; font-family: FontAwesome; font-style: normal;"></span> by Alok Prateek.
+								</div>										
+								<p></p>
+								<div class="color-picker"></div>
+							</section>
+					</div>
+			</div>		
+		<!--Wrapper End -->
+		<!--Search Begin -->
+			<div class="search">
 
-						
-
-				<!-- Footer -->
-					<section id="footer">
-						
-							<p class="copyright">
-								<span>
-									<center>
-										Made with <span class="fa-heart" style="color:red; font-family: FontAwesome; font-style: normal;"></span> by Alok Prateek.
-									</center>
-								</span>
-							</p>
-						<div class="color-picker"></div>
-					</section>
-
+				<button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">
+					<svg class="icone icon--cross">
+						<use xlink:href="#icon-cross"></use>
+					</svg>
+				</button>
+				<div class="terminal">
+					<p class="terminal__line">Initiating search...</p>
+					<p class="terminal__line">Search interface loaded.</p>
+					<p class="terminal__line">Fetching common searches...</p>
+					<p class="terminal__line">Common search terms fetched:</p>
+					<p class="terminal__line">
+						<a class="srtag" href="#">#foodie</a>
+					</p>
+					<p class="terminal__line">
+						<a class="srtag" href="#">#fantastic</a>
+					</p>
+					<p class="terminal__line">
+						<a class="srtag" href="#">#bio</a>
+					</p>
+					<p class="terminal__line">
+						<a class="srtag" href="#">#WebDev</a>
+					</p>
+					<p class="terminal__line">
+						<a class="srtag" href="#">#node.js</a>
+					</p>
+					<p class="terminal__line">
+						<a class="srtag" href="#">#react.js</a>
+					</p>
+					<p class="terminal__line">
+						<a class="srtag" href="#">#cv</a>
+					</p>
+				</div>
+				<form class="search__form" action="void()">
+					<input class="search__input" name="search" type="search" placeholder="" autocomplete="off" autocapitalize="off" spellcheck="false" />
+				</form>
 			</div>
-		<div class="search">
-			<button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form"><svg class="icone icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-			<div class="terminal">
-				<p class="terminal__line">Initiating search...</p>
-				<p class="terminal__line">Search interface loaded.</p>
-				<p class="terminal__line">Fetching common searches...</p>
-				<p class="terminal__line">Common search terms fetched:</p>
-				<p class="terminal__line"><a class="srtag" href="#">#foodie</a></p>
-				<p class="terminal__line"><a class="srtag" href="#">#fantastic</a></p>
-				<p class="terminal__line"><a class="srtag" href="#">#bio</a></p>
-				<p class="terminal__line"><a class="srtag" href="#">#howeverythingworks</a></p>
-				<p class="terminal__line"><a class="srtag" href="#">#dev</a></p>
-				<p class="terminal__line"><a class="srtag" href="#">#resume</a></p>
-				<p class="terminal__line"><a class="srtag" href="#">#cv</a></p>
-			</div>
-			<form class="search__form" action="">
-				<input class="search__input" name="search" type="search" placeholder="" autocomplete="off" autocorrect="on" autocapitalize="off" spellcheck="false" />
-			</form>
-		</div>
-
+		<!--Search End-->
 		<!-- Scripts -->
+			<!--Vendor Scripts-->
 			<script src="assets/js/jquery.min.js"></script>			
 			<script src="assets/js/jquery.scrollzer.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<!--My Scripts-->
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/search.js"></script>
-			
+			<!--Scripts For Google-->
 			<script src="https://www.google-analytics.com/analytics.js"></script>
 			<script>
 			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
 			  ga('create', 'UA-85177250-1', 'auto');
 			  ga('send', 'pageview');
-
 			</script>
 			<script type="application/ld+json">
 				{
@@ -338,27 +342,46 @@
 				    "postalCode": "201310",
 				    "addressCountry": "India"
 				  },
-				  "alumniOf": {
+				  "alumniOf": [
+				  {
 				    "@type": "Organization",
 				    "name": "Delhi Public School Greater Noida"
 				  },
+				  {
+				  	"@type": "Organization",
+				    "name": "Jawaharlal Nehru University"
+					},
+				  {
+				  	"@type": "Organization",
+				    "name": "IEC College Greater Noida"
+				  }
+				  ],		
 				  "birthDate": "1995-06-02",
 				  "height":  [
 			        { "@type": "Distance",
 			          "name": "1850 mm"
 			        }
 			      ],
-			      "email": "mailto:oxyenyos@gmail.com",
+			      "email": ["mailto:oxyenyos@gmail.com", "mailto:alok9868@gmail.com", "mailto:alokthesuperman@gmail.com"],
 				  "image": "avatar2.png",
 				  "jobTitle": "Web Developer",
+                  "gender": "Male",
 				  "name": "Alok Prateek",
 				  "telephone": "(+91) 9968-03-5588",
 				  "url": "https://alokprateek.ml",
 				  "birthPlace": "Delhi",
-				  "homeLocation": "Greater Noida",
-				  "memberOf": "Student Council",
+				  "homeLocation": [
+			        { "@type": "Place",
+			          "name": "Greater Noida"
+			        }
+			      ],
+				  "memberOf": [
+			        { "@type": "Organization",
+			          "name": "Student Council"
+			        }
+			      ],
 				  "nationality": "Indian",
-				  "seeks": "Job",
+				  "seeks": "Internship",
 				  "weight":   [
 			        {
 			          "@type": "QuantitativeValue",

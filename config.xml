@@ -5,7 +5,7 @@
         
         id          = "com.oxyenyos.portfolio"
         versionCode = "9"
-        version     = "0.4.8" >
+        version     = "0.5.0" >
 
 
   <name>My Portfolio</name>

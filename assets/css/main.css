@@ -472,11 +472,9 @@ g.  Photogallery
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
-
-		span{
+		span {
 			cursor: pointer;
 		}
-		
 	}
 
 		.icon:before {
@@ -1872,7 +1870,7 @@ g.  Photogallery
 	  position: relative;
 	  display: block;
 	  padding: 0.5em;
-	  color: e4e4e2;
+	 
 	}
 	.btn-draw > span:before, .btn-draw > span:after {
 	  content: '';
