@@ -1,0 +1,187 @@
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Roboto+Slab:400,300,700');
+	.signin-part {
+	 background:#fff;
+	 margin:0 auto 4px;
+	 max-height:350px;
+	 overflow:auto;
+	 padding:30px 30px 0;
+	 overflow:hidden;
+	 border-top-width:5px;
+	 border-top-style:solid;
+	 box-shadow:0 2px 5px 0 rgba(0,0,0,0.3);
+	 -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.3);
+	 border-top-color:#ea785d
+	}
+	.signin-part .signup-link {
+	 border-top:1px solid #ddd;
+	 clear:both;
+	 overflow:auto;
+	 padding-top:15px;
+	 position:relative;
+	 text-align:center;
+	 top:-15px
+	}
+	.signup-link a {
+	 color:#f0483e;
+	 display:block;
+	 text-decoration:underline
+	}
+	.signin-header {
+	 background:#fff;
+	 width:100%;
+	 overflow:hidden;
+	 padding:10px 0
+	}
+	#loginform {
+	 float:left;
+	 padding:10px;
+	 width:99%;
+	 position:relative;
+	 left:-25px
+	}
+	#loginform table {
+	 width:100%
+	}
+	#loginform h3 {
+	 display:none
+	}
+	#loginform .label {
+	 font-size:15px;
+	 color:#333;
+	 text-align:right;
+	 padding:0 5px 12px 0
+	}
+	#loginform .input {
+	 padding:8px;
+	 border:1px solid #e2e2e2;
+	 outline:0;
+	 font-family:inherit;
+	 -webkit-box-shadow:0 1px 0 #eee;
+	 box-shadow:0 1px 0 #eee;
+	 font-size:13px;
+	 width:98%;
+	 margin-bottom:10px
+	}
+	#loginform .input:focus {
+	 border-top:1px solid #999;
+	 border-left:1px solid #999
+	}
+	.forgotpasslink {
+	 margin-bottom:5px
+	}
+	.forgotpasslink span {
+	 font-size:12px;
+	 cursor:pointer;
+	 color:#333;
+	 text-decoration:underline;
+	 color:#1b7fd5
+	}
+	.forgotpasslink span:hover {
+	 text-decoration:none
+	}
+	#loginform input[type="submit"],#submit_but {
+	 background-color:#14b45a;
+	 cursor:pointer;
+	 border:1px solid #12ab55;
+	 margin-top:10px;
+	 outline:0;
+	 padding:10px 0;
+	 width:80%;
+	 text-align:center;
+	 font-size:15px;
+	 font-family:inherit;
+	 color:#fff;
+	 font-weight:bold
+	}
+	#loginform .securetxt {
+	 color:#434343;
+	 font-size:12px
+	}
+	#loginform input[type="submit"]:focus,#submit_but:focus {
+	 outline:0
+	}
+	.otheracc-main,.signinusingtxt {
+	 color:#333;
+	 float:left;
+	 font-size:14px;
+	 line-height:39px;
+	 margin-top:10px;
+	 padding-left:27px
+	}
+	.otheracc-main {
+	 border-top:1px solid #fff;
+	 float:left;
+	 height:43px;
+	 padding:0 10px 0
+	}
+	.otheracc-main font {
+	 float:left;
+	 font-size:11px;
+	 font-weight:bold;
+	 margin:5px 3px 0 0
+	}
+	.popbg {
+	 position:absolute;
+	 height:100%;
+	 width:100%;
+	 text-align:center;
+	 box-sizing:border-box;
+	 z-index:10;
+	 padding:20px
+	}
+	.popbox {
+	 background-color:#fff;
+	 vertical-align:middle;
+	 display:inline-block;
+	 position:relative;
+	 text-align:left;
+	 padding:20px;
+	 text-align:center;
+	 width:40%
+	}
+	.popbg:before {
+	 content:"";
+	 height:100%;
+	 vertical-align:middle;
+	 position:relative;
+	 display:inline-block;
+	 margin-right:-4px
+	}
+	.msg {
+	 color:red
+	}
+	.GIcon,.GAppsIcon,.YIcon,.FIcon,.TWTIcon,.LIcon,.WEIBOIcon,.BAIDUIcon,.DOUBANIcon,.QQIcon,.AZUREIcon {
+	 float:left;
+	 height:39px;
+	 margin-right:2px;
+	 cursor:pointer
+	}
+	.GIcon,.YIcon,.FIcon,.LIcon,.TWTIcon,.AZUREIcon {
+	 width:37px
+	}
+	.GIcon span,.YIcon span,.FIcon span,.LIcon span,.TWTIcon span,.AZUREIcon span {
+	 background-image:url('../img/THIRDPARTY-ICONS.png');
+	 background-repeat:no-repeat;
+	 margin:2px 0 0 3px;
+	 float:left;
+	 width:33px;
+	 height:36px
+	}
+	.GIcon span {
+	 background-position:-11px -83px
+	}
+	.YIcon span {
+	 background-position:-70px -83px
+	}
+	.FIcon span {
+	 background-position:-190px -83px
+	}
+	.LIcon span {
+	 background-position:-251px -83px
+	}
+	.TWTIcon span {
+	 background-position:-310px -83px
+	}
+	.AZUREIcon span {
+	 background-position:-369px -83px
+	}
