@@ -8,7 +8,6 @@ I am intrested in front-end design, I like the ways in which visual aids elegant
 For this site I've used static content to demonstrate my experiments with these technologies.
 I've designed the site in three parts:
 	*The main portfolio page:* this was built using HTML5 and JS
-	*The blog:* This is based off a theme [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll) by [Dean Attali](http://deanattali.com)
 	*The experiments:* These are mostly css and js based which I designed over many years, some for competions and some for fun.
 
 

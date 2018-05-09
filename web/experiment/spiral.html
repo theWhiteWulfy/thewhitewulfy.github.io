@@ -1,0 +1,86 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Spiral Generator</title>
+	<link rel="stylesheet" type="text/css" href="css/spiral.css">
+
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<div id="controls">
+  	<p id="intro">
+  		Try different values below and click the Generate button to create new art. Hover over inputs for tips.
+  	</p>
+	<p>
+		<label for="numberOfLines">
+			No. of lines
+		</label>
+		<input type="text" id="numberOfLines" value="6" title="Number of lines to draw - between 3 and 8 gives the best results"/>
+	</p>
+	<p>
+		<label for="size">
+			Line width
+		</label>
+		<input type="text" id="size" value="4" title="Width of the lines - try chunky lines for a different effect"/>
+	</p>
+	<p>
+		<label for="distance">
+			Step size
+		</label>
+		<input type="text" id="distance" value="1" title="The length of each line/step before rotating - smaller numbers produce smoother patterns"/>
+	</p>
+	<p>
+		<label for="speed">
+			Draw speed
+		</label>
+		<input type="text" id="speed" value="30" title="Delay in milliseconds between draw updates - doesn't affect the end result"/>
+	</p>
+	<p>
+		<label for="increment">
+			Step increment
+		</label>
+		<input type="text" id="increment" value="0.8" title="Amount to increase the step size by each time - very small numbers are best"/>
+	</p>
+	<p>
+		<label for="turn">
+			Rotation amount
+		</label>
+		<input type="text" id="turn" value="45" title="Amount to rotate by between steps"/>
+	</p>
+	<p>
+		<label for="wobble">
+			Split point
+		</label>
+		<input type="text" id="wobble" value="7" title="An interval afterwhich the rotation amount resets to zero - results in sharp turns. Set to zero to turn off."/>
+	</p>
+	<p>
+		<label for="opacity">
+			Line opacity
+		</label>
+		<input type="text" id="opacity" value="0.5" title="Opacity/alpha values of the lines"/>
+	</p>
+	<!--<p><label for="randomVariance">Randomness</label><input type="text" id="randomVariance" value="0" title="Make lines wobbly - lessons better"/></p>-->
+	<p id="shareLine">
+		<label for="sharecode">
+			Share code
+		</label>
+		<input type="text" id="sharecode" value="" title="Copy and paste this code for easily sharing between friends"/>
+	</p>
+	<p id="buttonsLine">
+		<input type="submit" id="submit" value="Generate" title="Click to redraw with your new settings"/>
+		<input type="button" id="random" value="Random" title="Get some random settings"/>
+		<input type="button" id="hide" value="Hide" title="Get rid of this settings panel - you won't get it back though!"/>
+	</p>
+  <p><a href="#" id="download" title="Careful, this can affect the image on screen!">Download image (May Break Sometimes)</a></p>
+  
+</div>
+
+<script src="../js/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="js/spiral.js"></script>
+
+
+
+</body>
+</html>

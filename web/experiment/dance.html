@@ -1,0 +1,46 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Dancing Robots</title>
+	<style type="text/css">
+		html {
+			overflow: hidden;
+		}
+
+		body {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+		}
+
+		canvas {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: #000;
+		}
+	</style>
+</head>
+<body>
+
+<div id="container">
+	<canvas id="ID">Your Browser does not support Canvas, please upgrade</canvas>
+</div>
+
+<script>
+(function(){
+
+var canvas = document.getElementById('ID');
+var ctx = canvas.getContext('Context');
+
+canvas.width = Width;
+canvas.height = Height;
+	
+}());
+</script>
+<script type="text/javascript" src="js/dance.js"></script>
+</body>
+</html>

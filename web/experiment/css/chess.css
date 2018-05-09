@@ -1,0 +1,138 @@
+html, body {
+  font-family: Arial, Helvetica, Sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #456987;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  overflow: hidden;
+  cursor: move;
+}
+
+.board {
+  background: transparent;
+  -webkit-transform: translateZ(100px) rotateX(60deg);
+          transform: translateZ(100px) rotateX(60deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 250px;
+  height: 250px;
+}
+.board > div.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.board > div.frontface {
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+.board > div.frontface > div {
+  width: 100%;
+  height: 31.25px;
+}
+.board > div.frontface > div > div {
+  float: left;
+  width: 31.25px;
+  height: 31.25px;
+  background: rgba(205, 205, 255, 0.3);
+}
+.board > div.frontface > div > div > div.piece {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.board > div.frontface > div > div > div.piece.white {
+  color: white;
+  -webkit-transform: translateZ(7.5px) rotateX(-90deg) rotateY(180deg);
+          transform: translateZ(7.5px) rotateX(-90deg) rotateY(180deg);
+  text-shadow: 0 0 5px black;
+}
+.board > div.frontface > div > div > div.piece.black {
+  color: black;
+  -webkit-transform: translateZ(7.5px) rotateX(-90deg);
+          transform: translateZ(7.5px) rotateX(-90deg);
+  text-shadow: 0 0 5px white;
+}
+.board > div.frontface > div:nth-child(even) > div:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.2);
+}
+.board > div.frontface > div:nth-child(odd) > div:nth-child(even) {
+  background: rgba(0, 0, 0, 0.2);
+}
+.board > div.backface {
+  background: rgba(35, 100, 100, 0.75);
+  -webkit-transform: rotateY(180deg) translateZ(5px);
+          transform: rotateY(180deg) translateZ(5px);
+  z-index: 0;
+}
+.board > div.side {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.board > div.side.north {
+  -webkit-transform: rotateX(90deg) translateZ(2.5px) translateY(-2.5px);
+          transform: rotateX(90deg) translateZ(2.5px) translateY(-2.5px);
+}
+.board > div.side.east {
+  -webkit-transform: rotateZ(90deg) rotateX(90deg) translateX(122.5px) translateZ(125px) translateY(-2.5px);
+          transform: rotateZ(90deg) rotateX(90deg) translateX(122.5px) translateZ(125px) translateY(-2.5px);
+}
+.board > div.side.south {
+  -webkit-transform: rotateX(90deg) translateZ(-247.5px) translateY(-2.5px);
+          transform: rotateX(90deg) translateZ(-247.5px) translateY(-2.5px);
+}
+.board > div.side.west {
+  -webkit-transform: rotateZ(90deg) rotateX(90deg) translateX(122.5px) translateZ(-125px) translateY(-2.5px);
+          transform: rotateZ(90deg) rotateX(90deg) translateX(122.5px) translateZ(-125px) translateY(-2.5px);
+}
+
+.note {
+  position: absolute;
+  bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 80px;
+  border: solid 1px white;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}

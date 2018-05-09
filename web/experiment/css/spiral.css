@@ -1,0 +1,88 @@
+body {
+  color: #000;
+  background-color:#1D1F20;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+canvas {
+  background-color:#000;
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.65);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+}
+
+#controls {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border:1px solid #808080;
+  padding: 5px 15px;
+  background: #CCC;
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.65);
+  opacity: 0.95;
+}
+
+#intro, #reddit {
+  width: 200px;
+  font-size: 0.9em;
+}
+
+#intro {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+#reddit {
+  padding-top: 20px;
+}
+
+#controls p {
+  margin: 5px 0;
+}
+
+#controls label {
+  display: inline-block;
+  width: 130px;
+  font-size: 0.9em;
+}
+
+#controls input {
+  width: 70px;
+  text-align: center;
+}
+
+#controls #submit, #controls #random, #controls #hide {
+  margin-right: 1px;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+}
+
+#controls #submit {
+  width: 80px;
+}
+
+#controls #random {
+  width: 70px;
+}
+
+#controls #hide {
+  width: 50px;
+  margin-right: 0;
+}
+
+#controls #shareLine {
+  margin-top: 15px;
+}
+
+#controls #buttonsLine {
+  margin-top: 15px;
+}
