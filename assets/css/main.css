@@ -39,6 +39,7 @@ e.	Others
    	6. Color Picker
 f.  Search
 g.  Photogallery
+i.  Featurette
 
 =====================================================================  */
 
@@ -2293,5 +2294,37 @@ g.  Photogallery
 			padding: 0.5em;
 		}
 	}
-
+/*i.  Featurette*/
+.frow {
+    overflow: hidden;
+}
+    .feature {
+    color: #BB1E1E;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 10px;
+}
+    
+    .fcol-4 {
+    width: 33.33333%;
+}
+    .fcol {
+    display: block;
+    float: left;
+}
+    .feature .feature-number {
+    font-size: 48px;
+    line-height: 70px;
+}
+    .feature .feature-description {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+.red {
+    color: #BB1E1E;
+}
+h2, h4{
+    text-transform: uppercase;
+}
 
