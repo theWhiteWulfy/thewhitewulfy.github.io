@@ -11,25 +11,28 @@
 		<link href="favicon.ico" rel="icon" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="assets/css/reset-dist.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-		<link href="assets/devicons/css/devicons.min.css" rel="stylesheet">
+		<link href="assets/vendor/devicons/css/devicons.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="assets/css/hint.css">
 		<link rel="manifest" href="manifest.json">         	
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
 		<meta name="author" content="Alok Prateek">
-		<meta name="description" content="Portfolio Site of Alok Prateek, a front-end designer from Delhi, India.">
+		<meta name="description" content="Alok Prateek, a full-stack web developer and graphic artist from Delhi, India.">
 		<meta name="google" content="notranslate">
 		<meta property="og:title" name="title" content="Alok Prateek">
 		<meta property="og:url" name="url" content="https://alokprateek.ml">
 		<meta property="og:site_name" name="sit_name" content="Alok Prateek">
-		<meta property="og:description" name="aboutSite" content="Portfolio Site of Alok Prateek, a front-end designer from Delhi, India.">
+		<meta property="og:description" name="aboutSite" content="Alok Prateek, a full-stack web developer and graphic artist from Delhi, India.">
 		<meta property="og:img" name="img" content="/avatar2.png">
 		<meta name="theme-color" content="#f74770"/>
 		<script>document.documentElement.className = 'js';</script>
     </head>
 
 	<body itemscope itemtype="https://schema.org/Person">
+        <noscript>
+        <h4>&nbsp;&nbsp;JavaScript has been disabled in your browser. The site may NOT display correctly.</h4>
+        </noscript>
 		<svg class="hidden">
 			<defs>
 				<symbol id="icon-search" viewBox="0 0 24 24">
@@ -45,21 +48,11 @@
 		<!-- Header Begin-->
 			<section id="header">
 				<header main-wrap>					
-					<div class="image avatar">					
-					 <!--Flipper-->		
-						<ul class="flipper">
-						    <li>
-						        <figure>
-						           <img src="images/avatar2.png" alt="My Ugly Photo" itemprop="image" />
-						            	<figcaption>
-						            	
-						            	</figcaption>
-						        </figure>
-						    </li>
-						</ul>						
+					<div class="image avatar">
+                        <img src="images/avatar2.png" alt="My Ugly Photo" itemprop="image" />				
 					</div>
-					<h1 id="logo"><a href="#" itemprop="name">Alok Prateek</a></h1>
-					<p class="console">intelligence made visible.</p>
+					<h1 id="logo" itemprop="name">Alok Prateek</h1>
+					<p class="console">Sapientia est potentia.</p>
 				</header>
 
 				<nav id="nav">
@@ -67,16 +60,16 @@
 						<li><a href="#one">Who am I?</a></li>
 						<li><a href="#two">My Skills and Offer</a></li>
 						<li><a href="#three">A Few Accomplishments</a></li>
-						<li><a href="#four">Send a Pigeon</a></li>
+						<li><a href="#four">Send me a Pigeon</a></li>
 					</ul>
 				</nav>
 
 				<footer>
 					<ul class="icons">
 						<li class="search-wrap">
-						<div id="btn-search" class="btn btn--search">
-							<a href="#icon-search" class="icon icon--search fa-search"><span class="label">Search</span></a>
-						</div>
+                            <div id="btn-search" class="btn btn--search">
+                                <a href="#icon-search" class="icon icon--search fa-search"><span class="label">Search</span></a>
+                            </div>
 						</li>
 						<li><a href="https://in.linkedin.com/in/alokprateek" class="icon fa-linkedin-square"><span class="label">Facebook</span></a></li>
 						<li><a href="https://github.com/Oxyenyos/" class="icon fa-github-alt"><span class="label">Github</span></a></li>
@@ -92,7 +85,7 @@
 							<section id="intro">
 								<div class="container">
 									<header class="major console">
-										<h2 class="line-1 anim-typewriter">hello world!</h2>
+										<h2 class="line-1 anim-typewriter textlower">hello world!</h2>
 									</header>
 								</div>
 							</section>
@@ -101,8 +94,8 @@
 								
 								<div class="container">
 									<header class="major">
-										<p id="smconsole">Hello there!<br>I'm <span itemprop="name">Alok Prateek</span>, a front end web designer and graphic artist.</p>
-                                        <p id="smconsole" >Send all your mails at my brand new id <a href="mailto:i@alokprateek.ml" class="red">i@alokprateek.ml</a></p>
+										<p id="smconsole" class="black">Hello there!<br>I'm <span itemprop="name">Alok Prateek</span>, a full-stack web developer and graphic artist.</p>
+                                        <p class="alertnotif" id="smconsole" >Send all your mails at my brand new id <a href="mailto:i@alokprateek.ml" class="red">i@alokprateek.ml</a></p>
 									</header>
 									<p>I enjoy turning the less ordinary problems into simple, beautiful and intuitive designs, that is delight to the user. When I'm not coding or pushing pixels, you could find me taking my dog, Zoe for a walk in the park. I also play an addictive game - <a href="https://playcontestofchampions.com/" rel="nofollow" target="_blank" class="red">Marvel Contest of the Champions</a> whenever I'm free.</p>
 									
@@ -138,23 +131,23 @@
 						 <!-- Two -->
 							<section id="two">
 								<div class="container">
-									<h2 class="red">My Skills and Offer</h2>
+									<h2 class="red"><i class="fa fa-user fa-lg"  id="notred"></i>&nbsp;&nbsp;My Skills and Offer</h2>
                                     
                                     <p>I am a <b>full-stack web developer</b> with over <b>eight years</b> of experience.</p>
 
-                                    <p>I have maintained, developed and launched multiple projects from scratch, carrying branding, the design of UI/UX, and the development of its' back-end and front-end codebases.</p>
+                                    <p>I have maintained, developed and launched multiple projects from scratch, carrying branding, the design of <strong class="red">UI/UX</strong>, and the development of its' back-end and front-end codebases.</p>
 
                                     <p>My current toolset includes <a href="https://reactjs.org/" rel="nofollow" target="_blank" class="red">React</a>, <a href="https://angular.io/" rel="nofollow" target="_blank" class="red">Angular</a>, <a href="#" rel="nofollow" target="_blank" class="red">TypeScript</a>, <a href="#" rel="nofollow" target="_blank" class="red">Ionic Framework</a>, <a href="#" rel="nofollow" target="_blank" class="red">Express Framework</a> and all the other various frameworks, libraries and technologies related to them.</p>
                                     
-                                    <p>I also used to work on websites using PHP codebases and running on Apache/NGINX servers. I used popular framework <a href="#" rel="nofollow" target="_blank" class="red">Drupal</a> and <a href="#" rel="nofollow" target="_blank" class="red">WordPress</a>. I can still do smaller projects using these, if you want me to.</p>                                        
+                                    <p>I also used to work on websites using <strong class="red">PHP</strong> codebases and running on <span class="red">Apache/NGINX</span> servers. I used popular framework <a href="#" rel="nofollow" target="_blank" class="red">Drupal</a> and <a href="#" rel="nofollow" target="_blank" class="red">WordPress</a>. I can still do smaller projects using these, if you want me to.</p>                                        
 
                                     <p>Feel free to ask me any questions. I can help you in your project in all from the branding, design,  UI mockups, back-end and front-end web development to fixing the design and installing &amp; configuration of the application on staging/production enviroments.</p>
 
-                                    <p>Call me a <i>Swiss Army Knife</i> in terms of web development. </p>
+                                    <p>Call me a <i class="red">Swiss Army Knife</i> in terms of web development. </p>
                                     <hr>
                                     
                                     <h4 class="red">
-                                    <i class="fa fa-edit"></i>
+                                    <i class="fa fa-edit fa-lg"></i>
                                     Front-end Web development
                                     </h4>
 
@@ -168,10 +161,10 @@
                                   </p>
                                   <ul>
                                     <li>
-                                        creating beautiful interfaces using only CSS and convering existing animations to CSS to reduce rendering load.
+                                        creating beautiful interfaces using only <strong class="red">CSS</strong> and convering existing animations to CSS to reduce rendering load.
                                     </li>  
                                     <li>
-                                      lead TypeScript/JavaScript development: bootstraping or refactoring an existing app architecture, by improving its' extensibility and reliability.
+                                        lead <span class="red">TypeScript</span>/<strong class="red">JavaScript</strong> development: bootstraping or refactoring an existing app architecture, by improving its' extensibility and reliability.
                                     </li>
                                     <li>
                                       full integration of front-end development using tools like <a href="https://webpack.js.org/" rel="nofollow" class="red">Webpack</a> with features like automatic code reload, code minifications, multiple environments support.
@@ -180,7 +173,7 @@
                                       good sense of design and UX, by having many experiences in graphic design.
                                     </li>
                                     <li>
-                                        knowledge and huge experience in many JS ecosystem, by using many libraries like <a href="https://reactjs.org/" rel="nofollow" target="_blank" class="red">React</a>, <a href="https://redux.js.org/" rel="nofollow" target="_blank" class="red">Redux</a>, Redux-Observable, <a href="reactivex.io/rxjs/" rel="nofollow" target="_blank" class="red">RxJS</a>, <a href="https://angular.io/" rel="nofollow" target="_blank" class="red">Angular</a>, <a href="#" rel="nofollow" target="_blank" class="red">Ionic Framework</a>, <a href="#" rel="nofollow" target="_blank" class="red">Backbone</a>, <a href="#" rel="nofollow" target="_blank" class="red">jQuery</a>, <a href="#" rel="nofollow" target="_blank" class="red">Lodash/Underscore</a> and whatever else was needed.
+                                        knowledge and huge experience in many JS ecosystem, by using many libraries like <a href="https://reactjs.org/" rel="nofollow" target="_blank" class="red">React</a>, <a href="https://redux.js.org/" rel="nofollow" target="_blank" class="red">Redux</a>, <a href="reactivex.io/rxjs/" rel="nofollow" target="_blank" class="red">RxJS</a>, <a href="https://angular.io/" rel="nofollow" target="_blank" class="red">Angular</a>, <a href="#" rel="nofollow" target="_blank" class="red">Ionic Framework</a>, <a href="#" rel="nofollow" target="_blank" class="red">Backbone</a>, <a href="#" rel="nofollow" target="_blank" class="red">jQuery</a>, <a href="#" rel="nofollow" target="_blank" class="red">Lodash/Underscore</a> and whatever else was needed.
                                     </li>
                                     <li>
                                       ... and even <strong>mobile app  development</strong> with the use of <a href="http://ionicframework.com/" rel="nofollow" class="red">Ionic Framework</a>.
@@ -210,15 +203,15 @@
                                   <hr>
 
                                   <h4 class="red">
-                                    <i class="fa fa-code"></i>
+                                    <i class="fa fa-code fa-lg"></i>
                                     Back-end Web development
                                   </h4>
 
                                   <p>
-                                    <strong>In back-end development, my current stack involves <a href="https://expressjs.com/" rel="nofollow" class="red">Express Framework</a>  and <a href="http://nodejs.org/" rel="nofollow" class="red">NodeJS</a>.</strong>, and alternatively <a href="https://meteor.com/" rel="nofollow" class="red">Meteor</a> or <a href="https://www.totaljs.com/" rel="nofollow" class="red">Total.JS</a>
+                                    <strong>In back-end development, my current stack involves <a href="https://expressjs.com/" rel="nofollow" class="red">Express Framework</a>  and <a href="http://nodejs.org/" rel="nofollow" class="red">NodeJS</a></strong>, and alternatively <a href="https://meteor.com/" rel="nofollow" class="red">Meteor</a> or <a href="https://www.totaljs.com/" rel="nofollow" class="red">Total.JS</a>
                                     </p>
                                   <p>
-                                    Nearly every app I have done in the past had the back-end written also by me. In order to improve the development speed, performance and reliability, I have changed languages and frameworks already multiple times, from PHP to Ruby and now to node.js.
+                                      Nearly every app I have done in the past had the back-end written also by me. In order to improve the development speed, performance and reliability, I have changed languages and frameworks already multiple times, from <strong class="red">PHP</strong> to <strong class="red">Ruby</strong> and now to <strong class="red">node.js</strong>.
                                   </p>
                                   <p>
                                     Luckily, my experience and lessons I learned while doing all those apps, will stay with me and be useful forever, no matter what framework I will use in the next project.
@@ -266,7 +259,7 @@
 
                                   <hr>
                                   <h4 class="red">
-                                    <i class="fa fa-terminal"></i>
+                                    <i class="fa fa-terminal fa-lg"></i>
                                     What about dev-ops &amp; UI ?
                                   </h4>
 
@@ -311,7 +304,7 @@
                                     
                                     
                                     <h4 class="red">
-                                    <i class="fa fa-eye"></i>
+                                    <i class="fa fa-eye fa-lg"></i>
                                     Design, Illustration &amp; Branding
                                   </h4>
 
@@ -344,40 +337,46 @@
 						 <!-- Three -->
 							<section id="three">
 								<div class="container">
-									<h2 class="red">A Few Accomplishments</h2>
+									<h2 class="red"><i class="fa fa-trophy fa-lg" id="notred"></i>&nbsp;&nbsp;A Few Accomplishments</h2>
 									<p>Over the years I've hit my head on every wall and learnt many ways of doing things. I've designed these projects over course of many tireless days and sleepless nights. Each project was taken up as a challenge, so to learn something new and experiment with the latest and greatest the tech offers. My special thanks to my father for his patience during all those years.</p>
 
 									<div class="features">
 										<article>
 											<a href="web/index.html" class="image"><img src="images/web.jpg" alt="web art" /></a>
-											<div class="inner">
+											<a href="web/index.html" class="portdesc">
+                                            <div class="inner">
 												<h4>Web Art</h4>
-												<p>...</p>
+												<p>Web has evolved from a medium of text to a medium of visualizations. This collection includes some of my best experiments that I did with newer web standards such as CSS3 and Canvas. <br><div class="alertnotif"><i>Be warned though, some use bleeding edge tech and may not render correctly on older browsers and mobile devices.</i></div></p>
 											</div>
+                                            </a>
 										</article>
 										<article>
 											<a href="graphics/index.html" class="image"><img src="images/graphics.jpg" alt="images" /></a>
-											<div class="inner">
+											<a href="graphics/index.html" class="portdesc">
+                                            <div class="inner">
 												<h4>Graphic Design</h4>
-												<p>...</p>
+												<p>Graphics are essential for web, they engage, fascinate and helps to form a connect with your brand. I design various graphic elements for the web as well as print media. This collection gallery displays quite a number of my graphic design works. </p>
 											</div>
+                                            </a>
 										</article>
 										<article>
 											<a href="sites/index.html" class="image"><img src="images/sites.jpg" alt="sites" /></a>
-											<div class="inner">
+											<a href="sites/index.html" class="portdesc">
+                                            <div class="inner">
 												<h4>Web Sites</h4>
-												<p>...</p>
+												<p>The most essential element of building one's own brand is by a website. This collection shows some of my recent works. If you want me to build one for you too contact me through the <a href="#four">Contact me form</a> below.</p>
 											</div>
+                                            </a>
 										</article>
 										<article>
 											<a href="codes/index.html" class="image"><img src="images/codes.jpg" alt="codes" /></a>
-											<div class="inner">
+											<a href="codes/index.html" class="portdesc">
+                                            <div class="inner">
 												<h4>Codes and Scripts</h4>
-												<p>...</p>
+												<p>Some random shell scripts that I find useful in my workflow as well as projects and code pieces that couldn't fit elsewhere.</p>
 											</div>
+                                            </a>
 										</article>
-										
-										
 									</div>
 									
 								</div>
@@ -385,7 +384,7 @@
 						 <!-- Four -->
 							<section id="four">
 								<div class="container">
-									<h2 class="red">Send Me a Pigeon</h2>
+									<h2 class="red"><i class="fa fa-comments fa-lg" id="notred"></i>&nbsp;&nbsp;Send Me a Pigeon</h2>
                                     <p>I'm currently <b>available</b> for work.</p>
                                     <p> If you have a project that you'd like to discuss, then please contact me via the form below or write to me at <a href="mailto:i@alokprateek.ml" class="red">i@alokprateek.ml</a>.<br>If you'd like to talk about anything else you can find me on social networks (Actually I'm on many, but I don't use all of them). A good ol' fashioned mail is always welcome, because I like reading and writing long mails as I don't have much time for writing shorter replies.</p>
 									<p><b>Of course I do not always work alone.</b> If you already have an existing team for your project, but still need someone to help it, contact me. I’ll fit into your needs. </p>
@@ -428,8 +427,15 @@
 								<p></p>										
 								<div class="copyright align-center">
 									Made with <span class="fa-heart" style="color:red; font-family: FontAwesome; font-style: normal;"></span> by Alok Prateek.
-								</div>										
-								<p></p>
+								</div>
+                                <div class="copyright align-center">
+                                    <br>Best viewed on <br>
+                                    <p style="margin: 1em 0 2em 0;">
+                                        <i class="fa fa-chrome fa-3x fa-fw fa-lg"> </i><span class="textsuper">57+</span>
+                                        <i class="fa fa-firefox fa-3x fa-fw fa-lg"> </i><span class="textsuper">52+</span>
+                                        <i class="fa fa-safari fa-3x fa-fw fa-lg"> </i><span class="textsuper">10.1+</span>
+                                    </p>
+                                </div>
 								<div class="color-picker"></div>
 							</section>
 					</div>
@@ -437,8 +443,7 @@
 		<!--Wrapper End -->
 		<!--Search Begin -->
 			<div class="search">
-
-				<button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">
+                <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">
 					<svg class="icone icon--cross">
 						<use xlink:href="#icon-cross"></use>
 					</svg>
@@ -503,13 +508,14 @@
 		<!--Search End-->
 		<!-- Scripts -->
 			<!--Vendor Scripts-->
-			<script src="assets/js/jquery.min.js"></script>			
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/vendor/jquery/jquery.min.js"></script>			
+			<script src="assets/vendor/jquery/jquery.scrollzer.min.js"></script>
+			<script src="assets/vendor/jquery/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<!--My Scripts-->
+            <script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script async src="assets/js/search.js"></script>
 			<!--Scripts For Google-->
@@ -555,9 +561,9 @@
 			          "name": "1850 mm"
 			        }
 			      ],
-			      "email": ["mailto:oxyenyos@gmail.com", "mailto:alok9868@gmail.com", "mailto:alokthesuperman@gmail.com"],
+			      "email": ["mailto:i@alokprateek.ml" "mailto:oxyenyos@gmail.com", "mailto:alokthesuperman@gmail.com"],
 				  "image": "avatar2.png",
-				  "jobTitle": "Web Developer",
+				  "jobTitle": "Full Stack Web Developer",
                   "gender": "Male",
 				  "name": "Alok Prateek",
 				  "telephone": "(+91) 9968-03-5588",
@@ -583,6 +589,5 @@
 			      ]
 				}
 				</script>
-
 	</body>
 </html>
