@@ -1,8 +1,8 @@
 /*
 =====================================================================
-*   Porto v2.5 Base Stylesheet
+*   Porto v4.1 Base Stylesheet
 *   Alok(oxyenyos@gmail.com)
-*   09-21-2016
+*   05-28-2018
 =====================================================================
 
 TOC:
@@ -205,7 +205,7 @@ i.  Featurette
 	}
 
 	header p {
-		color: #aaa;
+		color: #999;
 		position: relative;
 		margin: 0 0 1.6875em 0;
 	}
@@ -2342,15 +2342,30 @@ h2, h4{
 
 .red{   color: #BB1E1E;}
 .black{ color: #000000;}
-#notred{    color: dodgerblue;
-}
+#notred{    color: #1e8ffe;}
 
-.alertnotif{
+.notif-red{
     box-sizing: border-box;
     max-width: 50rem;
     overflow: hidden;
     background-color: #ffe7e8;
     border-left-color: #F44336;
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 2em;
+    padding-right: 0.4em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;   
+    font-size: smaller;
+}
+.notif-blue{
+    box-sizing: border-box;
+    max-width: 50rem;
+    overflow: hidden;
+    background-color: #e7ecff;
+    border-left-color: #1e8ffe;
     border-left-width: 10px;
     border-left-style: solid;
     border-top-right-radius: 10px;
