@@ -2302,9 +2302,14 @@ i.  Featurette
     text-align: center;
     padding: 0 10px;
 }
-    
+    .fcol-2 {
+    width: 16.66665%;
+}
     .fcol-4 {
     width: 33.33333%;
+}
+    .fcol-8 {
+    width: 66.66666%;
 }
     .fcol {
     display: block;
@@ -2339,6 +2344,7 @@ h2, h4{
 .textlower{ text-transform: lowercase;}
 .textcaps{  text-transform: capitalize;}
 .textsuper{ vertical-align: super;}
+.textcenter{ text-align: center;}
 
 .red{   color: #BB1E1E;}
 .black{ color: #000000;}
