@@ -2382,3 +2382,22 @@ h2, h4{
     padding-top: 0.5em;   
     font-size: smaller;
 }
+.privacypolicy{
+    text-decoration: none; 
+    border-bottom-style: dashed; 
+    border-bottom-width: 2px;
+}
+.browserchrome:hover{
+    color: yellow;
+    line-height: inherit;
+}
+
+.browserff:hover{
+    color: orange;
+    line-height: inherit;
+}
+
+.browsersafari:hover{
+    color: deepskyblue;
+    line-height: inherit;
+}
