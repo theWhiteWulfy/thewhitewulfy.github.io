@@ -109,6 +109,7 @@
 
 })(jQuery);
 
+//color picker
 var colorPicker = (function() {
 	var config = {
 		baseColors: [

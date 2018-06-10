@@ -3,17 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-
+	
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
+  	<link rel="stylesheet" type="text/css" href="../assets/css/googlefonts.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/devicons/css/devicons.min.css" >
+    <link rel="stylesheet" type="text/css" href="../assets/css/hint.css">
+    <link rel="stylesheet" href="../assets/vendor/fab/fab.min.css" />
+    <script src="../assets/vendor/fab/modernizr.touch.js"></script>  
 	<title>Portfolio Slider</title>
 </head>
 <body>
-    
+    <a name="top"></a>
+<ul id="menu" class="mfb-component--bl   mfb-slidein-spring " data-mfb-toggle="click" style="display: block;">
+      <li class="mfb-component__wrap">
+        <a href="#" class="mfb-component__button--main">
+          <i class="mfb-component__main-icon--resting fa fa-plus"></i>
+          <i class="mfb-component__main-icon--active fa fa-close"></i>
+        </a>
+        <ul class="mfb-component__list">
+          <li>
+            <a href="../index.html" data-mfb-label="Go Back" class="mfb-component__button--child">
+              <i class="mfb-component__child-icon fa fa-reply"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:i@alokprateek.ml" data-mfb-label="Hire Me" class="mfb-component__button--child">
+              <i class="mfb-component__child-icon fa fa-envelope-open-o"></i>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
 	<div class="cd-slider-wrapper">
 		<ul class="cd-slider">
             
@@ -23,11 +46,11 @@
                 <!--text half-->
 				<div class="cd-half-block content">
 					<div>
-						<h2>Content Title</h2>
+						<h2>Web Sites</h2>
 						<p>
-							Content here. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae.
+							Collection of sites I made.
 						</p>
-						<a href=" " class="btn">Call to action</a>
+						<a href=" " class="btn" target="_blank">Visit Site</a>
 					</div>
 				</div>
 			</li> <!-- .cd-half-block.content -->
@@ -37,10 +60,14 @@
 
 				<div class="cd-half-block content">
 					<div>
-						<h2>Slide Number 2</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
-						</p>
+						<h2>Baario</h2>
+						<p>Baario is an ever-growing knowledge base of local information, sourced and verified by local community members. Whether it's about solving a local issue, finding local help, or sharing something cool with the community, Baario has got it covered. It's a free and open platform where anyone can participate and contribute.</p>
+                        <p>Frameworks:<span style="font-size: 2.5rem;"> 
+                            <span class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="HTML5"><i class="devicons devicons-html5"></i></span>
+                            <span class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="CSS3"><i class="devicons devicons-css3"></i></span>
+                            <span class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="JavaScript"><i class="devicons devicons-javascript_badge"></i></span>
+                        </span></p>
+                        <a href="https://www.baario.com/" target="_blank" class="btn">Visit Site</a>
 					</div>
 				</div> 
 			</li> <!-- .cd-half-block.content -->
@@ -115,5 +142,6 @@
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/jquery.mobile.custom.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="../assets/vendor/fab/fab.min.js"></script>    
 </body>
 </html>
