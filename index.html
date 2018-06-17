@@ -447,10 +447,10 @@
                                             <label for="duetime">ready to go</label>
                                             <select id="duetime" name="duetime" tabindex="104" class="form-field" style="min-width: 60px; width:11ch;" onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';" >
                                               <option value="By Tomorrow" selected>by yesterday</option>
-                                              <option value="1 week">in a week</option>
-                                              <option value="1 Month">in a month</option>
-                                              <option value="2-3 Months">in 2-3 months</option>
-                                              <option value="3-6 Months">in 3-6 months</option>
+                                              <option value="in a week">in a week</option>
+                                              <option value="in a Month">in a month</option>
+                                              <option value="in 2-3 Months">in 2-3 months</option>
+                                              <option value="in 3-6 Months">in 3-6 months</option>
                                               <option value="Whenever Possible">whenever possible</option>
                                             </select>
                                             <span>. </span>
@@ -567,7 +567,7 @@
 				</form>
 				<datalist id="aloo">
 					<option>
-						nodejs
+						nodejs 
 					</option>
 					<option>
 						foodie
@@ -628,6 +628,10 @@
 			<script src="assets/vendor/jquery/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script async src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+            <script>var form = document.querySelector('.pageclip-form')
+                    Pageclip.form(form, {
+                      successTemplate: '<span>Thank you&#33;<br>I&#39;ll contact you shortly by email. Please check your inbox in a day&#33;</span>'
+                    })
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 
 			<!--My Scripts-->
