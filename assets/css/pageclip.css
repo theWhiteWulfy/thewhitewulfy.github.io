@@ -1,0 +1,178 @@
+.pageclip-form {
+    position: relative;
+}
+
+.pageclip-form__success {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    text-align: center;
+    background: hsla(0, 0%, 100%, .8);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pageclip-form__success__message {
+    font-size: 2rem;
+    text-align: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation: .3s linear none a;
+    animation: .3s linear none a;
+}
+
+.pageclip-form__submit {
+    position: relative;
+}
+
+.pageclip-form__submit:after {
+    display: inline-block;
+    position: relative;
+    text-indent: -9999em;
+    border: 3px solid hsla(0, 0%, 100%, .3);
+    border-left: 3px solid #fff;
+    -webkit-transform: scale(.01) translateZ(0);
+    transform: scale(.01) translateZ(0);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    z-index: 2;
+}
+
+.pageclip-form__submit.pageclip-form__submit--dark-loader:after {
+    border-color: rgba(0, 0, 0, .3);
+    border-left-color: #000;
+}
+
+.pageclip-form__submit.pageclip-form__submit--start-loading:after {
+    -webkit-animation: .1s linear none a;
+    animation: .1s linear none a;
+}
+
+.pageclip-form__submit.pageclip-form__submit--start-loading>span {
+    -webkit-animation: .1s linear none c;
+    animation: .1s linear none c;
+}
+
+.pageclip-form__submit.pageclip-form__submit--loading:after {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: 1.2s linear infinite d;
+    animation: 1.2s linear infinite d;
+}
+
+.pageclip-form__submit.pageclip-form__submit--loading>span {
+    opacity: 0
+}
+
+.pageclip-form__submit.pageclip-form__submit--end-loading:after {
+    -webkit-animation: .1s linear none b;
+    animation: .1s linear none b;
+}
+
+.pageclip-form__submit.pageclip-form__submit--end-loading>span {
+    -webkit-animation: .1s linear reverse c;
+    animation: .1s linear reverse c;
+}
+
+@-webkit-keyframes a {
+    0% {
+        -webkit-transform: scale(.01) translateZ(0);
+        transform: scale(.01) translateZ(0);
+    }
+    50% {
+        -webkit-transform: scale(1.2) translateZ(0);
+        transform: scale(1.2) translateZ(0);
+    }
+    to {
+        -webkit-transform: scale(1) translateZ(0);
+        transform: scale(1) translateZ(0);
+    }
+}
+
+@keyframes a {
+    0% {
+        -webkit-transform: scale(.01) translateZ(0);
+        transform: scale(.01) translateZ(0);
+    }
+    50% {
+        -webkit-transform: scale(1.2) translateZ(0);
+        transform: scale(1.2) translateZ(0);
+    }
+    to {
+        -webkit-transform: scale(1) translateZ(0);
+        transform: scale(1) translateZ(0);
+    }
+}
+
+@-webkit-keyframes b {
+    0% {
+        -webkit-transform: scale(1) translateZ(0);
+        transform: scale(1) translateZ(0);
+    }
+    to {
+        -webkit-transform: scale(.01) translateZ(0);
+        transform: scale(.01) translateZ(0);
+    }
+}
+
+@keyframes b {
+    0% {
+        -webkit-transform: scale(1) translateZ(0);
+        transform: scale(1) translateZ(0);
+    }
+    to {
+        -webkit-transform: scale(.01) translateZ(0);
+        transform: scale(.01) translateZ(0);
+    }
+}
+
+@-webkit-keyframes c {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes c {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes d {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes d {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
+}

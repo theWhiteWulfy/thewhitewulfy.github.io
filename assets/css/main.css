@@ -261,7 +261,8 @@ i.  Featurette
 		padding: 0;
 	}
 
-	input[type="text"],
+	input[type="text"], 
+    input[type="tel"],
 	input[type="password"],
 	input[type="email"],
 	select,
@@ -283,6 +284,7 @@ i.  Featurette
 
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
+        input[type="tel"]:invalid,
 		input[type="email"]:invalid,
 		select:invalid,
 		textarea:invalid {
@@ -291,6 +293,7 @@ i.  Featurette
 
 		input[type="text"]:focus,
 		input[type="password"]:focus,
+        input[type="tel"]:focus,
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
@@ -331,6 +334,7 @@ i.  Featurette
 		}
 
 	input[type="text"],
+    input[type="tel"],
 	input[type="password"],
 	input[type="email"],
 	select {
@@ -416,32 +420,32 @@ i.  Featurette
 	}
 
 	::-webkit-input-placeholder {
-		color: #aaa !important;
-		font-style: italic;
+		color: #555 !important;
+		font-style: normal;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: #aaa !important;
-		font-style: italic;
+		color: #555 !important;
+		font-style: normal;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: #aaa !important;
-		font-style: italic;
+		color: #555 !important;
+		font-style: normal;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: #aaa !important;
-		font-style: italic;
+		color: #555 !important;
+		font-style: normal;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: #aaa !important;
-		font-style: italic;
+		color: #555 !important;
+		font-style: normal;
 		opacity: 1.0;
 	}
 
@@ -801,6 +805,8 @@ i.  Featurette
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1em;
 	}
 
 		input[type="submit"]:hover,
@@ -2386,6 +2392,8 @@ h2, h4{
     text-decoration: none; 
     border-bottom-style: dashed; 
     border-bottom-width: 2px;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 .browserchrome:hover{
     color: yellow;
@@ -2401,3 +2409,63 @@ h2, h4{
     color: deepskyblue;
     line-height: inherit;
 }
+
+/*contact form*/
+.contact-letter form label{
+		color: inherit;
+		display: inline-flex;
+		font-size: 1em;
+		font-weight: 400;
+		margin: 0 0 0 0;
+	}
+.contact-letter form input[type="text"], 
+    input[type="tel"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		border: none;
+		color: inherit;
+		display: inline-flex;
+		outline: 0;
+		padding: 0.4em 0.2em 0.1em 0.2em;
+		text-decoration: none;
+		width: auto;
+	    border-bottom-color: #000;
+        border-bottom-style: dashed;
+        border-bottom-width: 2px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        min-width: 40px;
+        max-width:99.99%!important;
+        transition: width 0.25s;
+        text-align:left;
+        background-color: transparent;
+        
+	}
+    
+.contact-letter form input[type="text"]:focus,
+		input[type="password"]:focus,
+        input[type="tel"]:focus,
+		input[type="email"]:focus,
+		select:focus,
+		textarea:focus {
+			border-bottom-style: solid;
+            border-bottom-width: 3px;
+            border-bottom-color: #f74770;
+		}
+.contact-letter form input[type="text"],
+    input[type="tel"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		height: inherit;
+	}
+.contact-letter{
+    background-color:#ead5b1;
+    padding: 3.5em 1.5em 1.5em 3em;
+    background-attachment: scroll;
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+

@@ -1,0 +1,1056 @@
+<html>
+<head>
+    <title>reflect</title>
+    <script type="text/javascript" data-src="primitives.js">
+        function LevelPrimitives() {
+}
+
+LevelPrimitives.prototype.boundingWall = function(wallWidth, unitsX, unitsY) {
+  var o = new Wall(false);
+  var w = unitsX;
+  var h = unitsY;
+
+  var min = wallWidth;
+  var maxX = w - wallWidth;
+  var maxY = h - wallWidth;
+
+  o.addPoint(   0,    h, 1);
+  o.addPoint( min,    h, 0);
+  o.addPoint( min, maxY, 1);
+  o.addPoint( min,  min, 1);
+  o.addPoint(maxX,  min, 1);
+  o.addPoint(maxX, maxY, 1);
+  o.addPoint( min, maxY, 0);
+  o.addPoint( min,    h, 1);
+  o.addPoint( min,    h, 1);
+  o.addPoint(   w,    h, 1);
+  o.addPoint(   w,    0, 1);
+  o.addPoint(   0,    0, 1);
+
+  return o;
+}
+
+LevelPrimitives.prototype.boxWall = function(x, y, width, height) {
+  var o = new Wall();
+  o.addPoint(x - width/2, y + height/2);
+  o.addPoint(x + width/2, y + height/2);
+  o.addPoint(x + width/2, y - height/2);
+  o.addPoint(x - width/2, y - height/2);
+  return o;
+}
+
+LevelPrimitives.prototype.boxMirror =
+    function(x, y, width, height, isDraggable) {
+  var o = new Mirror(x, y, isDraggable);
+  o.addPoint(-width/2, height/2);
+  o.addPoint(width/2, height/2);
+  o.addPoint(width/2, -height/2);
+  o.addPoint(-width/2, -height/2);
+  return o;
+}
+
+LevelPrimitives.prototype.diamondMirror =
+    function(x, y, width, height, isDraggable) {
+  var o = new Mirror(x, y, isDraggable);
+  o.addPoint(-width/2, 0);
+  o.addPoint(0, height/2);
+  o.addPoint(width/2, 0);
+  o.addPoint(0, -height/2);
+  return o;
+}
+
+LevelPrimitives.prototype.ellipseMirror =
+    function(x, y, width, height, numEdges, isDraggable) {
+  // Easy, but stolen from http://en.wikipedia.org/wiki/Ellipse all the
+  // same
+  var a = width / 2;
+  var b = height / 2;
+  var tinc = Math.PI * 2 / numEdges;
+  var o = new Mirror(x, y, isDraggable);
+  for (var t = 0; t < Math.PI * 2; t += tinc) {
+    o.addPoint(a * Math.cos(t), -b * Math.sin(t));
+  }
+  return o;
+}
+
+// dir: 0 = up, 1 = right, 2 = down, 3 = left
+LevelPrimitives.prototype.isocMirror =
+    function(x, y, width, height, dir, isDraggable) {
+  var o = new Mirror(x, y, isDraggable);
+  if (dir == 0) {
+    o.addPoint(-width/2, -height/2);
+    o.addPoint(0, height/2);
+    o.addPoint(width/2, -height/2);
+    o.setCenterOffset(0, -height/6);
+  } else if (dir == 1) {
+    o.addPoint(-height/2, width/2);
+    o.addPoint(height/2, 0);
+    o.addPoint(-height/2, -width/2);
+    o.setCenterOffset(-height/6, 0);
+  } else if (dir == 2) {
+    o.addPoint(-width/2, height/2);
+    o.addPoint(width/2, height/2);
+    o.addPoint(0, -height/2);
+    o.setCenterOffset(0, height/6);
+  } else {
+    o.addPoint(height/2, width/2);
+    o.addPoint(height/2, -width/2);
+    o.addPoint(-height/2, 0);
+    o.setCenterOffset(height/6, 0);
+  }
+  return o;
+}
+
+// dir: 0 = ul, 1 = ur, 2 = dr, 3 = dl
+LevelPrimitives.prototype.rightMirror =
+    function(x, y, width, height, dir, isDraggable) {
+  var o = new Mirror(x, y, isDraggable);
+  if (dir == 0) {
+    o.addPoint(-width/2, -height/2);
+    o.addPoint(width/2, height/2);
+    o.addPoint(width/2, -height/2);
+    o.setCenterOffset(width/6, -height/6);
+  } else if (dir == 1) {
+    o.addPoint(-width/2, height/2);
+    o.addPoint(width/2, -height/2);
+    o.addPoint(-width/2, -height/2);
+    o.setCenterOffset(-width/6, -height/6);
+  } else if (dir == 2) {
+    o.addPoint(-width/2, height/2);
+    o.addPoint(width/2, height/2);
+    o.addPoint(-width/2, -height/2);
+    o.setCenterOffset(-width/6, height/6);
+  } else if (dir == 3) {
+    o.addPoint(-width/2, height/2);
+    o.addPoint(width/2, height/2);
+    o.addPoint(width/2, -height/2);
+    o.setCenterOffset(width/6, height/6);
+  }
+  return o;
+}
+
+// dir: 0 = ul, 1 = ur, 2 = dr, 3 = dl
+LevelPrimitives.prototype.wideMirror =
+    function(x, y, width, dir, isDraggable) {
+  var o = new Mirror(x, y, isDraggable);
+  var ratio = Math.tan(22.5 * Math.PI / 180);
+  var height = width * ratio;
+  if (dir == 0) {
+    o.addPoint(width/2, height/2);
+    o.addPoint(width/2, -height/2);
+    o.addPoint(-width/2, -height/2);
+    o.setCenterOffset(width/6, -height/6);
+  } else if (dir == 1) {
+    o.addPoint(-width/2, height/2);
+    o.addPoint(width/2, -height/2);
+    o.addPoint(-width/2, -height/2);
+    o.setCenterOffset(-width/6, -height/6);
+  } else if (dir == 2) {
+    o.addPoint(-width/2, height/2);
+    o.addPoint(width/2, height/2);
+    o.addPoint(-width/2, -height/2);
+    o.setCenterOffset(-width/6, height/6);
+  } else if (dir == 3) {
+    o.addPoint(-width/2, height/2);
+    o.addPoint(width/2, height/2);
+    o.addPoint(width/2, -height/2);
+    o.setCenterOffset(width/6, height/6);
+  }
+  return o;
+}
+
+// dir: 0 = ul, 1 = ur, 2 = dr, 3 = dl
+LevelPrimitives.prototype.tallMirror =
+    function(x, y, height, dir, isDraggable) {
+  var o = new Mirror(x, y, isDraggable);
+  var ratio = Math.tan(22.5 * Math.PI / 180);
+  var width = height * ratio;
+  if (dir == 0) {
+    o.addPoint(width/2, height/2);
+    o.addPoint(width/2, -height/2);
+    o.addPoint(-width/2, -height/2);
+    o.setCenterOffset(width/6, -height/6);
+  } else if (dir == 1) {
+    o.addPoint(-width/2, height/2);
+    o.addPoint(width/2, -height/2);
+    o.addPoint(-width/2, -height/2);
+    o.setCenterOffset(-width/6, -height/6);
+  } else if (dir == 2) {
+    o.addPoint(-width/2, height/2);
+    o.addPoint(width/2, height/2);
+    o.addPoint(-width/2, -height/2);
+    o.setCenterOffset(-width/6, height/6);
+  } else if (dir == 3) {
+    o.addPoint(-width/2, height/2);
+    o.addPoint(width/2, height/2);
+    o.addPoint(width/2, -height/2);
+    o.setCenterOffset(width/6, height/6);
+  }
+  return o;
+}
+    </script>
+    <script type="text/javascript" data-src="levels.js">
+    var currentLevel = undefined;
+
+function loadLevel(num) {
+  if (num < levelFunctions.length) {
+    b.reset();
+    levelFunctions[num]();
+    currentLevel = num;
+    b.start();
+  } else {
+    b.showMessageBox("Sorry, no more levels &mdash; you win!");
+  }
+}
+
+function nextLevel() {
+  loadLevel(currentLevel + 1);
+}
+
+function restartLevel() {
+  loadLevel(currentLevel);
+}
+
+var levelFunctions = [
+  function() {
+    b.addWall(p.boundingWall(2.5, b.xUnits, b.yUnits));
+    b.addMirror(p.isocMirror(50, 5, 10, 5, 0, false));
+    b.addMirror(p.rightMirror(95, 95, 5, 5, 3, true));
+    b.addMirror(p.isocMirror(25, 25, 10, 5, 2, true));
+    b.addGoal(p.boxWall(95, 5, 5, 5));
+    b.addBeam(new Beam([7.5, 5], [20, 5]));
+  },
+  function () {
+    b.addWall(p.boundingWall(2.5, b.xUnits, b.yUnits));
+    b.addWall(p.boxWall(25, 25, 5, 20));
+    b.addWall(p.boxWall(75, 25, 5, 20));
+    b.addGoal(p.boxWall(5, 25, 5, 5));
+    b.addGoal(p.boxWall(95, 25, 5, 5));
+    b.addMirror(p.isocMirror(50, 95, 10, 5, 2, false));
+    b.addMirror(p.isocMirror(25, 75, 10, 5, 0, true));
+    b.addMirror(p.rightMirror(75, 75, 5, 5, 2, true));
+    b.addMirror(p.rightMirror(75, 50, 5, 5, 3, true));
+    b.addBeam(new Beam([7.5, 5], [20, 5]));
+    b.addBeam(new Beam([92.5, 5], [80, 5]));
+  },
+  function() {
+    b.addWall(p.boundingWall(2.5, b.xUnits, b.yUnits));
+    b.addWall(p.boxWall(50, 50, 10, 10));
+    b.addMirror(p.rightMirror(70, 70, 5, 5, 1, true));
+    b.addMirror(p.boxMirror(25, 25, 5, 5, true));
+    b.addMirror(p.tallMirror(69.6, 20, 10, 2, true));
+    b.addGoal(p.boxWall(95, 5, 5, 5));
+    b.addBeam(new Beam([7.5, 92.5], [10, 90]));
+  },
+  function() {
+    b.addWall(p.boundingWall(2.5, b.xUnits, b.yUnits));
+    b.addBeam(new Beam([45, 92.5], [45, 90]));
+    b.addBeam(new Beam([55, 92.5], [55, 90]));
+    b.addMirror(p.wideMirror(75, 75, 10, 1, true));
+    b.addMirror(p.wideMirror(75, 50, 10, 0, true));
+    b.addMirror(p.wideMirror(25, 75.4, 10, 2, true));
+    b.addMirror(p.wideMirror(25, 50.4, 10, 3, true));
+    b.addGoal(p.boxWall(5, 5, 5, 5));
+    b.addGoal(p.boxWall(95, 5, 5, 5));
+  },
+  function() {
+    b.addWall(p.boundingWall(2.5, b.xUnits, b.yUnits));
+
+    w = new Wall();
+    w.addPoint(40, 80, 1);
+    w.addPoint(40, 97.5, 0);
+    w.addPoint(40, 98, 0);
+    w.addPoint(98, 98, 0);
+    w.addPoint(98, 80, 0);
+    w.addPoint(97.5, 80, 1);
+    b.addWall(w);
+
+    b.addBeam(new Beam([25, 80], [25, 70]));
+    b.addBeam(new Beam([32.5, 80], [32.5, 70]));
+    b.addMirror(p.wideMirror(50, 65.75, 15, 1, true));
+    b.addMirror(p.wideMirror(50, 55, 15, 3, true));
+    b.addGoal(p.boxWall(67.5, 5, 5, 5));
+    b.addGoal(p.boxWall(75, 60, 5, 5));
+  },
+  function() {
+    b.addWall(p.boundingWall(2.5, b.xUnits, b.yUnits));
+
+    w = new Wall();
+    w.addPoint(20, 85, 1);
+    w.addPoint(20, 97.5, 0);
+    w.addPoint(20, 98, 0);
+    w.addPoint(80, 98, 0);
+    w.addPoint(80, 97.5, 1);
+    w.addPoint(80, 85, 1);
+    b.addWall(w);
+
+    w = new Wall();
+    w.addPoint(20, 65, 1);
+    w.addPoint(80, 65, 1);
+    w.addPoint(80, 2.5, 0);
+    w.addPoint(80, 2, 0);
+    w.addPoint(20, 2, 0);
+    w.addPoint(20, 2.5, 1);
+    b.addWall(w);
+
+    b.addMirror(p.boxMirror(82.5, 7.5, 5, 10, true));
+    b.addMirror(p.tallMirror(10.7, 25, 15, 1, true));
+    b.addMirror(p.rightMirror(82.5, 95, 5, 5, 2, true));
+
+    m = new Mirror(17.5, 92.5, true);
+    m.addPoint(-2.5, 0);
+    m.addPoint(2.5, 5);
+    m.addPoint(2.5, -5);
+    b.addMirror(m);
+
+    b.addBeam(new Beam([5, 95], [10, 90]));
+    b.addBeam(new Beam([95, 7.5], [95, 10]));
+    b.addGoal(p.boxWall(95, 95, 5, 5));
+    b.addGoal(p.boxWall(5, 5, 5, 5));
+  },
+]
+    </script>
+    <script type="text/javascript" data-src="reflect.js">
+    var l = undefined;
+var b = undefined;
+var p = undefined;
+var mb = undefined;
+
+function handleOnLoad() {
+  l = new Logger("log", 15);
+  b = new Board(document.getElementById("canvas"));
+  p = new LevelPrimitives();
+  mb = document.getElementById("messageBox");
+  loadLevel(0);
+}
+
+
+function coord(x, y) {
+  return "(" + x + "," + y + ")";
+}
+
+
+function rotate(x, y, theta) {
+  return [Math.cos(theta) * x - Math.sin(theta) * y,
+          Math.sin(theta) * x + Math.cos(theta) * y];
+}
+
+
+function getIntersection(x0, y0, x1, y1, x2, y2, x3, y3) {
+  // swiped from http://local.wasp.uwa.edu.au/~pbourke/geometry/lineline2d/
+  var u0 = ((x3 - x2) * (y0 - y2) - (y3 - y2) * (x0 - x2)) /
+           ((y3 - y2) * (x1 - x0) - (x3 - x2) * (y1 - y0));
+  var u1 = ((x1 - x0) * (y0 - y2) - (y1 - y0) * (x0 - x2)) /
+           ((y3 - y2) * (x1 - x0) - (x3 - x2) * (y1 - y0));
+
+  // Give up if no intersection occurred.
+  if (u0 == Infinity || u1 == Infinity) return undefined;
+  if (u0 < 0) return undefined;
+  if (u1 < 0 || u1 > 1) return undefined;
+
+  var intX = x0 + u0 * (x1 - x0);
+  var intY = y0 + u0 * (y1 - y0);
+
+  // Get the line segment's normal.
+  var normX = y2 - y3;
+  var normY = x3 - x2;
+  var length = Math.sqrt(Math.pow(normX, 2) + Math.pow(normY, 2));
+  normX /= length;
+  normY /= length;
+
+  var incX = x0 - intX;
+  var incY = y0 - intY;
+  length = Math.sqrt(Math.pow(incX, 2) + Math.pow(incY, 2));
+  incX /= length;
+  incY /= length;
+
+  var theta = Math.acos(incX * normX + incY * normY);
+  if (theta > Math.PI / 2) {
+    // If the angle between the normal and the reversed incoming vector is
+    // greater than 90 degrees, it means that we hit the wrong side of the
+    // line segment.  Pretend like we didn't hit it, as we'd just end up
+    // producing some screwy vector otherwise.
+    return undefined;
+  }
+  if (incY > 0 && normY > 0 && incX < normX ||
+      incX > 0 && normX > 0 && incY > normY ||
+      incY < 0 && normY < 0 && incX > normX ||
+      incX < 0 && normX < 0 && incY < normY) {
+    // Rotate clockwise instead of counter-clockwise if necessary.
+    theta *= -1;
+  }
+  var ref = rotate(incX, incY, 2 * theta);
+
+  return [intX, intY, intX + ref[0], intY + ref[1], normX, normY];
+}
+
+
+function getNearestIntersection(x0, y0, x1, y1, points) {
+  var intDistSquared = Number.MAX_VALUE;
+  var intP = undefined;
+
+  for (var i = 0; i < points.length; ++i) {
+    var point = points[i];
+    var nextPoint = points[(i + 1) % points.length];
+    var p = getIntersection(x0, y0, x1, y1,
+                            point[0], point[1], nextPoint[0], nextPoint[1]);
+    if (p == undefined) continue;
+    var distSquared = Math.pow(p[0] - x0, 2) + Math.pow(p[1] - y0, 2);
+    if (distSquared < intDistSquared) {
+      intDistSquared = distSquared;
+      intP = p;
+    }
+  }
+
+  if (intDistSquared == Number.MAX_VALUE) return undefined;
+  return [intP, intDistSquared];
+}
+
+
+function Wall() {
+  this.points = new Array();
+  this.hitByBeam = false;
+}
+
+// Points must be added in clockwise order.
+Wall.prototype.addPoint = function(x, y, drawEdge) {
+  this.points[this.points.length] = [x, y, drawEdge];
+}
+
+Wall.prototype.getIntersection = function(x0, y0, x1, y1) {
+  return getNearestIntersection(x0, y0, x1, y1, this.points);
+}
+
+Wall.prototype.resetState = function() {
+  this.hitByBeam = false;
+}
+
+Wall.prototype.markHit = function(x, y) {
+  this.hitByBeam = true;
+}
+
+
+function Mirror(x, y, isDraggable) {
+  this.points = new Array();
+  this.pos = [x, y];
+  this.isDraggable = isDraggable;
+  this.boundMin = [0, 0];
+  this.boundMax = [0, 0];
+  this.centerOffset = [0, 0];
+}
+
+// Points must be added in clockwise order.
+Mirror.prototype.addPoint = function(x, y) {
+  this.points[this.points.length] = [x, y];
+  if (x < this.boundMin[0]) this.boundMin[0] = x;
+  if (y < this.boundMin[1]) this.boundMin[1] = y;
+  if (x > this.boundMax[0]) this.boundMax[0] = x;
+  if (y > this.boundMax[1]) this.boundMax[1] = y;
+}
+
+Mirror.prototype.setCenterOffset = function(x, y) {
+  this.centerOffset = [x, y];
+}
+
+Mirror.prototype.moveOffset = function(x, y) {
+  this.pos = [this.pos[0] + x, this.pos[1] + y];
+}
+
+Mirror.prototype.getIntersection = function(x0, y0, x1, y1) {
+  // If the mirror has a bunch of points, just do a test against its
+  // bounding box first.
+  if (this.points.length > 8) {
+    var points = new Array();
+    points[0] = [this.pos[0] + this.boundMin[0],
+                 this.pos[1] + this.boundMin[1]];
+    points[1] = [this.pos[0] + this.boundMin[0],
+                 this.pos[1] + this.boundMax[1]];
+    points[2] = [this.pos[0] + this.boundMax[0],
+                 this.pos[1] + this.boundMax[1]];
+    points[3] = [this.pos[0] + this.boundMax[0],
+                 this.pos[1] + this.boundMin[1]];
+    if (!getNearestIntersection(x0, y0, x1, y1, points)) {
+      return undefined;
+    }
+  }
+
+  var points = new Array();
+  for (var i = 0; i < this.points.length; ++i) {
+    points[points.length] = [this.pos[0] + this.points[i][0],
+                             this.pos[1] + this.points[i][1]];
+  }
+  return getNearestIntersection(x0, y0, x1, y1, points);
+}
+
+Mirror.prototype.isPointInsideBoundingBox = function(x, y) {
+  if (x >= this.pos[0] + this.boundMin[0] &&
+      x <= this.pos[0] + this.boundMax[0] &&
+      y >= this.pos[1] + this.boundMin[1] &&
+      y <= this.pos[1] + this.boundMax[1]) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+Mirror.prototype.resetState = function() {
+}
+
+Mirror.prototype.markHit = function(x, y) {
+}
+
+
+function Beam(p0, p1) {
+  this.p0 = p0;
+  this.p1 = p1;
+}
+
+
+function Board(canvas) {
+  this.canvas = canvas;
+  this.ctx = canvas.getContext("2d");
+
+  this.reset();
+
+  this.maxRays = 50;
+  this.toggleBeamMs = 5000;
+
+  this.gridSize = 2.5;
+  this.xUnits = 100;
+  this.yUnits = 100;
+
+  this.handleResize();
+}
+
+Board.prototype.handleResize = function() {
+  this.padding = Math.min(this.canvas.width, this.canvas.height) / 50;
+  this.x = this.padding;
+  this.y = this.padding;
+
+  var ratio = Math.min((this.canvas.width - 2 * this.padding) / this.xUnits,
+                       (this.canvas.height - 2 * this.padding) / this.yUnits);
+  this.w = ratio * this.xUnits;
+  this.h = ratio * this.yUnits;
+
+  this.lineWidth = ratio * 0.5;
+}
+
+Board.prototype.reset = function() {
+  this.borders = new Array();
+  this.walls = new Array();
+  this.mirrors = new Array();
+  this.goals = new Array();
+  this.beams = new Array();
+
+  this.dragObject = undefined;
+  this.dragLast = [0, 0];
+  this.canvas.style.cursor = 'default';
+
+  this.beamEnabled = true;
+  this.beamTimeout = undefined;
+  this.levelComplete = false;
+}
+
+Board.prototype.addWall = function(wall) {
+  this.walls[this.walls.length] = wall;
+}
+
+Board.prototype.addGoal = function(goal) {
+  this.goals[this.goals.length] = goal;
+}
+
+Board.prototype.addMirror = function(mirror) {
+  this.mirrors[this.mirrors.length] = mirror;
+}
+
+Board.prototype.addBeam = function(beam) {
+  this.beams[this.beams.length] = beam;
+}
+
+Board.prototype.bToC = function(x, y) {
+  return [this.x + (x / this.xUnits) * this.w,
+          this.y + this.h - (y / this.yUnits) * this.h];
+}
+
+Board.prototype.cToB = function(x, y) {
+  return [(x - this.x) / this.w * this.xUnits,
+          this.yUnits - (y - this.y) / this.h * this.yUnits];
+}
+
+Board.prototype.eToC = function(event) {
+  return [event.clientX - this.canvas.offsetLeft,
+          event.clientY - this.canvas.offsetTop];
+}
+
+Board.prototype.eToB = function(event) {
+  return this.cToB.apply(this, this.eToC(event));
+}
+
+Board.prototype.handleMouseDown = function(event) {
+  var p = b.eToB(event);
+  for (var i = 0; i < b.mirrors.length; ++i) {
+    var mirror = b.mirrors[i];
+    if (mirror.isDraggable && mirror.isPointInsideBoundingBox(p[0], p[1])) {
+      b.dragObject = mirror;
+      b.dragLast = p;
+      b.canvas.style.cursor = 'move';
+      break;
+    }
+  }
+}
+
+Board.prototype.stopDrag = function() {
+  if (b.dragObject) {
+    b.dragObject = undefined;
+    b.canvas.style.cursor = 'default';
+  }
+}
+
+Board.prototype.handleMouseUp = function(event) {
+  b.stopDrag();
+}
+
+Board.prototype.handleMouseMove = function(event) {
+  if (b.dragObject) {
+    var p = b.eToB(event);
+    var moveX = 0;
+    var moveY = 0;
+    if (Math.abs(p[0] - b.dragLast[0]) >= b.gridSize / 2) {
+      moveX = Math.round((p[0] - b.dragLast[0]) / b.gridSize) * b.gridSize;
+      if (b.dragObject.pos[0] + moveX > b.xUnits ||
+          b.dragObject.pos[0] + moveX < 0) moveX = 0;
+    }
+    if (Math.abs(p[1] - b.dragLast[1]) >= b.gridSize / 2) {
+      moveY = Math.round((p[1] - b.dragLast[1]) / b.gridSize) * b.gridSize;
+      if (b.dragObject.pos[1] + moveY > b.yUnits ||
+          b.dragObject.pos[1] + moveY < 0) moveY = 0;
+    }
+    if (moveX || moveY) {
+      b.dragLast = [b.dragLast[0] + moveX, b.dragLast[1] + moveY];
+      b.dragObject.moveOffset(moveX, moveY);
+      b.draw();
+    }
+  }
+}
+
+Board.prototype.toggleBeam = function() {
+  this.beamEnabled = !this.beamEnabled;
+  this.beamTimeout = undefined;
+  this.draw();
+  //if (!this.levelComplete) {
+  //  this.beamTimeout = setTimeout("b.toggleBeam()", this.toggleBeamMs);
+  //}
+}
+
+Board.prototype.start = function() {
+  this.hideMessageBox();
+  this.draw();
+  this.canvas.onmousedown = this.handleMouseDown;
+  this.canvas.onmouseup = this.handleMouseUp;
+  this.canvas.onmousemove = this.handleMouseMove;
+  //if (!this.levelComplete) {
+  //  this.beamTimeout = setTimeout("b.toggleBeam()", this.toggleBeamMs);
+  //}
+}
+
+Board.prototype.showMessageBox = function(msg) {
+  mb.style.width = this.canvas.width/2;
+  //mb.style.height = this.canvas.height/4;
+  mb.style.left = this.canvas.offsetLeft + this.canvas.width/4;
+  mb.style.top = this.canvas.offsetTop + 3 * this.canvas.height/8;
+  mb.innerHTML = msg;
+  mb.style.visibility = 'visible';
+}
+
+Board.prototype.hideMessageBox = function(msg) {
+  mb.style.visibility = 'hidden';
+}
+
+Board.prototype.victory = function() {
+  if (this.beamTimeout != undefined) {
+    clearTimeout(this.beamTimeout);
+  }
+  this.stopDrag();
+  this.levelComplete = true;
+  this.canvas.onmousedown = undefined;
+  this.canvas.onmouseup = undefined;
+  this.canvas.onmousemove = undefined;
+  this.showMessageBox('<h3>Level Completed!</h3>' +
+    '<a href="javascript:restartLevel();">Replay</a> ' +
+    '<a href="javascript:nextLevel();">Next Level</a>');
+}
+
+Board.prototype.drawGrid = function() {
+  var ctx = this.ctx;
+  ctx.strokeStyle = "#eeeeee";
+  ctx.lineWidth = this.lineWidth * 0.75;
+  ctx.globalAlpha = 1;
+  for (var i = 0; i <= this.xUnits; i += this.gridSize) {
+    ctx.beginPath();
+    ctx.moveTo.apply(ctx, this.bToC(i, 0));
+    ctx.lineTo.apply(ctx, this.bToC(i, this.yUnits));
+    ctx.stroke();
+  }
+  for (var i = 0; i <= this.yUnits; i += this.gridSize) {
+    ctx.beginPath();
+    ctx.moveTo.apply(ctx, this.bToC(0, i));
+    ctx.lineTo.apply(ctx, this.bToC(this.xUnits, i));
+    ctx.stroke();
+  }
+}
+
+Board.prototype.drawWall = function(wall, isGoal) {
+  var ctx = this.ctx;
+  ctx.save();
+
+  ctx.lineWidth = this.lineWidth;
+  ctx.lineCap = "round";
+  if (isGoal) {
+    ctx.fillStyle = "#dddd33";
+    ctx.strokeStyle = "#cccc22";
+    ctx.globalAlpha = 0.75;
+  } else {
+    ctx.fillStyle = "#cccccc";
+    ctx.strokeStyle = "#aaaaaa";
+    ctx.globalAlpha = 1;
+  }
+
+  // Fill wall interior.
+  ctx.beginPath();
+  var p = this.bToC(wall.points[0][0], wall.points[0][1]);
+  ctx.moveTo(p[0], p[1]);
+  for (var j = 1; j < wall.points.length; ++j) {
+    p = this.bToC(wall.points[j][0], wall.points[j][1]);
+    ctx.lineTo(p[0], p[1]);
+  }
+  ctx.fill();
+
+  // Draw lines around wall.
+  for (var j = 1; j < wall.points.length + 1; ++j) {
+    if (wall.points[j-1][2] == 0) continue;
+    ctx.beginPath();
+    var p = this.bToC(wall.points[j-1][0], wall.points[j-1][1]);
+    ctx.moveTo(p[0], p[1]);
+    p = this.bToC(wall.points[j % wall.points.length][0],
+                   wall.points[j % wall.points.length][1]);
+    ctx.lineTo(p[0], p[1]);
+    ctx.stroke();
+  }
+
+  ctx.restore();
+}
+
+Board.prototype.drawMirror = function(mir) {
+  var ctx = this.ctx;
+  ctx.save();
+
+  if (mir.isDraggable) {
+    ctx.fillStyle = "#88ccff";
+    ctx.strokeStyle = "#66bbdd";
+  } else {
+    ctx.fillStyle = "#55ccaa";
+    ctx.strokeStyle = "#33aa88";
+  }
+
+  ctx.lineWidth = this.lineWidth;
+  ctx.lineCap = "round";
+  ctx.globalAlpha = 1;
+  ctx.beginPath();
+  var p0 = this.bToC(mir.pos[0] + mir.points[0][0],
+                      mir.pos[1] + mir.points[0][1]);
+  ctx.moveTo(p0[0], p0[1]);
+  for (var j = 1; j < mir.points.length; ++j) {
+    var p = this.bToC(mir.pos[0] + mir.points[j][0],
+                      mir.pos[1] + mir.points[j][1]);
+    ctx.lineTo(p[0], p[1]);
+  }
+  ctx.lineTo(p0[0], p0[1]);  // close the line
+  ctx.fill();
+  ctx.stroke();
+
+  if (mir.isDraggable) {
+    // Draw center dot.
+    p0 = this.bToC.apply(this,
+                         [mir.pos[0] + mir.centerOffset[0],
+                          mir.pos[1] + mir.centerOffset[1]]);
+    ctx.fillStyle = "#66bbdd";
+    ctx.beginPath();
+    ctx.arc(p0[0], p0[1], this.lineWidth, 0, 2 * Math.PI, false);
+    ctx.fill();
+  }
+
+  ctx.restore();
+}
+
+Board.prototype.drawBeamGun = function(beam) {
+  ctx = this.ctx;
+  ctx.save();
+
+  ctx.lineCap = "round";
+  ctx.lineWidth = this.lineWidth * 2;
+  ctx.strokeStyle = "#555555";
+  ctx.fillStyle = "#777777";
+  ctx.globalAlpha = 1;
+  ctx.beginPath();
+
+  var length = Math.sqrt(
+      Math.pow(beam.p1[0] - beam.p0[0], 2) +
+      Math.pow(beam.p1[1] - beam.p0[1], 2));
+  var normY = (beam.p1[1] - beam.p0[1]) / length;
+  var theta = Math.acos(normY);
+  if (beam.p1[0] > beam.p0[0]) theta *= -1;
+
+  var p0 = rotate(-2.5, 0, theta);
+  p0[0] += beam.p0[0], p0[1] += beam.p0[1];
+  ctx.moveTo.apply(ctx, this.bToC.apply(this, p0));
+
+  var p1 = rotate(2.5, 0, theta);
+  p1[0] += beam.p0[0], p1[1] += beam.p0[1];
+  ctx.lineTo.apply(ctx, this.bToC.apply(this, p1));
+
+  var p2 = rotate(1.25, -5, theta);
+  p2[0] += beam.p0[0], p2[1] += beam.p0[1];
+  ctx.lineTo.apply(ctx, this.bToC.apply(this, p2));
+
+  var p3 = rotate(-1.25, -5, theta);
+  p3[0] += beam.p0[0], p3[1] += beam.p0[1];
+  ctx.lineTo.apply(ctx, this.bToC.apply(this, p3));
+
+  ctx.lineTo.apply(ctx, this.bToC.apply(this, p0));
+
+  ctx.stroke();
+  ctx.fill();
+
+  ctx.restore();
+}
+
+Board.prototype.drawBeam = function(beam) {
+  ctx = this.ctx;
+  ctx.save();
+
+  ctx.lineCap = "round";
+  ctx.strokeStyle = "#ff0000";
+  ctx.lineWidth = this.lineWidth * 2;
+  ctx.globalAlpha = 0.75;
+
+  var rayX0 = beam.p0[0], rayY0 = beam.p0[1];
+  var rayX1 = beam.p1[0], rayY1 = beam.p1[1];
+  var rayStopped = false;
+  var numRays = 0;
+  var hitObject = undefined;
+
+  while (!rayStopped) {
+    if (numRays > this.maxRays) {
+      l.write("Drew more than " + this.maxRays + " rays; giving up");
+      break;
+    }
+
+    var intP = undefined;
+    var intDist = Number.MAX_VALUE;
+    for (var i = 0; i < this.walls.length + this.goals.length; ++i) {
+      var wall = i < this.walls.length ?
+        this.walls[i] : this.goals[i - this.walls.length];
+      var r = wall.getIntersection(rayX0, rayY0, rayX1, rayY1);
+      if (r != undefined && r[1] < intDist) {
+        intP = r[0];
+        intDist = r[1];
+        rayStopped = true;
+        hitObject = wall;
+      }
+    }
+    for (var i = 0; i < this.mirrors.length; ++i) {
+      var r = this.mirrors[i].getIntersection(rayX0, rayY0, rayX1, rayY1);
+      if (r != undefined && r[1] < intDist) {
+        intP = r[0];
+        intDist = r[1];
+        rayStopped = false;
+        hitObject = this.mirrors[i];
+        if (intDist == 0) {
+          l.write("Whoops, distance is 0");
+          rayStopped = true;
+        }
+      }
+    }
+    // If the ray didn't run into anything yet, find its intersection with
+    // the border.
+    if (intDist == Number.MAX_VALUE) {
+      var r = getNearestIntersection(
+        rayX0, rayY0, rayX1, rayY1,
+        [[0, 0], [this.xUnits, 0],
+         [this.xUnits, this.yUnits], [0, this.yUnits]]);
+      if (r == undefined) {
+        l.write("Didn't find collision with border!");
+      } else {
+        intP = r[0];
+      }
+      rayStopped = true;
+    }
+
+    ctx.beginPath();
+    ctx.moveTo.apply(ctx, this.bToC(rayX0, rayY0));
+    ctx.lineTo.apply(ctx, this.bToC(intP[0], intP[1]));
+    ctx.stroke();
+
+    /* draw normal
+    if (!rayStopped) {
+      ctx.strokeStyle = "#00ff00";
+      ctx.lineWidth = this.lineWidth;
+      ctx.beginPath();
+      ctx.moveTo.apply(ctx, this.bToC(intP[0], intP[1]));
+      ctx.lineTo.apply(ctx,
+                       this.bToC(intP[0] + 10 * intP[4],
+                                  intP[1] + 10 * intP[5]));
+      ctx.stroke();
+    }
+    */
+
+    if (rayStopped) {
+      var p = this.bToC(intP[0], intP[1]);
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = "#ff0000";
+      ctx.beginPath();
+      ctx.arc(p[0], p[1], this.lineWidth * 2, 0, 2 * Math.PI, false);
+      ctx.fill();
+
+      /*for (var i = 0; i < 12; ++i) {
+        var l = Math.random() * 5;
+        var theta = Math.random() * 2 * Math.PI;
+        var x0 = Math.cos(theta) * 0.5;
+        var y0 = Math.sin(theta) * 0.5;
+        var x1 = Math.sin(theta) * l;
+        var y1 = Math.cos(theta) * l;
+        var x2 = Math.cos(theta) * -0.5;
+        var y2 = Math.sin(theta) * -0.5;
+
+        ctx.beginPath();
+        ctx.globalAlpha = 0.1;
+        ctx.moveTo.apply(ctx, this.bToC(intP[0] + x0, intP[1] + y0));
+        ctx.lineTo.apply(ctx, this.bToC(intP[0] + x1, intP[1] + y1));
+        ctx.lineTo.apply(ctx, this.bToC(intP[0] + x2, intP[1] + y2));
+        ctx.fill();
+      }
+      */
+    } else {
+      // Offset the starting point a tiny bit in the direction of the ray
+      // so we don't immediately collide with the mirror that we hit.
+      rayX0 = intP[0] + (intP[2] - intP[0]) * 0.001;
+      rayY0 = intP[1] + (intP[3] - intP[1]) * 0.001;
+      rayX1 = intP[2];
+      rayY1 = intP[3];
+    }
+
+    if (hitObject) {
+      hitObject.markHit(intP[0], intP[1]);
+    }
+
+    numRays += 1;
+  }
+
+  ctx.restore();
+}
+
+Board.prototype.draw = function() {
+  this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+  this.drawGrid();
+
+  for (var i = 0; i < this.walls.length; ++i) {
+    this.walls[i].resetState();
+    this.drawWall(this.walls[i], false);
+  }
+  for (var i = 0; i < this.goals.length; ++i) {
+    this.goals[i].resetState();
+    this.drawWall(this.goals[i], true);
+  }
+  for (var i = 0; i < this.mirrors.length; ++i) {
+    this.mirrors[i].resetState();
+    this.drawMirror(this.mirrors[i]);
+  }
+  if (this.beamEnabled) {
+    for (var i = 0; i < this.beams.length; ++i) {
+      this.drawBeam(this.beams[i]);
+    }
+  }
+  for (var i = 0; i < this.beams.length; ++i) {
+    this.drawBeamGun(this.beams[i]);
+  }
+
+  if (!this.levelComplete) {
+    var allGoalsHit = true;
+    for (var i = 0; i < this.goals.length; ++i) {
+      if (!this.goals[i].hitByBeam) {
+        allGoalsHit = false;
+        break;
+      }
+    }
+    if (this.goals.length && allGoalsHit) {
+      this.victory();
+    }
+  }
+}
+
+Board.prototype.dumpMirrorPositions = function() {
+  for (var i = 0; i < this.mirrors.length; ++i) {
+    var mir = this.mirrors[i];
+    l.write("mirror[" + i + "]: " + coord(mir.pos[0], mir.pos[1]));
+  }
+}
+
+
+function Logger(id, maxLines) {
+  this.div = document.getElementById(id);
+  this.lines = new Array();
+  this.numLines = 0;
+  this.maxLines = maxLines;
+  this.curLine = 0;
+}
+
+Logger.prototype.write = function(msg) {
+  this.lines[this.curLine] = msg;
+  this.curLine = (this.curLine + 1) % this.maxLines;
+  if (this.numLines < this.maxLines) this.numLines += 1;
+
+  text = "";
+  for (var i = 0; i < this.numLines; ++i) {
+    var lineNum = (this.curLine + (this.maxLines - this.numLines) + i) %
+      this.maxLines;
+    text += this.lines[lineNum] + "<br/>";
+  }
+  this.div.innerHTML = text;
+}
+    </script>
+  
+    <style type="text/css">
+        #canvas {
+          z-index: -1;
+        }
+        #messageBox {
+          z-index: 0;
+          position: absolute;
+          text-align: center;
+          border: solid 1px black;
+          background-color: white;
+          padding: 10px;
+          visibility: hidden;
+        }
+    </style>
+</head>
+
+<body onLoad="handleOnLoad()">
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <div>
+      <a href="mailto:i@alokprateek.ml">comments, suggestions, etc.</a>
+    </div>
+
+    <div id="messageBox"></div>
+
+    <!--
+    <div><a href="javascript:b.dumpMirrorPositions()">Dump mirror positions</a>
+    </div>
+    -->
+
+    <div id="log"></div>
+
+</body>
+</html>
