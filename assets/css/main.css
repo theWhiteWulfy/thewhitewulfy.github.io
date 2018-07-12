@@ -1,8 +1,8 @@
 /*
 =====================================================================
-*   Porto v4.1 Base Stylesheet
+*   Porto v4.3 Base Stylesheet
 *   Alok(oxyenyos@gmail.com)
-*   05-28-2018
+*   07-05-2018
 =====================================================================
 
 TOC:
@@ -231,8 +231,9 @@ i.  Featurette
 	}
 
 	header.major h2 {
-		color: #f96c8d;
+		color: #fff;
 		font-size: 3.5em;
+        
 	}
 
 		header.major h2 + p {
@@ -993,13 +994,12 @@ i.  Featurette
 		top: 0;
 		width: 23em;
 		right: 0;
-	}
-
+}
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
 			color: #ffffff;
 		}
 
-			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
+		#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
 				color: #ffffff;
 			}
 
@@ -1125,7 +1125,7 @@ i.  Featurette
 
 	#intro:before {
 		
-		background-color: #222222;
+		background-color: transparent;
 		animation: squishy 35s ease-in 5s 1 alternate infinite;
 		background-position: top right;
 		background-repeat: no-repeat;
@@ -1136,14 +1136,40 @@ i.  Featurette
 		width: 100%;
 	}
 
-	#intro{
-		
+	#intro{		
 		background-color: #222222;
 		animation: squishy 35s ease-in 5s 1 alternate infinite;
 		background-position: top right;
 		background-repeat: no-repeat;
-		background-size: cover;
-	}
+		background-size: cover; background: linear-gradient(126deg, #c31432, #240b36);
+        background-size: 400% 400%;
+
+        -webkit-animation: header-gradient-anim 5s ease infinite;
+        -moz-animation: header-gradient-anim 5s ease infinite;
+        -o-animation: header-gradient-anim 5s ease infinite;
+        animation: header-gradient-anim 5s ease infinite;
+    }
+        @-webkit-keyframes header-gradient-anim {
+            0%{background-position:0% 51%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 51%}
+        }
+        @-moz-keyframes header-gradient-anim {
+            0%{background-position:0% 51%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 51%}
+        }
+        @-o-keyframes header-gradient-anim {
+            0%{background-position:0% 51%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 51%}
+        }
+        @keyframes header-gradient-anim {
+            0%{background-position:0% 51%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 51%}
+        }
+
 	@keyframes squishy {
 		from {
 			background-color: #c62828;
