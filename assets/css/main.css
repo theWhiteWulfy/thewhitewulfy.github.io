@@ -1444,9 +1444,8 @@ i.  Featurette
 					}
 
 					#titleBar .toggle:before {
-						background: #f74770;
 						color: #ffffff;
-						content: '\f292';
+						content: '\f0c9';
 						display: block;
 						font-size: 18px;
 						height: 44px;

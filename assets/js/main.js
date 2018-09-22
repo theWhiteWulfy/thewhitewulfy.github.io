@@ -228,6 +228,12 @@ var colorPicker = (function() {
 		$(".devicon-list li i:hover").css({
 			"color": "rgb(" + state.activeColor + ")"
 		});
+        $(".mfb-component__button--child").css({
+			"background-color": "rgb(" + state.activeColor + ")"
+		});
+        $(".mfb-component__button--main").css({
+			"background-color": "rgb(" + state.activeColor + ")"
+		});
 	}
 
 	function createVariations(color, callback) {
