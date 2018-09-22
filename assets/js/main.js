@@ -210,9 +210,7 @@ var colorPicker = (function() {
 		$("#header").css({
 			"background-color": "rgb(" + state.activeColor + ")"
 		});
-		$("header.major h2").css({
-			"color": "rgb(" + state.activeColor + ")"
-		});
+		
 
 		$("ul.feature-icons li:before").css({
 			"background-color": "rgb(" + state.activeColor + ")"
