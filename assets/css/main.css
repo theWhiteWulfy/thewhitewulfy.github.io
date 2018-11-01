@@ -1690,7 +1690,7 @@ i.  Featurette
 			margin: 0 0.25em;
 	}
 
-	#smconsole{
+	.smconsole{
 		font-size: 1.2em;
 	}
 
@@ -2067,7 +2067,7 @@ h2, h4{
 
 .red{   color: #BB1E1E;}
 .black{ color: #000000;}
-#notred{    color: #1e8ffe;}
+.notred{    color: #1e8ffe;}
 
 .notif-red{
     box-sizing: border-box;

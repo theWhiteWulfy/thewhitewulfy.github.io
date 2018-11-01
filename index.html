@@ -68,8 +68,8 @@
 					</ul>
                     <div>
                     	<form class="search--form">
-						  <input type="search" placeholder="Search" class="search--text">
-						  <button class="search--button">
+						  <input type="search" placeholder="Search" class="search--text" id="search-text-input">
+						  <button class="search--button" onclick="searchmark()">
 						    <span class="fontawesome-search"><span class="fa fa-search"></span></span>
 						  </button>
 						</form>
@@ -81,7 +81,7 @@
 		<!-- Wrapper Begin-->
 			<div id="wrapper">
 				<!-- Main -->
-                    <a name="top"></a>
+                    <a id="top"></a>
 					<div id="main">						
 							<section id="intro">
 								<div class="container">
@@ -92,11 +92,11 @@
 							</section>
 						 <!-- One -->
 							<section id="one">
-								
+								<h2 style="display: none;">Introduction</h2>
 								<div class="container">
 									<header class="major">
-										<p id="smconsole" class="black">Hello there!<br>I'm <span itemprop="name">Alok Prateek</span>, a full-stack web developer and graphic artist.</p>
-                                        <p class="notif-blue" id="smconsole" >Send all your mails at my brand new id <a href="mailto:i@alokprateek.in" class="red">i@alokprateek.in</a></p>
+										<p class="smconsole black">Hello there!<br>I'm <span itemprop="name">Alok Prateek</span>, a full-stack web developer and graphic artist.</p>
+                                        <p class="notif-blue smconsole">Send all your mails at my brand new id <a href="mailto:i@alokprateek.in" class="red">i@alokprateek.in</a></p>
 									</header>
 									<p>I enjoy turning less ordinary problems into simple, beautiful and intuitive designs, that is delight to the user. When I'm not coding or pushing pixels, you could find me taking my dog, Zoe for a walk in the park. I also play an addictive game - <a href="https://playcontestofchampions.com/" rel="nofollow" target="_blank" class="red">Marvel Contest of the Champions</a> whenever I'm free.</p>
 									
@@ -132,7 +132,7 @@
 						 <!-- Two -->
 							<section id="two">
 								<div class="container">
-									<h2 class="red"><i class="fa fa-user fa-lg"  id="notred"></i>&nbsp;&nbsp;My Skills and Offer</h2>
+									<h2 class="red"><i class="fa fa-user fa-lg notred"></i>&nbsp;&nbsp;My Skills and Offer</h2>
                                     
                                     <p>I am a <b>full-stack web developer</b> with over <b>eight years</b> of experience.</p>
 
@@ -254,7 +254,6 @@
                                         <li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="WordPress">		<i class="devicons devicons-wordpress">		</i></li>
                                         <li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Codeigniter">		<i class="devicons devicons-codeigniter">		</i></li>                                        
                                         <li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="sqllite">		<i class="devicons devicons-sqllite">		</i></li>
-                                        <!--<li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="PostgreSQL">		<i class="devicons devicons-postgresql">		</i></li>-->
                                         <li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="mySQL">		<i class="devicons devicons-mysql">		</i></li>
                                         <li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="Apache Cassandra">		<i class="devicons devicons-database">		</i></li>
                                         <li class="hint--bottom hint--bounce hint--rounded hint--medium" aria-label="MS SQL Server">		<i class="devicons devicons-msql_server">		</i></li>
@@ -341,7 +340,7 @@
 						 <!-- Three -->
 							<section id="three">
 								<div class="container">
-									<h2 class="red"><i class="fa fa-trophy fa-lg" id="notred"></i>&nbsp;&nbsp;A Few Accomplishments</h2>
+									<h2 class="red"><i class="fa fa-trophy fa-lg notred"></i>&nbsp;&nbsp;A Few Accomplishments</h2>
 									<p>Over the years I've hit my head on every wall and learned many ways of doing things. I've designed these projects over course of many tireless days and sleepless nights. Each project was a challenge and I learned something new with each iteration. Some allowed me to experiment with the latest and greatest the tech offers, which taught me well. My special thanks to my father for his perseverance during all those years.</p>
 
 									<div class="features">
@@ -350,7 +349,7 @@
 											<a href="web/index.html" class="portdesc">
                                             <div class="inner">
 												<h4>Web Art</h4>
-												<p>Web has evolved from a medium of text to a medium of visualizations. This collection includes some of my best experiments I did with newer web standards including CSS3 and Canvas elements. <br><div class="notif-red"><i>Be warned though, some use bleeding edge tech and may not render correctly on older browsers and mobile devices.</i></div></p>
+												<p>Web has evolved from a medium of text to a medium of visualizations. This collection includes some of my best experiments I did with newer web standards including CSS3 and Canvas elements.</p><div class="notif-red"><i>Be warned though, some use bleeding edge tech and may not render correctly on older browsers and mobile devices.</i></div>
 											</div>
                                             </a>
 										</article>
@@ -359,7 +358,7 @@
 											<a href="graphics/index.html" class="portdesc">
                                             <div class="inner">
 												<h4>Graphic Design</h4>
-												<p>Graphics are essential for web as they engage, fascinate and connect public to your brand. I design various graphic elements for the web as well as print media. This collection gallery displays many my graphic design works. <br><div class="notif-blue">This collection will be available soon. <br>[After 7<sup>th</sup>, June 2018]. <br>Thanks for your patience.</div></p>
+												<p>Graphics are essential for web as they engage, fascinate and connect public to your brand. I design various graphic elements for the web as well as print media. This collection gallery displays many my graphic design works.</p><div class="notif-blue">This collection will be available soon. <br>[After 7<sup>th</sup>, June 2018]. <br>Thanks for your patience.</div>
 											</div>
                                             </a>
 										</article>
@@ -368,7 +367,7 @@
 											<a href="sites/index.html" class="portdesc">
                                             <div class="inner">
 												<h4>Web Sites</h4>
-												<p>The most essential element of building one's own brand is by a website. This collection shows some of my recent works. If you want me to build one for you too contact me through the <a href="#four">Contact me form</a> below.<br><div class="notif-blue">This collection will be available soon. <br>[After 30<sup>th</sup>, May 2018]. <br>Thanks for your patience.</div> </p>
+												<p>The most essential element of building one's own brand is by a website. This collection shows some of my recent works. If you want me to build one for you too contact me through the Contact me form below.</p><div class="notif-blue">This collection will be available soon. <br>[After 30<sup>th</sup>, May 2018]. <br>Thanks for your patience.</div> 
 											</div>
                                             </a>
 										</article>
@@ -377,7 +376,7 @@
 											<a href="codes/index.html" class="portdesc">
                                             <div class="inner">
 												<h4>Codes and Scripts</h4>
-												<p>These are some random shell scripts that I find useful in my workflow. As well as random gist’s and code pieces that could not fit elsewhere on the site.<br><div class="notif-blue">This collection will be available soon. <br>[After 15<sup>th</sup>, June 2018]. <br>Thanks for your patience.</div></p>
+												<p>These are some random shell scripts that I find useful in my workflow. As well as random gist’s and code pieces that could not fit elsewhere on the site.</p><div class="notif-blue">This collection will be available soon. <br>[After 15<sup>th</sup>, June 2018]. <br>Thanks for your patience.</div>
 											</div>
                                             </a>
 										</article>
@@ -388,7 +387,7 @@
 						 <!-- Four -->
 							<section id="four">
 								<div class="container">
-									<h2 class="red"><i class="fa fa-comments fa-lg" id="notred"></i>&nbsp;&nbsp;Send Me a Pigeon</h2>
+									<h2 class="red"><i class="fa fa-comments fa-lg notred"></i>&nbsp;&nbsp;Send Me a Pigeon</h2>
                                     <p>I'm currently <b>available</b> for work.</p>
                                     <p> If you have a project that you'd like to discuss, then please contact me via the form below or write to me at <a href="mailto:i@alokprateek.in" class="red">i@alokprateek.in</a>.<br>If you'd like to talk about anything else you can find me on social networks (Actually I'm on many, but I do not use all of them). A good ol' fashioned mail is always welcome, because I like reading and writing long mails as I do not have much time for writing shorter replies.</p>
 									<p><b>Of course I do not always work alone.</b> If you already have an existing team for your project, but still need someone to help it, contact me. I’ll fit into your needs. </p>
@@ -400,7 +399,7 @@
 										
                                         <p>Hey Alok!</p>
                                         <p>
-                                          <label for="name" required>I go by</label>
+                                          <label for="name">I go by</label>
                                           <input type="text" name="name" id="name" placeholder="Full Name" tabindex="100" spellcheck="false" required class="form-field" style="min-width: 60px; width:9ch;" onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';" />
 
                                           <label for="company"> and I'm with</label>
@@ -449,12 +448,12 @@
                                             </select>
                                             <span>. </span>
 
-                                          <label for="email" required>Please </label>
-                                            <label for="email" required>get in touch</label>
-                                            <label for="email" required> by emailing</label>
+                                          <label for="email">Please </label>
+                                            <label for="email">get in touch</label>
+                                            <label for="email"> by emailing</label>
                                           <input type="email" id="email" name="email" value="" placeholder="at my email address" tabindex="105" required class="form-field" style="min-width: 60px; width:16ch;" onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';" >
 
-                                          <label for="telphone" required> or by calling </label>
+                                          <label for="telphone"> or by calling </label>
                                           <input type="tel" id="telphone" name="telphone" value="" placeholder="my phone number" tabindex="106" required class="form-field" style="min-width: 60px; width:15ch;" onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';" >
 
                                           <span> to discuss further.</span>
@@ -496,6 +495,7 @@
 							</section>
 						 <!-- Footer -->
 							<section id="footer">
+							    <h2 style="display: none;">Footer Info</h2>
 								<p></p>										
 								<div class="copyright align-center" style="font-size: large; ">
 									Made with <span class="fa fa-heart" style="color:red;"></span> by Alok Prateek.
@@ -561,11 +561,33 @@
 			<script src="assets/vendor/jquery/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			
-			<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+			<script src="https://s.pageclip.co/v1/pageclip.js"></script>
             <script>var form = document.querySelector('.pageclip-form')
                     Pageclip.form(form, {
                       successTemplate: '<div class="pageclip-form__success__message"><p><i class="fa fa-smile-o"></i></p><p>Thank you&#33;</p><p>I&#39;ll contact you shortly by email.<br><br>Please check your inbox in a day&#33;</p></div>'
                     })</script>
+            <script src="assets/vendor/mark/mark.js"></script>
+            <script>
+                var options = {
+                        "element": "mark",
+                        "exclude": [],
+                        "separateWordSearch": true,
+                        "accuracy": "complementary",
+                        "synonyms": {},
+                        "acrossElements": true,
+                        "caseSensitive": false,
+                        "ignoreJoiners": true,
+                        "ignorePunctuation": [":;.,-–—‒_(){}[]!'\""],
+                        "wildcards": "withSpaces",
+                        "debug": true,
+                        "log": window.console
+                    };                    
+                var instance = new Mark(document.querySelectorAll("div.container");
+                var term =document.getElementById('search-text-input');
+                function searchmark(){
+                 instance.mark(term, options);
+                }
+            </script>        
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 
 			<!--My Scripts-->
@@ -585,7 +607,7 @@
 			  ga('create', 'UA-85177250-1', 'auto');
 			  ga('send', 'pageview');
 			</script>
-			<script type="text/javascript">
+			<script>
 				$('.search--button').on('click', function(e) {
 				  e.preventDefault();
 				  $('.search--form').addClass('opened');
