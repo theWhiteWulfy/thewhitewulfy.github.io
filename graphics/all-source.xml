@@ -1,0 +1,1193 @@
+﻿<?xml version="1.0"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<photoCollection mode="publish">
+<display>
+<style cellBorderColor="#787878" cellRolloverColor="#a1a1a1" cssVersion="154468277336513781" idplateEnabled="false" css="&#xA;				#previewFull {background-color: #666666 !important; width: 1630px !important; color: inherit}&#xA;				#liveUpdateContactInfo {color: #b3b3b3 !important; background-color: inherit;}&#xA;				.borderRightDotted {border-right: 1px dotted #787878 !important;}&#xA;				.logo {display: none !important;}&#xA;				#liveUpdateCollectionDescription {color: #b3b3b3 !important; background-color: inherit;}&#xA;				.detailNav, .detailLinks, #detailCaption, #detailTitle {color: #b3b3b3 !important; background-color: inherit;}&#xA;				.emptyThumbnail {background-color: #efefef !important; color: inherit;}&#xA;				.thumbnail {background-color: #efefef !important; color: inherit;}&#xA;				.previewFullImage {height: 1600px !important; width: 1630px !important;}&#xA;				#stage2 {width: 1630px !important;}&#xA;				.itemNumber {display: inherit !important; color: #9c9c9c !important; background-color: inherit;}&#xA;				#content {background-color: #4c4c4c !important; color: inherit;}&#xA;				.borderTopLeft {border-top: 1px solid #787878 !important; border-left: 1px solid #787878 !important;}&#xA;				#stage {width: 645px !important;}&#xA;				.caption {color: #b3b3b3 !important; background-color: inherit;}&#xA;				#wrapper2 {width: 1630px !important;}&#xA;				.borderBottomRight {border-right: 1px solid #787878 !important; border-bottom: 1px solid #787878 !important;}&#xA;				#wrapper {width: 645px !important;}&#xA;				#liveUpdateCollectionTitle {color: #b3b3b3 !important; background-color: inherit;}&#xA;				.paginationLinks, .pagination, #liveUpdatePagination {color: #b3b3b3 !important; background-color: inherit;}&#xA;				.selectedThumbnail, .thumbnail:hover {background-color: #a1a1a1 !important; color: inherit;}&#xA;				#liveUpdateSiteTitle {color: #b3b3b3 !important; background-color: inherit;}&#xA;				#thumbnailName {color: #b3b3b3 !important; background-color: inherit;}&#xA;				#largeName {color: #b3b3b3 !important; background-color: inherit; margin-top: 10px; margin-left: 7px; margin-right: 7px;}&#xA;				.borderBottom {border-bottom: 1px solid #787878 !important;}&#xA;				.borderRight {border-right: 1px solid #787878 !important;}&#xA;				body {background-color: #4c4c4c !important; color: inherit;}&#xA;			" identityPlateAbsolutePath="" numCols="4" numRows="4" homePage="index.html" imageBase="content" cellColor="#efefef">
+</style>
+<metadata>
+<creationDate formatted="Thu Dec 13 2018 12:02:53 GMT+0530"></creationDate>
+<groupTitle value="Contains iconography, cards, posters and wallpapers"></groupTitle>
+<contactInfo value="by Alok Prateek" link="mailto:i@alokprateek.in"></contactInfo>
+<siteTitle value="Digital Art Portfolio"></siteTitle>
+<groupDescription value=""></groupDescription>
+</metadata>
+<localization>
+<item id="AdobeLightroomWebSite" localized="http://labs.adobe.com/technologies/lightroom/"></item>
+<item id="AdobeLightroomBeta" localized="Adobe Lightroom Beta"></item>
+<item id="Fullsize" localized="Fullsize"></item>
+<item id="Next" localized="Next"></item>
+<item id="Previous" localized="Previous"></item>
+<item id="EmptyGallery" localized="There are no images in this gallery."></item>
+<item id="more" localized="more"></item>
+<item id="Index" localized="Index"></item>
+</localization>
+</display>
+<head>
+<siteTitle></siteTitle>
+<collectionName></collectionName>
+<collectionTitle></collectionTitle>
+<collectionDescription></collectionDescription>
+<contactInfo></contactInfo>
+<slideDuration></slideDuration>
+<sizes>
+<size name="large" height="1600" width="1600"></size>
+<size name="thumb" height="129" width="129"></size>
+</sizes>
+</head>
+<samples totalGallerySize="143" firstSampleIndex="1">
+<img orientation="BC" imageID="0_1544682773369" filename="1" tipname="%_tempFileName1%">
+<text>
+<title>Casino Night</title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/1.jpg" height="1600" width="1100" size="large"></rendition>
+<rendition path="content/bin/images/thumb/1.jpg" height="129" width="88" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="1_1544682773372" filename="2" tipname="%_tempFileName2%">
+<text>
+<title>Casino Night</title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/2.jpg" height="1600" width="1100" size="large"></rendition>
+<rendition path="content/bin/images/thumb/2.jpg" height="129" width="88" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="2_1544682773374" filename="3" tipname="%_tempFileName3%">
+<text>
+<title>Casino Night</title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/3.jpg" height="1600" width="1100" size="large"></rendition>
+<rendition path="content/bin/images/thumb/3.jpg" height="129" width="88" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="3_1544682773377" filename="4" tipname="%_tempFileName4%">
+<text>
+<title>Casino Night</title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/4.jpg" height="1600" width="1100" size="large"></rendition>
+<rendition path="content/bin/images/thumb/4.jpg" height="129" width="88" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="4_1544682773379" filename="5" tipname="%_tempFileName5%">
+<text>
+<title>Casino Night</title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/5.jpg" height="1600" width="1100" size="large"></rendition>
+<rendition path="content/bin/images/thumb/5.jpg" height="129" width="88" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="5_1544682773382" filename="6" tipname="%_tempFileName6%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/6.jpg" height="1000" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/6.jpg" height="80" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="6_1544682773383" filename="7" tipname="%_tempFileName7%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/7.jpg" height="1000" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/7.jpg" height="80" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="7_1544682773385" filename="8" tipname="%_tempFileName8%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/8.jpg" height="1000" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/8.jpg" height="80" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="8_1544682773388" filename="9" tipname="%_tempFileName9%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/9.jpg" height="1000" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/9.jpg" height="80" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="9_1544682773389" filename="18greetINT" tipname="%_tempFileName18greetINT%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/18greetINT.jpg" height="1051" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/18greetINT.jpg" height="84" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="10_1544682773391" filename="18greetTOP" tipname="%_tempFileName18greetTOP%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/18greetTOP.jpg" height="1173" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/18greetTOP.jpg" height="94" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="11_1544682773393" filename="ALOK_APPROVED_LifeCycle" tipname="%_tempFileNameALOK_APPROVED_LifeCycle%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/ALOK_APPROVED_LifeCycle.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/ALOK_APPROVED_LifeCycle.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="12_1544682773396" filename="ALOK_APPROVEDWORK-MODELLL" tipname="%_tempFileNameALOK_APPROVEDWORK-MODELLL%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/ALOK_APPROVEDWORK-MODELLL.jpg" height="1200" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/ALOK_APPROVEDWORK-MODELLL.jpg" height="96" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="13_1544682773398" filename="alok_create_invite_a4_back" tipname="%_tempFileNamealok_create_invite_a4_back%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_create_invite_a4_back.jpg" height="1600" width="1131" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_create_invite_a4_back.jpg" height="129" width="91" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="14_1544682773400" filename="alok_create_invite_a4_front" tipname="%_tempFileNamealok_create_invite_a4_front%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_create_invite_a4_front.jpg" height="1600" width="1131" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_create_invite_a4_front.jpg" height="129" width="91" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="15_1544682773402" filename="alok_create_woman18_full" tipname="%_tempFileNamealok_create_woman18_full%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_create_woman18_full.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_create_woman18_full.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="16_1544682773404" filename="alok_create_woman18_half" tipname="%_tempFileNamealok_create_woman18_half%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_create_woman18_half.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_create_woman18_half.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="17_1544682773406" filename="alok_create_womansd" tipname="%_tempFileNamealok_create_womansd%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_create_womansd.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_create_womansd.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="18_1544682773408" filename="alok_create_womansd1" tipname="%_tempFileNamealok_create_womansd1%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_create_womansd1.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_create_womansd1.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="19_1544682773410" filename="alok_create_womansd2" tipname="%_tempFileNamealok_create_womansd2%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_create_womansd2.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_create_womansd2.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="20_1544682773412" filename="alok_create_womansd3" tipname="%_tempFileNamealok_create_womansd3%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_create_womansd3.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_create_womansd3.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="21_1544682773415" filename="alok_create_womansd4" tipname="%_tempFileNamealok_create_womansd4%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_create_womansd4.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_create_womansd4.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="22_1544682773417" filename="alok_created_benvenuto_draft_dark" tipname="%_tempFileNamealok_created_benvenuto_draft_dark%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_created_benvenuto_draft_dark.jpg" height="1600" width="900" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_created_benvenuto_draft_dark.jpg" height="129" width="72" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="23_1544682773419" filename="alok_created_benvenuto_draft_light" tipname="%_tempFileNamealok_created_benvenuto_draft_light%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_created_benvenuto_draft_light.jpg" height="1600" width="900" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_created_benvenuto_draft_light.jpg" height="129" width="72" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="24_1544682773421" filename="ALOK_CREATED_FUNGAME" tipname="%_tempFileNameALOK_CREATED_FUNGAME%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/ALOK_CREATED_FUNGAME.jpg" height="1000" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/ALOK_CREATED_FUNGAME.jpg" height="80" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="25_1544682773422" filename="alok_created_iectalents" tipname="%_tempFileNamealok_created_iectalents%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_created_iectalents.jpg" height="1600" width="1066" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_created_iectalents.jpg" height="129" width="85" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="26_1544682773425" filename="alok_created_inno_white" tipname="%_tempFileNamealok_created_inno_white%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_created_inno_white.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_created_inno_white.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="27_1544682773426" filename="ALOK_CREATED_QUIZ_FRONT" tipname="%_tempFileNameALOK_CREATED_QUIZ_FRONT%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/ALOK_CREATED_QUIZ_FRONT.jpg" height="1000" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/ALOK_CREATED_QUIZ_FRONT.jpg" height="80" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="28_1544682773428" filename="alok_created_unfresh_harpoon" tipname="%_tempFileNamealok_created_unfresh_harpoon%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_created_unfresh_harpoon.jpg" height="1600" width="900" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_created_unfresh_harpoon.jpg" height="129" width="72" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="29_1544682773431" filename="alok_created_unfresh" tipname="%_tempFileNamealok_created_unfresh%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_created_unfresh.jpg" height="1600" width="900" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_created_unfresh.jpg" height="129" width="72" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="30_1544682773434" filename="alok_created_veryfresh" tipname="%_tempFileNamealok_created_veryfresh%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_created_veryfresh.jpg" height="1600" width="900" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_created_veryfresh.jpg" height="129" width="72" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="31_1544682773436" filename="alok_created_winepnew" tipname="%_tempFileNamealok_created_winepnew%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_created_winepnew.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_created_winepnew.jpg" height="85" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="32_1544682773438" filename="alok_created_winepts" tipname="%_tempFileNamealok_created_winepts%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_created_winepts.jpg" height="1600" width="1066" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_created_winepts.jpg" height="129" width="86" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="33_1544682773440" filename="alok_dussehra" tipname="%_tempFileNamealok_dussehra%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_dussehra.jpg" height="873" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_dussehra.jpg" height="70" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="34_1544682773442" filename="alok_gndhy" tipname="%_tempFileNamealok_gndhy%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_gndhy.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_gndhy.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="35_1544682773444" filename="alok_gndhy2" tipname="%_tempFileNamealok_gndhy2%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/alok_gndhy2.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/alok_gndhy2.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="36_1544682773446" filename="app" tipname="%_tempFileNameapp%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/app.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/app.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="37_1544682773448" filename="approved_alok_created_colle" tipname="%_tempFileNameapproved_alok_created_colle%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/approved_alok_created_colle.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/approved_alok_created_colle.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="38_1544682773450" filename="approved_alok_created_rule" tipname="%_tempFileNameapproved_alok_created_rule%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/approved_alok_created_rule.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/approved_alok_created_rule.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="39_1544682773452" filename="approved_alok_created_zonal" tipname="%_tempFileNameapproved_alok_created_zonal%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/approved_alok_created_zonal.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/approved_alok_created_zonal.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="40_1544682773454" filename="backdrop" tipname="%_tempFileNamebackdrop%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/backdrop.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/backdrop.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="41_1544682773456" filename="badminton" tipname="%_tempFileNamebadminton%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/badminton.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/badminton.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="42_1544682773458" filename="book55" tipname="%_tempFileNamebook55%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/book55.jpg" height="1130" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/book55.jpg" height="91" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="43_1544682773460" filename="brochure%20cover" tipname="%_tempFileNamebrochure%20cover%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/brochure%20cover.jpg" height="1600" width="760" size="large"></rendition>
+<rendition path="content/bin/images/thumb/brochure%20cover.jpg" height="129" width="61" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="44_1544682773462" filename="busi" tipname="%_tempFileNamebusi%">
+<text>
+<title>Technology of business flat illustration concept </title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/busi.jpg" height="1000" width="1500" size="large"></rendition>
+<rendition path="content/bin/images/thumb/busi.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="45_1544682773465" filename="calvinride" tipname="%_tempFileNamecalvinride%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/calvinride.jpg" height="1000" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/calvinride.jpg" height="80" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="46_1544682773467" filename="Capture" tipname="%_tempFileNameCapture%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/Capture.jpg" height="476" width="479" size="large"></rendition>
+<rendition path="content/bin/images/thumb/Capture.jpg" height="128" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="47_1544682773469" filename="carrom" tipname="%_tempFileNamecarrom%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/carrom.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/carrom.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="48_1544682773471" filename="certa" tipname="%_tempFileNamecerta%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/certa.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/certa.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="49_1544682773473" filename="CertificateyNEW" tipname="%_tempFileNameCertificateyNEW%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/CertificateyNEW.jpg" height="1131" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/CertificateyNEW.jpg" height="91" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="50_1544682773475" filename="certm" tipname="%_tempFileNamecertm%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/certm.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/certm.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="51_1544682773477" filename="certp" tipname="%_tempFileNamecertp%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/certp.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/certp.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="52_1544682773480" filename="channel" tipname="%_tempFileNamechannel%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/channel.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/channel.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="53_1544682773482" filename="chem%20fest_2" tipname="%_tempFileNamechem%20fest_2%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/chem%20fest_2.jpg" height="1000" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/chem%20fest_2.jpg" height="80" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="54_1544682773484" filename="chess" tipname="%_tempFileNamechess%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/chess.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/chess.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="55_1544682773486" filename="cloudthree" tipname="%_tempFileNamecloudthree%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/cloudthree.jpg" height="1000" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/cloudthree.jpg" height="80" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="56_1544682773488" filename="codomania1" tipname="%_tempFileNamecodomania1%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/codomania1.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/codomania1.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="57_1544682773490" filename="comingsoon" tipname="%_tempFileNamecomingsoon%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/comingsoon.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/comingsoon.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="58_1544682773492" filename="cover" tipname="%_tempFileNamecover%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/cover.jpg" height="650" width="900" size="large"></rendition>
+<rendition path="content/bin/images/thumb/cover.jpg" height="93" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="59_1544682773495" filename="cricket" tipname="%_tempFileNamecricket%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/cricket.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/cricket.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="60_1544682773497" filename="cristmas17" tipname="%_tempFileNamecristmas17%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/cristmas17.jpg" height="1600" width="1348" size="large"></rendition>
+<rendition path="content/bin/images/thumb/cristmas17.jpg" height="129" width="108" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="61_1544682773499" filename="daredevil" tipname="%_tempFileNamedaredevil%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/daredevil.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/daredevil.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="62_1544682773501" filename="dhanteras-" tipname="%_tempFileNamedhanteras-%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/dhanteras-.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/dhanteras-.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="63_1544682773503" filename="dilki" tipname="%_tempFileNamedilki%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/dilki.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/dilki.jpg" height="85" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="64_1544682773506" filename="diwali" tipname="%_tempFileNamediwali%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/diwali.jpg" height="1097" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/diwali.jpg" height="88" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="65_1544682773508" filename="diwali2" tipname="%_tempFileNamediwali2%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/diwali2.jpg" height="1600" width="1131" size="large"></rendition>
+<rendition path="content/bin/images/thumb/diwali2.jpg" height="129" width="91" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="66_1544682773510" filename="diwali17" tipname="%_tempFileNamediwali17%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/diwali17.jpg" height="1600" width="1131" size="large"></rendition>
+<rendition path="content/bin/images/thumb/diwali17.jpg" height="129" width="91" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="67_1544682773511" filename="dlinvert" tipname="%_tempFileNamedlinvert%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/dlinvert.jpg" height="1600" width="1388" size="large"></rendition>
+<rendition path="content/bin/images/thumb/dlinvert.jpg" height="129" width="111" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="68_1544682773514" filename="DLLOGO" tipname="%_tempFileNameDLLOGO%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/DLLOGO.jpg" height="1600" width="1388" size="large"></rendition>
+<rendition path="content/bin/images/thumb/DLLOGO.jpg" height="129" width="111" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="69_1544682773516" filename="DPSGREATERNOIDABOOK" tipname="%_tempFileNameDPSGREATERNOIDABOOK%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/DPSGREATERNOIDABOOK.jpg" height="1131" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/DPSGREATERNOIDABOOK.jpg" height="91" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="70_1544682773518" filename="factor" tipname="%_tempFileNamefactor%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/factor.jpg" height="1046" width="1569" size="large"></rendition>
+<rendition path="content/bin/images/thumb/factor.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="71_1544682773520" filename="football" tipname="%_tempFileNamefootball%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/football.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/football.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="72_1544682773523" filename="footloose" tipname="%_tempFileNamefootloose%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/footloose.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/footloose.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="73_1544682773525" filename="freak" tipname="%_tempFileNamefreak%">
+<text>
+<title>ACDF Poster - A2</title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/freak.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/freak.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="74_1544682773527" filename="greetINT" tipname="%_tempFileNamegreetINT%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/greetINT.jpg" height="1051" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/greetINT.jpg" height="84" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="75_1544682773529" filename="greetTOP" tipname="%_tempFileNamegreetTOP%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/greetTOP.jpg" height="1173" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/greetTOP.jpg" height="94" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="76_1544682773531" filename="guest-lecture" tipname="%_tempFileNameguest-lecture%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/guest-lecture.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/guest-lecture.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="77_1544682773533" filename="harpy" tipname="%_tempFileNameharpy%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/harpy.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/harpy.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="78_1544682773536" filename="iectalentsbaned" tipname="%_tempFileNameiectalentsbaned%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/iectalentsbaned.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/iectalentsbaned.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="79_1544682773538" filename="ihmshi" tipname="%_tempFileNameihmshi%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/ihmshi.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/ihmshi.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="80_1544682773540" filename="iossessionbanner" tipname="%_tempFileNameiossessionbanner%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/iossessionbanner.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/iossessionbanner.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="81_1544682773542" filename="junkyard" tipname="%_tempFileNamejunkyard%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/junkyard.jpg" height="800" width="1201" size="large"></rendition>
+<rendition path="content/bin/images/thumb/junkyard.jpg" height="85" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="82_1544682773544" filename="karwa" tipname="%_tempFileNamekarwa%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/karwa.jpg" height="1600" width="1187" size="large"></rendition>
+<rendition path="content/bin/images/thumb/karwa.jpg" height="129" width="95" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="83_1544682773546" filename="kirti17" tipname="%_tempFileNamekirti17%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/kirti17.jpg" height="1600" width="1373" size="large"></rendition>
+<rendition path="content/bin/images/thumb/kirti17.jpg" height="129" width="110" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="84_1544682773548" filename="lanavenger%20(2)" tipname="%_tempFileNamelanavenger%20(2)%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/lanavenger%20(2).jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/lanavenger%20(2).jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="85_1544682773551" filename="lanavenger" tipname="%_tempFileNamelanavenger%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/lanavenger.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/lanavenger.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="86_1544682773552" filename="laninst" tipname="%_tempFileNamelaninst%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/laninst.jpg" height="1600" width="1044" size="large"></rendition>
+<rendition path="content/bin/images/thumb/laninst.jpg" height="129" width="84" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="87_1544682773554" filename="livedbeat" tipname="%_tempFileNamelivedbeat%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/livedbeat.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/livedbeat.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="88_1544682773556" filename="lock" tipname="%_tempFileNamelock%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/lock.jpg" height="898" width="1348" size="large"></rendition>
+<rendition path="content/bin/images/thumb/lock.jpg" height="85" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="89_1544682773558" filename="logo-mdsbf72dwz84" tipname="%_tempFileNamelogo-mdsbf72dwz84%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/logo-mdsbf72dwz84.jpg" height="125" width="300" size="large"></rendition>
+<rendition path="content/bin/images/thumb/logo-mdsbf72dwz84.jpg" height="53" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="90_1544682773561" filename="logo1" tipname="%_tempFileNamelogo1%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/logo1.jpg" height="1600" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/logo1.jpg" height="129" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="91_1544682773563" filename="logo1bw" tipname="%_tempFileNamelogo1bw%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/logo1bw.jpg" height="1600" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/logo1bw.jpg" height="129" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="92_1544682773565" filename="logo2" tipname="%_tempFileNamelogo2%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/logo2.jpg" height="512" width="512" size="large"></rendition>
+<rendition path="content/bin/images/thumb/logo2.jpg" height="129" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="93_1544682773568" filename="logo3" tipname="%_tempFileNamelogo3%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/logo3.jpg" height="1600" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/logo3.jpg" height="129" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="94_1544682773570" filename="logobest" tipname="%_tempFileNamelogobest%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/logobest.jpg" height="1200" width="1200" size="large"></rendition>
+<rendition path="content/bin/images/thumb/logobest.jpg" height="129" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="95_1544682773572" filename="longban" tipname="%_tempFileNamelongban%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/longban.jpg" height="1600" width="1066" size="large"></rendition>
+<rendition path="content/bin/images/thumb/longban.jpg" height="129" width="86" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="96_1544682773574" filename="mask" tipname="%_tempFileNamemask%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/mask.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/mask.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="97_1544682773576" filename="Mca" tipname="%_tempFileNameMca%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/Mca.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/Mca.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="98_1544682773578" filename="mer" tipname="%_tempFileNamemer%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/mer.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/mer.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="99_1544682773582" filename="meritt" tipname="%_tempFileNamemeritt%">
+<text>
+<title>Graduation Poster</title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/meritt.jpg" height="1600" width="1131" size="large"></rendition>
+<rendition path="content/bin/images/thumb/meritt.jpg" height="129" width="91" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="100_1544682773584" filename="meritt3" tipname="%_tempFileNamemeritt3%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/meritt3.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/meritt3.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="101_1544682773586" filename="mindscrib" tipname="%_tempFileNamemindscrib%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/mindscrib.jpg" height="1067" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/mindscrib.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="102_1544682773587" filename="ML_Blog" tipname="%_tempFileNameML_Blog%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/ML_Blog.jpg" height="600" width="600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/ML_Blog.jpg" height="129" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="103_1544682773589" filename="model" tipname="%_tempFileNamemodel%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/model.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/model.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="104_1544682773591" filename="murder" tipname="%_tempFileNamemurder%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/murder.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/murder.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="105_1544682773593" filename="navratri" tipname="%_tempFileNamenavratri%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/navratri.jpg" height="900" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/navratri.jpg" height="72" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="106_1544682773596" filename="newdl2" tipname="%_tempFileNamenewdl2%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/newdl2.jpg" height="1000" width="1000" size="large"></rendition>
+<rendition path="content/bin/images/thumb/newdl2.jpg" height="129" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="107_1544682773598" filename="newyear18" tipname="%_tempFileNamenewyear18%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/newyear18.jpg" height="680" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/newyear18.jpg" height="54" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="108_1544682773600" filename="nukkad" tipname="%_tempFileNamenukkad%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/nukkad.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/nukkad.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="109_1544682773602" filename="ostraca" tipname="%_tempFileNameostraca%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/ostraca.jpg" height="1257" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/ostraca.jpg" height="101" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="110_1544682773604" filename="pharma" tipname="%_tempFileNamepharma%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/pharma.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/pharma.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="111_1544682773606" filename="pharma2" tipname="%_tempFileNamepharma2%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/pharma2.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/pharma2.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="112_1544682773608" filename="photogrid" tipname="%_tempFileNamephotogrid%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/photogrid.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/photogrid.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="113_1544682773611" filename="placed" tipname="%_tempFileNameplaced%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/placed.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/placed.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="114_1544682773613" filename="poster1_more" tipname="%_tempFileNameposter1_more%">
+<text>
+<title>quality concept</title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/poster1_more.jpg" height="978" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/poster1_more.jpg" height="78" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="115_1544682773615" filename="poster1" tipname="%_tempFileNameposter1%">
+<text>
+<title>quality concept</title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/poster1.jpg" height="978" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/poster1.jpg" height="78" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="116_1544682773617" filename="poster2" tipname="%_tempFileNameposter2%">
+<text>
+<title>Mill Valley Film fest_poster</title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/poster2.jpg" height="1600" width="1203" size="large"></rendition>
+<rendition path="content/bin/images/thumb/poster2.jpg" height="129" width="96" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="117_1544682773619" filename="poster3" tipname="%_tempFileNameposter3%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/poster3.jpg" height="909" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/poster3.jpg" height="73" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="118_1544682773621" filename="psart" tipname="%_tempFileNamepsart%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/psart.jpg" height="700" width="832" size="large"></rendition>
+<rendition path="content/bin/images/thumb/psart.jpg" height="108" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="119_1544682773623" filename="rapbattle" tipname="%_tempFileNamerapbattle%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/rapbattle.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/rapbattle.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="120_1544682773626" filename="roborace" tipname="%_tempFileNameroborace%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/roborace.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/roborace.jpg" height="85" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="121_1544682773627" filename="robowar" tipname="%_tempFileNamerobowar%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/robowar.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/robowar.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="122_1544682773630" filename="shoot" tipname="%_tempFileNameshoot%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/shoot.jpg" height="800" width="1200" size="large"></rendition>
+<rendition path="content/bin/images/thumb/shoot.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="123_1544682773632" filename="siddie%20approved%20debate%202" tipname="%_tempFileNamesiddie%20approved%20debate%202%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/siddie%20approved%20debate%202.jpg" height="878" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/siddie%20approved%20debate%202.jpg" height="70" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="124_1544682773634" filename="siddie%20approved%20debate" tipname="%_tempFileNamesiddie%20approved%20debate%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/siddie%20approved%20debate.jpg" height="960" width="1080" size="large"></rendition>
+<rendition path="content/bin/images/thumb/siddie%20approved%20debate.jpg" height="114" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="125_1544682773636" filename="siddie%20approved%20fun%20game" tipname="%_tempFileNamesiddie%20approved%20fun%20game%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/siddie%20approved%20fun%20game.jpg" height="1000" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/siddie%20approved%20fun%20game.jpg" height="80" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="126_1544682773638" filename="siddie%20approved%20quiz_1(with%20realistic%20blur)" tipname="%_tempFileNamesiddie%20approved%20quiz_1(with%20realistic%20blur)%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/siddie%20approved%20quiz_1(with%20realistic%20blur).jpg" height="808" width="1064" size="large"></rendition>
+<rendition path="content/bin/images/thumb/siddie%20approved%20quiz_1(with%20realistic%20blur).jpg" height="97" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="127_1544682773641" filename="Siddie%20approved%20spotting%20colon%20D" tipname="%_tempFileNameSiddie%20approved%20spotting%20colon%20D%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/Siddie%20approved%20spotting%20colon%20D.jpg" height="768" width="1024" size="large"></rendition>
+<rendition path="content/bin/images/thumb/Siddie%20approved%20spotting%20colon%20D.jpg" height="96" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="128_1544682773643" filename="siddie%20was%20not%20here%20to%20approve%20it" tipname="%_tempFileNamesiddie%20was%20not%20here%20to%20approve%20it%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/siddie%20was%20not%20here%20to%20approve%20it.jpg" height="808" width="1064" size="large"></rendition>
+<rendition path="content/bin/images/thumb/siddie%20was%20not%20here%20to%20approve%20it.jpg" height="97" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="129_1544682773646" filename="solidworks" tipname="%_tempFileNamesolidworks%">
+<text>
+<title>Engineering drawing</title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/solidworks.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/solidworks.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="130_1544682773648" filename="starwarsplanet" tipname="%_tempFileNamestarwarsplanet%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/starwarsplanet.jpg" height="1000" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/starwarsplanet.jpg" height="80" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="131_1544682773650" filename="table" tipname="%_tempFileNametable%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/table.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/table.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="132_1544682773652" filename="tennis" tipname="%_tempFileNametennis%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/tennis.jpg" height="1067" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/tennis.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="133_1544682773655" filename="tshirt_invert" tipname="%_tempFileNametshirt_invert%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/tshirt_invert.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/tshirt_invert.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="134_1544682773657" filename="tshirt" tipname="%_tempFileNametshirt%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/tshirt.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/tshirt.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="135_1544682773658" filename="Untitled-1_01" tipname="%_tempFileNameUntitled-1_01%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/Untitled-1_01.jpg" height="863" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/Untitled-1_01.jpg" height="69" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="136_1544682773660" filename="video" tipname="%_tempFileNamevideo%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/video.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/video.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="137_1544682773663" filename="voice18" tipname="%_tempFileNamevoice18%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/voice18.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/voice18.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="138_1544682773665" filename="volley" tipname="%_tempFileNamevolley%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/volley.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/volley.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="139_1544682773667" filename="waro" tipname="%_tempFileNamewaro%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/waro.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/waro.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="140_1544682773669" filename="waroo" tipname="%_tempFileNamewaroo%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/waroo.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/waroo.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="141_1544682773671" filename="webnet" tipname="%_tempFileNamewebnet%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/webnet.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/webnet.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+<img orientation="BC" imageID="142_1544682773673" filename="words" tipname="%_tempFileNamewords%">
+<text>
+<title></title>
+<description></description>
+</text>
+<rendition path="content/bin/images/large/words.jpg" height="1066" width="1600" size="large"></rendition>
+<rendition path="content/bin/images/thumb/words.jpg" height="86" width="129" size="thumb"></rendition>
+</img>
+</samples>
+<siteParams>
+<firstImage index="1"></firstImage>
+<lastImage index="143"></lastImage>
+<mode value="all"></mode>
+</siteParams>
+</photoCollection>
