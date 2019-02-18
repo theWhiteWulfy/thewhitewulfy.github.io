@@ -15,7 +15,7 @@
     body {
       display: grid;
       grid-template-areas:
-        "header names pic"
+        "header info info"
         "nav article article"
         "footer footer footer";
       /*grid-template-rows: 80px 1fr 70px;*/
@@ -40,8 +40,15 @@
 
     #pageHeader {
       grid-area: header;
-      display: flex;
-      align-items: flex-end;
+      font-size: larger;
+      background-color: #f74770;
+      text-align-last: end;
+    }
+
+    #pageHeader h1 {
+      display: inline-block;
+      color: #fff;
+      vertical-align: text-top;
     }
 
     #pageFooter {
@@ -57,46 +64,90 @@
       grid-area: nav;
     }
 
-    #sitePic {
-      grid-area: pic;
+    #info {
+      grid-area: info;
+      display: grid;
+      grid-template-areas:
+        "pic names";
+      /*grid-template-rows: 80px 1fr 70px;*/
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
       padding: 0 0 0 0;
     }
 
-    #sitePic img{
+    #sitePic {
+      grid-area: pic;
+      padding: 0 0 0 0;
+      text-align: right;
+    }
+
+    #sitePic img {
       border-radius: 90%;
       border-style: solid;
     }
 
     #nameContact {
       grid-area: names;
-      text-align: right;
-      align-items: end;
-      display: inline-grid;
+      text-align: left;
+      align-items: stretch;
     }
 
     /* Stack the layout on small devices/viewports. */
-    @media all and (max-width: 575px) {
+    @media all and (max-width: 650px) {
       body {
         grid-template-areas:
           "header"
-          "pic"
-          "names"
+          "info"
           "nav"
           "article"
           "footer";
         /*grid-template-rows: 80px 1fr 70px 1fr 70px;*/
         grid-template-columns: 1fr;
-        padding-left: 2 rem;
+        padding-left: 2rem;
         padding-right: 2rem;
       }
-      #nameContact {
-        grid-area: names;
-        align-items: end;
-        display: inline-grid;
+
+      #info {
+        grid-area: info;
+        display: grid;
+        grid-template-areas:
+          "names pic";
+        /*grid-template-rows: 80px 1fr 70px;*/
+        grid-template-columns: 2fr 1fr;
+      }
+
+      #sitePic {
+        grid-area: pic;
+        padding: 0 0 0 0;
+        text-align: left;
+      }
+      #pageHeader {
+      grid-area: header;
+      text-align-last: start;
+    }
+    }
+
+    @media all and (min-width: 650px) and (max-width: 800px) {
+      #info {
+        grid-area: info;
+        display: grid;
+        grid-template-areas:
+          "pic"
+          "names";
+        /*grid-template-rows: 80px 1fr 70px;*/
+        grid-template-columns: 1fr;
+      }
+
+      #sitePic {
+        grid-area: pic;
+        padding: 0 0 0 0;
         text-align: left;
       }
     }
-
+    @media all and (max-width: 400px) {
+      html{ font-size: x-small;}
+    }
     a {
       text-decoration: underline !important;
     }
@@ -138,15 +189,17 @@
     </li>
   </ul>
   <header id="pageHeader">
-    <h1>Curriculum Vitae</h1>
+    <h1>Curriculum</h1>
+    <h1>Vitae</h1>
   </header>
-  
-  <div id="nameContact">
-    <h3>ALOK PRATEEK</h3>
-    <h5><a href="mailto:i@alokprateek.in">i@alokprateek.in</a></h5>
-    <h5><a href="tel:+919968035588">+91-9968-03-5588</a> | <a href="tel:+919315852108">+91-9315-85-2108</a></h5>
+  <div id="info">
+    <div id="nameContact">
+      <h3>ALOK PRATEEK</h3>
+      <h5><a href="mailto:i@alokprateek.in">i@alokprateek.in</a></h5>
+      <h5><a href="tel:+919968035588">+91-9968-03-5588</a> | <a href="tel:+919315852108">+91-9315-85-2108</a></h5>
+    </div>
+    <div id="sitePic"><img src="../avatar2.png" width="170px"></div>
   </div>
-  <div id="sitePic"><img src="../avatar2.png" width="170px"></div>
 
   <nav id="mainNav">
     <hr>
