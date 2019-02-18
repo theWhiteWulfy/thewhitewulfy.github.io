@@ -24,8 +24,8 @@
       grid-column-gap: 10px;
       height: 95vh;
       margin: 0;
-      margin-top: 2rem;
-      margin-left: 5rem;
+      padding-top: 2rem;
+      padding-left: 5rem;
       padding-right: 5rem;
     }
 
@@ -60,9 +60,11 @@
     #sitePic {
       grid-area: pic;
       padding: 0 0 0 0;
-      text-align: center;
-      align-items: end;
-      display: inline-grid;
+    }
+
+    #sitePic img{
+      border-radius: 90%;
+      border-style: solid;
     }
 
     #nameContact {
@@ -77,15 +79,21 @@
       body {
         grid-template-areas:
           "header"
-          "names"
           "pic"
+          "names"
           "nav"
           "article"
           "footer";
         /*grid-template-rows: 80px 1fr 70px 1fr 70px;*/
         grid-template-columns: 1fr;
-        margin-left: 4rem;
-        padding-right: 3rem;
+        padding-left: 2 rem;
+        padding-right: 2rem;
+      }
+      #nameContact {
+        grid-area: names;
+        align-items: end;
+        display: inline-grid;
+        text-align: left;
       }
     }
 
@@ -132,7 +140,7 @@
   <header id="pageHeader">
     <h1>Curriculum Vitae</h1>
   </header>
-
+  
   <div id="nameContact">
     <h3>ALOK PRATEEK</h3>
     <h5><a href="mailto:i@alokprateek.in">i@alokprateek.in</a></h5>
