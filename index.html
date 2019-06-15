@@ -64,17 +64,18 @@
 						
 						<li class="hint--top hint--bounce hint--rounded hint--medium" aria-label="LinkedIn: @alokprateek"><a href="https://in.linkedin.com/in/alokprateek" class="icon fa-linkedin-square"><span class="label">LinkedIn</span></a></li>
 						<li class="hint--top hint--bounce hint--rounded hint--medium" aria-label="Github: @oxyenyos"><a href="https://github.com/Oxyenyos/" class="icon fa-github-alt"><span class="label">Github</span></a></li>
-						<li class="hint--top hint--bounce hint--rounded hint--medium" aria-label="i@alokprateek.in"><a href="mailto:i@alokprateek.in" class="icon fa-inbox"><span class="label">Email</span></a></li>
+            <li class="hint--top hint--bounce hint--rounded hint--medium" aria-label="i@alokprateek.in"><a href="mailto:i@alokprateek.in" class="icon fa-inbox"><span class="label">Email</span></a></li>
+            <li class="hint--top hint--bounce hint--rounded hint--medium" aria-label="@thewhitewulfy"><a href="https://www.instagram.com/thewhitewulfy/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 					</ul>
-                    <div>
+                    <!--<div>
                     	<form class="search--form">
 						  <input type="search" placeholder="Search" class="search--text" id="search-text-input">
 						  <button class="search--button" onclick="searchmark()">
 						    <span class="fontawesome-search"><span class="fa fa-search"></span></span>
 						  </button>
 						</form>
-                        <!--<a href="#icon-search" class="icon fa-search"><span class="label">Search</span></a>-->
-                    </div>
+                        <!--<a href="#icon-search" class="icon fa-search"><span class="label">Search</span></a>
+                    </div>-->
 				</footer>
 			</section>
 		<!--Header End-->
@@ -96,17 +97,20 @@
 								<div class="container">
 									<header class="major">
 										<p class="smconsole black">Hello there!<br>I'm <span itemprop="name">Alok Prateek</span>, a full-stack web developer and graphic artist.</p>
-                                        <p class="notif-blue smconsole">Send all your mails at my brand new id <a href="mailto:i@alokprateek.in" class="red">i@alokprateek.in</a></p>
+                        <p class="notif-blue smconsole">Send all your mails at my brand new id <a href="mailto:i@alokprateek.in" class="red">i@alokprateek.in</a></p>
 									</header>
 									<p>I enjoy turning less ordinary problems into simple, beautiful and intuitive designs, that is delight to the user. When I'm not coding or pushing pixels, you could find me taking my dog, Zoe for a walk in the park. I also play an addictive game - <a href="https://playcontestofchampions.com/" rel="nofollow" target="_blank" class="red">Marvel Contest of the Champions</a> whenever I'm free.</p>
 									
 									<p>I am born and brought up in Noida, and completed my schooling from <a href="http://www.dpsgrnoida.com/" rel="nofollow" target="_blank" class="red">Delhi Public School</a>. It provided me great exposure and helped me excel in my field of interest. I always loved the idea of connecting known facts and recalling them, which made a great quizzer. I helped my school team to win many a times in quizzes and conducted dozens. An effort for which my school made me President of Quiz Society. I developed a keen interest in web and graphic designing early on. An experience which helped me craft many posters and websites for school events. I also have a fair knowledge of German language, which I have studied until B2 Level.</p>
 
-									<p>Currently, I am pursuing an engineering course in Information Technology. And this summer I am looking for opportunities for internship. My future plans include pursuing research in developing AI powered user interfaces. And perhaps a trip to Antarctica before the glaciers melt or the penguins migrate.</p>
+									<p>Currently, I am actively looking for full-time development role. I just finished pursuing an engineering course in Information Technology. I'm also developed a keen interest in openAPI and creating a cool project based on that. My future plans include pursuing research in developing AI powered user interfaces. And perhaps a trip to Antarctica before the glaciers melt or the penguins migrate.</p>
 
-									<p>Let me have another chance to enlighten and entertain you with my words. For this just...</p>
+									<p>I unfortunenately have redesigned my blog eleventh time over, but could never take time out for writing, but do surely have a look at my empty blog...</p>
 
-									<p style="text-align:center;"><a class="btn-draw" href="http://blog.alokprateek.in"><span>Read My Blog</span></a></p>
+                  <p style="text-align:center;"><a class="btn-draw" href="http://blog.alokprateek.in"><span>Read My Blog</span></a></p>
+                  
+                  <p>I've decided to solve this problem of empty blog by bringing in content from social media via API's, this is surely be a task for June'19.</p>
+
                                     
                                       <!--<div class="frow features">
                                         <div class="fcol fcol-4 feature">
@@ -134,7 +138,7 @@
 								<div class="container">
 									<h2 class="red"><i class="fa fa-user fa-lg notred"></i>&nbsp;&nbsp;My Skills and Offer</h2>
                                     
-                                    <p>I am a <b>full-stack web developer</b> with over <b>eight years</b> of experience.</p>
+                                    <p>I am a <b>full-stack web developer</b> with over <b>ten years</b> of experience.</p>
 
                                     <p>I have maintained, developed and launched multiple projects from scratch. I carried out branding, the design of <strong class="red">UI/UX</strong>, and the development of its back-end and front-end codebases.</p>
 
@@ -582,8 +586,8 @@
                         "debug": true,
                         "log": window.console
                     };                    
-                var instance = new Mark(document.querySelectorAll("div.container");
-                var term =document.getElementById('search-text-input');
+                var instance = new Mark(document.querySelectorAll("div.container"));
+                var term = document.getElementById('search-text-input');
                 function searchmark(){
                  instance.mark(term, options);
                 }
