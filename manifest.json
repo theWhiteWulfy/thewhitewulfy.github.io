@@ -1,0 +1,21 @@
+{   "name" : "Alok Prateek's Portfolio",
+    "short_name" : "Alok Prateek",
+    "description" : "Alok Prateek, a full-stack web developer and graphic artist from Delhi, India.",
+    "start_url" : "https://alokprateek.in",
+    "display" : "standalone",
+    "background_color" : "#f74770",
+    "theme_color" : "#f74770",
+    "lang" : "",
+    "orientation" : "undefined",
+    "generated" : "undefined",
+    "icons" : [
+        {
+            "src": "",
+            "sizes": "192x192"
+        },
+        {
+            "src": "",
+            "sizes": "512x512"
+        }
+    ]
+}
