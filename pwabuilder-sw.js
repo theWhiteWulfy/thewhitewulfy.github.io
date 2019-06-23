@@ -1,5 +1,3 @@
-// This is the "Offline copy of pages" service worker
-
 const CACHE = "alok-offline";
 const offlineFallbackPage = "/index.html";
 
