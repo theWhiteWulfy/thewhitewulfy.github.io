@@ -2001,6 +2001,7 @@ i.  Featurette
 	}
 	.color-var.visible {
 		-webkit-transition: all .4s;
+		transition: all .4s;
 	  -webkit-transform: scale(1, 1);
 	          transform: scale(1, 1);
 	}
@@ -2191,6 +2192,7 @@ h2, h4{
 	transition: width 0.5s;
   margin: auto;
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
   background: rgba(0, 0, 0, 0);
 }
 
