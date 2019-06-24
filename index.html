@@ -98,15 +98,15 @@
     <footer>
       <ul class="icons">
         <li class="hint--top hint--bounce hint--rounded hint--medium" aria-label="@thewhitewulfy"><a
-            href="https://www.instagram.com/thewhitewulfy/" class="icon fa-instagram"><span
+            href="https://www.instagram.com/thewhitewulfy/" class="icon fa-instagram" aria-label="My Instagram profile"><span
               class="label">Instagram</span></a></li>
         <li class="hint--top hint--bounce hint--rounded hint--medium" aria-label="LinkedIn: @alokprateek"><a
-            href="https://in.linkedin.com/in/alokprateek" class="icon fa-linkedin-square"><span
+            href="https://in.linkedin.com/in/alokprateek" class="icon fa-linkedin-square" aria-label="My LinkedIn profile"><span
               class="label">LinkedIn</span></a></li>
         <li class="hint--top hint--bounce hint--rounded hint--medium" aria-label="Github: @oxyenyos"><a
-            href="https://github.com/Oxyenyos/" class="icon fa-github-alt"><span class="label">Github</span></a></li>
+            href="https://github.com/Oxyenyos/" class="icon fa-github-alt" aria-label="My Github profile"><span class="label">Github</span></a></li>
         <li class="hint--top hint--bounce hint--rounded hint--medium" aria-label="i@alokprateek.in"><a
-            href="mailto:i@alokprateek.in" class="icon fa-inbox"><span class="label">Email</span></a></li>
+            href="mailto:i@alokprateek.in" class="icon fa-inbox" aria-label="My mail address"><span class="label">Email</span></a></li>
 
       </ul>
       <!--
@@ -598,20 +598,19 @@
               <p>Hey Alok!</p>
               <p>
                 <label for="name">I go by</label>
-                <input type="text" name="name" id="name" placeholder="Full Name" tabindex="100" spellcheck="false"
+                <input type="text" name="name" id="name" placeholder="Full Name" spellcheck="false"
                   required class="form-field" style="min-width: 60px; width:9ch;"
                   onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';" />
 
                 <label for="company"> and I'm with</label>
-                <input type="text" id="company" name="company" placeholder="Organization" tabindex="101"
-                  spellcheck="false" class="form-field" style="min-width: 60px; width:11ch;"
+                <input type="text" id="company" name="company" placeholder="Organization"                   spellcheck="false" class="form-field" style="min-width: 60px; width:11ch;"
                   onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';">
                 <span>. </span>
 
 
                 <label for="projecttype">I'm interested </label>
                 <label for="projecttype">in discussing</label>
-                <select id="projecttype" name="projecttype" tabindex="102" class="form-field"
+                <select id="projecttype" name="projecttype" class="form-field"
                   style="min-width: 60px; width:12ch;"
                   onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';">
                   <option value="A New Project" selected>a new project</option>
@@ -627,7 +626,7 @@
 
                 <label for="budget">have a rough </label>
                 <label for="budget">budget of</label>
-                <select id="budget" name="budget" tabindex="103" class="form-field" style="min-width: 60px; width:12ch;"
+                <select id="budget" name="budget" class="form-field" style="min-width: 60px; width:12ch;"
                   onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';">
                   <option value="5k to 20k">5k to 20k</option>
                   <option value="20k to 50k">20k to 50k</option>
@@ -643,7 +642,7 @@
                 <label for="duetime"> and hope to </label>
                 <label for="duetime">have it </label>
                 <label for="duetime">ready to go</label>
-                <select id="duetime" name="duetime" tabindex="104" class="form-field"
+                <select id="duetime" name="duetime" class="form-field"
                   style="min-width: 60px; width:11ch;"
                   onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';">
                   <option value="By Tomorrow" selected>by yesterday</option>
@@ -658,12 +657,11 @@
                 <label for="email">Please </label>
                 <label for="email">get in touch</label>
                 <label for="email"> by emailing</label>
-                <input type="email" id="email" name="email" value="" placeholder="at my email address" tabindex="105"
-                  required class="form-field" style="min-width: 60px; width:16ch;"
+                <input type="email" id="email" name="email" value="" placeholder="at my email address"      required class="form-field" style="min-width: 60px; width:16ch;"
                   onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';">
 
                 <label for="telphone"> or by calling </label>
-                <input type="tel" id="telphone" name="telphone" value="" placeholder="my phone number" tabindex="106"
+                <input type="tel" id="telphone" name="telphone" value="" placeholder="my phone number" 
                   required class="form-field" style="min-width: 60px; width:15ch;"
                   onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';">
 
@@ -747,24 +745,24 @@
   <!--fab begin-->
   <ul id="menu" class="mfb-component--bl   mfb-slidein-spring " data-mfb-toggle="click" style="display: block;">
     <li class="mfb-component__wrap">
-      <a href="#" class="mfb-component__button--main">
+      <a href="#" class="mfb-component__button--main" aria-label="Main material button to open or close a menu">
         <i class="mfb-component__main-icon--resting fa fa-plus"></i>
         <i class="mfb-component__main-icon--active fa fa-close"></i>
       </a>
 
       <ul class="mfb-component__list">
         <li>
-          <a href="#top" data-mfb-label="Go to Top" class="mfb-component__button--child">
+          <a href="#top" data-mfb-label="Go to Top" class="mfb-component__button--child" aria-label="Go to top button">
             <i class="mfb-component__child-icon fa fa-arrow-up"></i>
           </a>
         </li>
         <li>
-          <a href="http://blog.alokprateek.in" data-mfb-label="My Blog" class="mfb-component__button--child">
+          <a href="http://blog.alokprateek.in" data-mfb-label="My Blog" class="mfb-component__button--child" aria-label="Go to my blog Button">
             <i class="mfb-component__child-icon fa fa-book"></i>
           </a>
         </li>
         <li>
-          <a href="mailto:i@alokprateek.in" data-mfb-label="Hire Me" class="mfb-component__button--child">
+          <a href="mailto:i@alokprateek.in" data-mfb-label="Hire Me" class="mfb-component__button--child" aria-label="Send a mail to hire me">
             <i class="mfb-component__child-icon fa fa-envelope-open-o"></i>
           </a>
         </li>
