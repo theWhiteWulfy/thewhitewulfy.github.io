@@ -1,16 +1,20 @@
-const CACHE = "alok-offline";
+// This is the "Offline copy of pages" service worker
+
+const CACHE = "pwabuilder-offline";
+
+// TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "index.html";
 const offlineFallbackPage = "/index.html";
 
 // Install stage sets up the index page (home page) in the cache and opens a new cache
 self.addEventListener("install", function (event) {
-  console.log("[Alok Prateek] Install Event processing");
+  console.log("[PWA Builder] Install Event processing");
 
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
-      console.log("[Alok Prateek] Cached offline page during install");
+      console.log("[PWA Builder] Cached offline page during install");
 
-      if (offlineFallbackPage === "/index.html") {
-        return cache.add(new Response("offlineFallbackPage cached by the serviceworker."));
+      if (offlineFallbackPage === "ToDo-replace-this-name.html") {
+        return cache.add(new Response("TODO: Update the value of the offlineFallbackPage constant in the serviceworker."));
       }
       
       return cache.add(offlineFallbackPage);
@@ -25,7 +29,7 @@ self.addEventListener("fetch", function (event) {
   event.respondWith(
     fetch(event.request)
       .then(function (response) {
-        console.log("[Alok Prateek] add page to offline cache: " + response.url);
+        console.log("[PWA Builder] add page to offline cache: " + response.url);
 
         // If request was success, add or update it in the cache
         event.waitUntil(updateCache(event.request, response.clone()));
@@ -33,7 +37,7 @@ self.addEventListener("fetch", function (event) {
         return response;
       })
       .catch(function (error) {        
-        console.log("[Alok Prateek] Network request Failed. Serving content from cache: " + error);
+        console.log("[PWA Builder] Network request Failed. Serving content from cache: " + error);
         return fromCache(event.request);
       })
   );
