@@ -2,9 +2,582 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Offilne</title>
+        <title>Offline Zombie to Haunt you</title>
     </head>
+    <style>@import url('https://fonts.googleapis.com/css?family=Creepster|Rye');
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            html, body{
+                width: 100%;
+                height: 100%;
+                min-height: 100%;
+                font-family: 'Rye', cursive;
+                font-size: 100%;
+                background: -webkit-linear-gradient(-45deg, #148A94 0%, #104F54 100%);
+            }
+            @-webkit-keyframes animationZombi{
+                0%{
+                    bottom: -140px;
+                }
+                20%{
+                    bottom: -90px;
+                }
+                40%{
+                    bottom: -90px;
+                }
+                50%{
+                    bottom: 0;
+                }
+                90%{
+                    bottom: 0;        
+                }
+                100%{
+                    bottom: -140px;
+                }
+            }
+            @keyframes animationZombi{
+                0%{
+                    bottom: -140px;
+                }
+                20%{
+                    bottom: -90px;
+                }
+                40%{
+                    bottom: -90px;
+                }
+                50%{
+                    bottom: 0;
+                }
+                90%{
+                    bottom: 0;        
+                }
+                100%{
+                    bottom: -140px;
+                }
+            }
+            .text{
+                position: absolute;
+                top: 3%;
+                left: 3%;
+            }
+            .text h1{
+                font-size: 2em;
+                color: #FFF;
+            }
+            .text p{
+                font-size: 1.5em;
+              color: #FFF;
+            }
+            .text p span{
+                color: #FFF;
+            }
+            .text-effect{
+                width: 215px;
+                height: 50px;
+                position: absolute;
+                z-index: 5;
+                top: 0;
+                left: 0;
+            }
+            .container{
+                width: 460px;
+                height: 440px;
+                position: absolute;
+                top: calc(50% - 220px);
+                left: calc(50% - 230px);
+            }
+            .cross{
+                width: 80px;
+                height: 200px;
+                position: absolute;
+                z-index: 1;
+                top: 70px;
+                left: 70px;
+                background-color: #b5b8bf;
+                border-radius: 20px 20px 0 0;
+                border: 2px solid #191919;
+                transform: rotate(-5deg);
+            }
+            .cross:before{
+                content: "";
+                width: 200px;
+                height: 64px;
+                position: absolute;
+                z-index: 1;
+                top: 50px;
+                left: -59px;
+                background-color: #b5b8bf;
+                border-radius: 20px;
+                border: 2px solid #191919;
+            }
+            .cross:after{
+                content: "";
+                width: 80px;
+                height: 83px;
+                position: absolute;
+                z-index: 1;
+                top: 38px;
+                left: 0;
+                background-color: #b5b8bf;
+            }
+            .cross-text{
+                width: 100%;
+                height: auto;
+                float: left;
+                position: absolute;
+                z-index: 2;
+                top: 12px;
+                left: 0;
+                font-size: 27px;
+                text-align: center;
+            }
+            .cross-text:before{
+                content: "You're offline";
+                width: 201px;
+                height: auto;
+                float: left;
+                position: absolute;
+                z-index: 2;
+                top: 52px;
+                left: -60px;
+                font-size: 26px;
+                text-align: center;
+            }
+            .cross-text:after{
+                content: "Check your 4G or Wi-Fi";
+                width: 100%;
+                height: auto;
+                float: left;
+                position: absolute;
+                z-index: 2;
+                top: 88px;
+                left: 0;
+                font-size: 18px;
+                text-align: center;
+            }
+            .box-zombi{
+                width: 200px;
+                height: 230px;
+                position: absolute;
+                z-index: 3;
+                bottom: 50px;
+                left: 160px;    
+                overflow: hidden;
+            }
+            .hole{
+                width: 200px;
+                height: 190px;
+                position: absolute;
+                z-index: 3;
+                bottom: -70px;
+                left: 0px;
+                background-color: #000;
+                border-radius: 50%;
+                transform: rotateX(73deg);
+            }
+            .zombi{
+                width: 200px;
+                height: 170px;
+                position: absolute;
+                z-index: 4;
+                left: 0;
+                bottom: 0;    
+                -webkit-animation: animationZombi 4s linear infinite;
+                animation: animationZombi 4s linear infinite;
+            }
+            .t-shirt{
+                width: 100px;
+                height: 60px;
+                position: absolute;
+                z-index: 4;
+                bottom: 0px;
+                left: 49px;
+                background-color: #9ee6f2;
+                border: 2px solid #000;
+            }
+            .t-shirt:before{
+                content: "";
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: -2px;
+                left: -17px;
+                background-color: #9ee6f2;
+                border: 2px solid #000;
+                border-radius: 20px 20px 0 0;
+                transform: rotate(45deg);
+            }
+            .t-shirt:after{
+                content: "";
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: -2px;
+                right: -17px;
+                background-color: #9ee6f2;
+                border: 2px solid #000;
+                border-radius: 20px 20px 0 0;
+                transform: rotate(-45deg);
+            }
+            .arms{
+                width: 15px;
+                height: 30px;
+                position: absolute;
+                z-index: 3;
+                bottom: 12px;
+                background-color: #b6cdb1;
+                border-radius: 10px;
+            }
+            .arms-left{
+                left: 34px;  
+            }
+            .arms-right{
+                right: 24px;
+                transform: rotate(-36deg);
+            }
+            .face{
+                width: 89px;
+                height: 80px;
+                position: absolute;
+                z-index: 5;
+                bottom: 44px;
+                left: 54px;
+                background-color: #b6cdb1;
+                border: 2px solid #000;
+                border-radius: 11px;
+            }
+            .mouth{
+                width: 40px;
+                height: 20px;
+                position: absolute;
+                z-index: 5;
+                border-radius: 10px;
+                background-color: #000;
+                border: 3px solid #cb1933;
+                bottom: 6px;
+                left: 20px;
+            }
+            .mouth:after{
+                content: "";
+                width: 6px;
+                height: 7px;
+                position: absolute;
+                top: 0px;
+                left: 7px;
+                background-color: #f7f5f6;
+                box-shadow: #f7f5f6 18px 0 0, #f7f5f6 23px 13px 0, #f7f5f6 7px 13px 0;
+            }
+            .mouth:before{
+                content: "";
+                width: 3px;
+                height: 15px;
+                position: absolute;
+                bottom: -16px;
+                left: 0;
+                background-color: #cb1933;
+                box-shadow: #cb1933 9px -1px 0, #cb1933 31px -5px 0;
+            }
+            .eyes-left{
+                width: 30px;
+                height: 33px;
+                position: absolute;
+                top: 9px;
+                left: 15px;
+                z-index: 5;
+                background-color: #fffde6;
+                border-radius: 50%;
+                box-sizing: border-box;
+                border: 3px solid #000;
+            }
+            .eyes-left:after{
+                content: "";
+                width: 5px;
+                height: 6px;
+                position: absolute;
+                top: 10px;
+                right: 3px;
+                z-index: 5;
+                background-color: #000;
+                border-radius: 50%;
+            }
+            .eyes-right{
+                width: 25px;
+                height: 23px;
+                position: absolute;
+                top: 16px;
+                left: 46px;
+                z-index: 5;
+                background-color: #fffde6;
+                border-radius: 50%;
+                box-sizing: border-box;
+                border: 2px solid #000;
+            }
+            .eyes-right:after{
+                content: "";
+                width: 5px;
+                height: 6px;
+                position: absolute;
+                top: 6px;
+                left: 3px;
+                z-index: 5;
+                background-color: #000;
+                border-radius: 50%;
+            }
+            .eyebrow{
+                width: 20px;
+                height: 5px;
+                position: absolute;
+                top: 9px;
+                right: 24px;
+                background-color: #000;
+                transform: rotate(-16deg);
+            }
+            .brain{
+                width: 39px;
+                height: 10px;
+                position: absolute;
+                z-index: 6;
+                bottom: 121px;
+                left: 56px;
+                background-color: #e05887;
+                border-radius: 50% 50% 0 0;
+            }
+            .brain:before{
+                content: "";
+                width: 39px;
+                height: 15px;
+                position: absolute;
+                z-index: 6;
+                bottom: 0px;
+                left: 26px;
+                background-color: #e05887;
+                border-radius: 50% 50% 0 0;
+            }
+            .brain:after{
+                content: "";
+                width: 41px;
+                height: 18px;
+                position: absolute;
+                z-index: 6;
+                bottom: -4px;
+                left: 54px;
+                background-color: #e05887;
+                border-radius: 50% 50% 0 0;
+                transform: rotate(24deg);
+            }
+            .brain-detail{
+                width: 3px;
+                height: 10px;
+                position: absolute;
+                z-index: 16;
+                top: 0px;
+                left: 8px;
+                background-color: #FFF;
+                opacity: 0.2;
+                transform: rotate(45deg);
+                box-shadow: #FFF 9px -6px 0, #FFF 15px -22px 0, #FFF 25px -23px 0, #FFF 35px -43px 0, #FFF 49px -43px 0, #FFF 59px -51px 0;
+            }
+            .stones-cross{
+                width: 30px;
+                height: 15px;
+                position: absolute;
+                z-index: 2;
+                top: 266px;
+                left: 70px;
+                background-color: #b5b8bf;
+                border-radius: 50%;
+                border: 2px solid #576067;
+            }
+            .stones-cross:before{
+                content: "";
+                width: 30px;
+                height: 15px;
+                position: absolute;
+                z-index: 2;
+                top: -1px;
+                left: 29px;
+                background-color: #b5b8bf;
+                border-radius: 50%;
+                border: 2px solid #576067;
+                transform: rotate(-24deg);
+            }
+            .stones-cross:after{
+                content: "";
+                width: 30px;
+                height: 15px;
+                position: absolute;
+                z-index: 2;
+                top: -1px;
+                left: 61px;
+                background-color: #b5b8bf;
+                border-radius: 50%;
+                border: 2px solid #576067;
+                transform: rotate(0deg);
+            }
+            .stones-zombi{
+                width: 50px;
+                height: 25px;
+                position: absolute;
+                z-index: 22;
+                bottom: 36px;
+                left: 180px;
+                background-color: #0b3738;
+                border-radius: 50%;
+                border: 2px solid #072829;
+            }
+            .stones-zombi:before{
+                content: "";
+                width: 69px;
+                height: 25px;
+                position: absolute;
+                z-index: 22;
+                bottom: -9px;
+                left: 42px;
+                background-color: #0b3738;
+                border-radius: 50%;
+                border: 2px solid #072829;
+            }
+            .stones-zombi:after{
+                content: "";
+                width: 70px;
+                height: 25px;
+                position: absolute;
+                z-index: 22;
+                bottom: -10px;
+                left: 100px;
+                background-color: #0b3738;
+                border-radius: 50%;
+                border: 2px solid #072829;
+                transform: rotate(-24deg);
+            }
+            .stones-zombi-two{
+                width: 30px;
+                height: 15px;
+                position: absolute;
+                z-index: 22;
+                bottom: 56px;
+                left: 125px;
+                background-color: #0b3738;
+                border-radius: 50%;
+                border: 2px solid #072829;
+            }
+            .stones-zombi-two:before{
+                content: "";
+                width: 29px;
+                height: 15px;
+                position: absolute;
+                z-index: 22;
+                bottom: 21px;
+                left: 22px;
+                background-color: #0b3738;
+                border-radius: 50%;
+                border: 2px solid #072829;
+            }
+            .stones-zombi-two:after{
+                content: "";
+                width: 40px;
+                height: 17px;
+                position: absolute;
+                z-index: 22;
+                bottom: -40px;
+                left: 0px;
+                background-color: #0b3738;
+                border-radius: 50%;
+                border: 2px solid #072829;
+                transform: rotate(-24deg);
+            }
+            .stones-zombi-three{
+                width: 30px;
+                height: 15px;
+                position: absolute;
+                z-index: 22;
+                bottom: 88px;
+                left: 354px;
+                background-color: #0b3738;
+                border-radius: 50%;
+                border: 2px solid #072829;
+            }
+            .stones-zombi-three:before{
+                content: "";
+                width: 29px;
+                height: 15px;
+                position: absolute;
+                z-index: 22;
+                bottom: 21px;
+                left: 22px;
+                background-color: #0b3738;
+                border-radius: 50%;
+                border: 2px solid #072829;
+            }
+            .stones-zombi-three:after{
+                content: "";
+                width: 40px;
+                height: 17px;
+                position: absolute;
+                z-index: 22;
+                bottom: -40px;
+                left: 0px;
+                background-color: #0b3738;
+                border-radius: 50%;
+                border: 2px solid #072829;
+                transform: rotate(-24deg);
+            }
+            .moon{
+                width: 140px;
+                height: 130px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-radius: 50%;
+                background: -webkit-linear-gradient(left, #fbefa5 0%, #f8df5e 100%);
+                border: 2px solid #000;
+            }
+            .front-end{
+                width: auto;
+                height: auto;
+                position: absolute;
+                right: 60px;
+                bottom: 24px;
+                font-size: 9px;
+                color: #000;
+                z-index: 6;
+                font-family: Arial;
+                font-weight: 700;
+            }
+            </style>
     <body>
-        OFFILNE FUCKER!
+            <div class="text">
+	
+                </div>
+                    <div class="container">
+                        <div class="moon"></div>
+                        <div class="cross">
+                            <div class="cross-text">RIP</div>
+                        </div>
+                        <div class="stones-cross"></div>
+                        <div class="box-zombi">
+                            <div class="zombi">
+                                <div class="brain">
+                                    <div class="brain-detail"></div>
+                                </div>
+                                <div class="face">
+                                    <div class="eyebrow"></div>
+                                    <div class="eyes-left"></div>
+                                    <div class="eyes-right"></div>
+                                    <div class="mouth"></div>
+                                </div>
+                                <div class="t-shirt"></div>
+                                <div class="arms arms-left"></div>
+                                <div class="arms arms-right"></div>
+                                <div class="front-end">Curse your WIFI</div>
+                            </div>
+                            <div class="hole"></div>
+                        </div>
+                        <div class="stones-zombi"></div>				
+                        <div class="stones-zombi-two"></div>				
+                        <div class="stones-zombi-three"></div>				
+                    </div>
     </body>
 </html>
