@@ -611,7 +611,7 @@
                 <label for="projecttype">I'm interested </label>
                 <label for="projecttype">in discussing</label>
                 <select id="projecttype" name="projecttype" class="form-field"
-                  style="min-width: 60px; width:12ch;"
+                  style="min-width: 60px; width:12ch;" aria-label="What is your project type?"
                   onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';">
                   <option value="A New Project" selected>a new project</option>
                   <option value="A Site Redesign">a site redesign</option>
@@ -627,7 +627,7 @@
                 <label for="budget">have a rough </label>
                 <label for="budget">budget of</label>
                 <select id="budget" name="budget" class="form-field" style="min-width: 60px; width:12ch;"
-                  onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';">
+                  onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';" aria-label="budget for your project">
                   <option value="5k to 20k">5k to 20k</option>
                   <option value="20k to 50k">20k to 50k</option>
                   <option value="50k to 100k">50k to 100k</option>
@@ -643,7 +643,7 @@
                 <label for="duetime">have it </label>
                 <label for="duetime">ready to go</label>
                 <select id="duetime" name="duetime" class="form-field"
-                  style="min-width: 60px; width:11ch;"
+                  style="min-width: 60px; width:11ch;" aria-label="Due date for the project?"
                   onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';">
                   <option value="By Tomorrow" selected>by yesterday</option>
                   <option value="in a week">in a week</option>
@@ -657,7 +657,7 @@
                 <label for="email">Please </label>
                 <label for="email">get in touch</label>
                 <label for="email"> by emailing</label>
-                <input type="email" id="email" name="email" value="" placeholder="at my email address"      required class="form-field" style="min-width: 60px; width:16ch;"
+                <input type="email" id="email" name="email" value="" placeholder="at my email address"      required class="form-field" style="min-width: 60px; width:16ch;" aria-label="your email ID"
                   onInput="this.style.width = ((this.value.length + 1) * 12) + 'px';">
 
                 <label for="telphone"> or by calling </label>
