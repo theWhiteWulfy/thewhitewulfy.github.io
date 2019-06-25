@@ -14,7 +14,7 @@
      Hey mate! Thanks for installing this app. Well it won't give you freebies but it could show you my portfolio and you might read some of my posts on my blog. Since this is offline web app, you need access to wifi or mobile data only when using it for the first time around. Cheers!
   </description>
 
-  <author href="http://alokprateek.ml" email="oxyenyos@gmail.com">
+  <author href="http://alokprateek.in" email="oxyenyos@gmail.com">
       Alok Prateek
   </author>
 
@@ -23,7 +23,7 @@
   <preference name="orientation" value="landscape" />
   <preference name="fullscreen" value="true" />
 
-  <access origin="http://alokprateek.ml" subdomains="true" />
+  <access origin="http://alokprateek.in" subdomains="true" />
 
   <platform name="ios">
     <preference name="target-device" value="universal" />
