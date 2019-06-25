@@ -5,9 +5,10 @@
     "display" : "standalone",
     "background_color" : "#f74770",
     "theme_color" : "#f74770",
-    "lang" : "",
+    "lang" : "en-US",
     "orientation" : "undefined",
     "generated" : "undefined",
+    "categories" : ["business", "education", "personal", "portfolio"],
     "icons" : [
         {
             "src": "/res/gen/android-chrome-36x36.png?v=6a",
@@ -54,5 +55,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ]
+    ]    
 }
