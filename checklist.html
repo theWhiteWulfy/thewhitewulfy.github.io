@@ -1,447 +1,1501 @@
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Website Launch Checklist</title>
-	<meta name="description" content="The Humaan website launch checklist" />
-	<meta name="og:title" content="The Humaan website launch checklist" />
-	<meta name="og:type" content="website" />
-	<meta name="og:description" content="The bulletproof list for website QA before and after launch." />
-	<meta name="og:url" content="https://alokprateek.in/checklist" />
-	<meta name="og:image" content="" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Website Launch Checklist</title>
+    <meta name="description" content="The Humaan website launch checklist" />
+    <meta name="og:title" content="The Humaan website launch checklist" />
+    <meta name="og:type" content="website" />
+    <meta name="og:description" content="The bulletproof list for website QA before and after launch." />
+    <meta name="og:url" content="https://alokprateek.in/checklist" />
+    <meta name="og:image" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <style media="screen">
-    a,a:active,a:hover{outline:0}img,legend{border:0}legend,td,th{padding:0}.clear,.clearfix:after,.row:after{clear:both}blockquote,p{margin:0 0 20px}sub,sup,ul li{position:relative}ul input,ul li.focus:before{left:0;top:0;position:absolute}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block} audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0;text-decoration:underline;-webkit-transition:color .2s ease-in-out;transition:color .2s ease-in-out;color:#3597eb}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}mark{background:#ff0;color:#000} sub,sup{font-size:75%;line-height:0;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}hr{box-sizing:content-box;height:0}pre,textarea{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}h1,h2,h3,h4,h5,h6,input{line-height:normal}h6,small{line-height:1.3}body,h2,h3,p{line-height:1.5}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}.clear,.container:after{visibility:hidden;height:0;display:block}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}table{border-collapse:collapse;border-spacing:0}.container:after{content:"\0020";clear:both}.clearfix:after,.clearfix:before,.row:after,.row:before{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix,.row{zoom:1}.clear{overflow:hidden;width:0}html{font-size:6.25%}h1,h2,h3,h4,h5,h6{font-weight:400;margin:0}h4,h5{line-height:1.4}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}h1{font-size:20px;font-size:20rem;line-height:1.6;font-weight:700}h2{font-size:24px;font-size:24rem}h3{font-size:22px;font-size:22rem}h4{font-size:18px;font-size:18rem}h5{font-size:16px;font-size:16rem}h6{font-size:12px;font-size:12rem}p{font-size:16px;font-size:16rem}small{font-size:80%}a:focus,a:hover{color:#2c6596}blockquote,blockquote p{font-style:italic}blockquote{padding:20px 20px 20px 40px;border-left:2px solid #3597eb}blockquote cite{display:block}blockquote cite:before{content:"\2014 \0020"}ul li.checked .check:before,ul li.focus:before,ul span.input:before{content:""}figure{margin:0}*,:after,:before{box-sizing:border-box}body,html{height:100%}body{margin:0;background:-webkit-linear-gradient(top,#2cd8e7 0,#2ce7d3 100%) fixed;background:linear-gradient(to bottom,#2cd8e7 0,#2ce7d3 100%) fixed;font-family:adelle-sans,Avenir,Helvetica,Arial,sans-serif;font-size:16px;font-size:16rem;-webkit-font-smoothing:antialiased}.container{max-width:700px;margin:0 auto;padding:0 15px}footer,header.main{max-width:560px;text-align:center}header.main{margin:0 auto;color:#fff;padding-bottom:30px}header.main a{color:#fff}header.main a:hover{color:rgba(255,255,255,.8)}header.main h1{margin:0 0 20px}footer{margin:0 auto;color:#fff;color:rgba(0,0,0,.4);padding:40px 0}.header-logo{margin:50px 0 30px;display:block}ul,ul li{margin:0}.checklist{max-width:700px;background:#fff;box-shadow:0 3px 40px 0 rgba(0,0,0,.15)}.checklist header{background:#545258;text-align:center;color:#bbbabe;font-size:12px;font-size:12rem;line-height:1.3;text-transform:uppercase;padding:20px 0;font-weight:700}ul{list-style:none;padding:10px 0}ul li{padding:0;color:#626262}ul li.checked,ul li.checked a,ul li.checked a:hover{color:#b7b7b7}ul li.focus{background:#fafafa}ul li.focus:before{width:3px;height:100%;background:#9fee16}ul label{font-size:14px;font-size:14rem;line-height:1.4;padding:13px 24px 13px 64px;display:block;position:relative;z-index:100}ul input{opacity:0}ul span,ul span:after,ul span:before{display:block;position:absolute;background:#fff;border-radius:50%}ul span.input{background:-webkit-linear-gradient(top,#2cd8e7 0,#2ce7d3 100%);background:linear-gradient(to bottom,#2cd8e7 0,#2ce7d3 100%);width:26px;height:26px;left:24px;top:10px}ul span.input:before{width:22px;height:22px;top:2px;left:2px}ul li.checked{background:#f1f1f1}ul li.checked label{text-decoration:line-through}ul li.checked span.input{background:#dcdcdc}ul li.checked span.input:before{display:none}ul li.checked .check{width:8px;height:4px;border-radius:1px;z-index:2;top:13px;left:5px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}ul li.checked .check:before{width:4px;height:14px;border-radius:1px;z-index:2;left:5px;top:-10px}ul li.checked.focus:before{background:#888}
+        a,
+        a:active,
+        a:hover {
+            outline: 0
+        }
+
+        img,
+        legend {
+            border: 0
+        }
+
+        legend,
+        td,
+        th {
+            padding: 0
+        }
+
+        .clear,
+        .clearfix:after,
+        .row:after {
+            clear: both
+        }
+
+        blockquote,
+        p {
+            margin: 0 0 20px
+        }
+
+        sub,
+        sup,
+        ul li {
+            position: relative
+        }
+
+        ul input,
+        ul li.focus:before {
+            left: 0;
+            top: 0;
+            position: absolute
+        }
+
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        nav,
+        section,
+        summary {
+            display: block
+        }
+
+        audio,
+        canvas,
+        progress,
+        video {
+            display: inline-block;
+            vertical-align: baseline
+        }
+
+        audio:not([controls]) {
+            display: none;
+            height: 0
+        }
+
+        [hidden],
+        template {
+            display: none
+        }
+
+        a {
+            background: 0 0;
+            text-decoration: underline;
+            -webkit-transition: color .2s ease-in-out;
+            transition: color .2s ease-in-out;
+            color: #3597eb
+        }
+
+        abbr[title] {
+            border-bottom: 1px dotted
+        }
+
+        b,
+        optgroup,
+        strong {
+            font-weight: 700
+        }
+
+        dfn {
+            font-style: italic
+        }
+
+        mark {
+            background: #ff0;
+            color: #000
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            vertical-align: baseline
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        svg:not(:root) {
+            overflow: hidden
+        }
+
+        hr {
+            box-sizing: content-box;
+            height: 0
+        }
+
+        pre,
+        textarea {
+            overflow: auto
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            color: inherit;
+            font: inherit;
+            margin: 0
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        input {
+            line-height: normal
+        }
+
+        h6,
+        small {
+            line-height: 1.3
+        }
+
+        body,
+        h2,
+        h3,
+        p {
+            line-height: 1.5
+        }
+
+        button {
+            overflow: visible
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        html input[type=button],
+        input[type=reset],
+        input[type=submit] {
+            -webkit-appearance: button;
+            cursor: pointer
+        }
+
+        button[disabled],
+        html input[disabled] {
+            cursor: default
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        .clear,
+        .container:after {
+            visibility: hidden;
+            height: 0;
+            display: block
+        }
+
+        input[type=search] {
+            -webkit-appearance: textfield;
+            box-sizing: content-box
+        }
+
+        input[type=search]::-webkit-search-cancel-button,
+        input[type=search]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        fieldset {
+            border: 1px solid silver;
+            margin: 0 2px;
+            padding: .35em .625em .75em
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        .container:after {
+            content: "\0020";
+            clear: both
+        }
+
+        .clearfix:after,
+        .clearfix:before,
+        .row:after,
+        .row:before {
+            content: '\0020';
+            display: block;
+            overflow: hidden;
+            visibility: hidden;
+            width: 0;
+            height: 0
+        }
+
+        .clearfix,
+        .row {
+            zoom: 1
+        }
+
+        .clear {
+            overflow: hidden;
+            width: 0
+        }
+
+        html {
+            font-size: 6.25%
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400;
+            margin: 0
+        }
+
+        h4,
+        h5 {
+            line-height: 1.4
+        }
+
+        h1 a,
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a {
+            font-weight: inherit
+        }
+
+        h1 {
+            font-size: 20px;
+            font-size: 20rem;
+            line-height: 1.6;
+            font-weight: 700
+        }
+
+        h2 {
+            font-size: 24px;
+            font-size: 24rem
+        }
+
+        h3 {
+            font-size: 22px;
+            font-size: 22rem
+        }
+
+        h4 {
+            font-size: 18px;
+            font-size: 18rem
+        }
+
+        h5 {
+            font-size: 16px;
+            font-size: 16rem
+        }
+
+        h6 {
+            font-size: 12px;
+            font-size: 12rem
+        }
+
+        p {
+            font-size: 16px;
+            font-size: 16rem
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        a:focus,
+        a:hover {
+            color: #2c6596
+        }
+
+        blockquote,
+        blockquote p {
+            font-style: italic
+        }
+
+        blockquote {
+            padding: 20px 20px 20px 40px;
+            border-left: 2px solid #3597eb
+        }
+
+        blockquote cite {
+            display: block
+        }
+
+        blockquote cite:before {
+            content: "\2014 \0020"
+        }
+
+        ul li.checked .check:before,
+        ul li.focus:before,
+        ul span.input:before {
+            content: ""
+        }
+
+        figure {
+            margin: 0
+        }
+
+        *,
+        :after,
+        :before {
+            box-sizing: border-box
+        }
+
+        body,
+        html {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            background: -webkit-linear-gradient(top, #2cd8e7 0, #2ce7d3 100%) fixed;
+            background: linear-gradient(to bottom, #2cd8e7 0, #2ce7d3 100%) fixed;
+            font-family: adelle-sans, Avenir, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-size: 16rem;
+            -webkit-font-smoothing: antialiased
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 15px
+        }
+
+        footer,
+        header.main {
+            max-width: 560px;
+            text-align: center
+        }
+
+        header.main {
+            margin: 0 auto;
+            color: #fff;
+            padding-bottom: 30px
+        }
+
+        header.main a {
+            color: #fff
+        }
+
+        header.main a:hover {
+            color: rgba(255, 255, 255, .8)
+        }
+
+        header.main h1 {
+            margin: 0 0 20px
+        }
+
+        footer {
+            margin: 0 auto;
+            color: #fff;
+            color: rgba(0, 0, 0, .4);
+            padding: 40px 0
+        }
+
+        .header-logo {
+            margin: 50px 0 30px;
+            display: block
+        }
+
+        ul,
+        ul li {
+            margin: 0
+        }
+
+        .checklist {
+            max-width: 700px;
+            background: #fff;
+            box-shadow: 0 3px 40px 0 rgba(0, 0, 0, .15)
+        }
+
+        .checklist header {
+            background: #545258;
+            text-align: center;
+            color: #bbbabe;
+            font-size: 12px;
+            font-size: 12rem;
+            line-height: 1.3;
+            text-transform: uppercase;
+            padding: 20px 0;
+            font-weight: 700
+        }
+
+        ul {
+            list-style: none;
+            padding: 10px 0
+        }
+
+        ul li {
+            padding: 0;
+            color: #626262
+        }
+
+        ul li.checked,
+        ul li.checked a,
+        ul li.checked a:hover {
+            color: #b7b7b7
+        }
+
+        ul li.focus {
+            background: #fafafa
+        }
+
+        ul li.focus:before {
+            width: 3px;
+            height: 100%;
+            background: #9fee16
+        }
+
+        ul label {
+            font-size: 14px;
+            font-size: 14rem;
+            line-height: 1.4;
+            padding: 13px 24px 13px 64px;
+            display: block;
+            position: relative;
+            z-index: 100
+        }
+
+        ul input {
+            opacity: 0
+        }
+
+        ul span,
+        ul span:after,
+        ul span:before {
+            display: block;
+            position: absolute;
+            background: #fff;
+            border-radius: 50%
+        }
+
+        ul span.input {
+            background: -webkit-linear-gradient(top, #2cd8e7 0, #2ce7d3 100%);
+            background: linear-gradient(to bottom, #2cd8e7 0, #2ce7d3 100%);
+            width: 26px;
+            height: 26px;
+            left: 24px;
+            top: 10px
+        }
+
+        ul span.input:before {
+            width: 22px;
+            height: 22px;
+            top: 2px;
+            left: 2px
+        }
+
+        ul li.checked {
+            background: #f1f1f1
+        }
+
+        ul li.checked label {
+            text-decoration: line-through
+        }
+
+        ul li.checked span.input {
+            background: #dcdcdc
+        }
+
+        ul li.checked span.input:before {
+            display: none
+        }
+
+        ul li.checked .check {
+            width: 8px;
+            height: 4px;
+            border-radius: 1px;
+            z-index: 2;
+            top: 13px;
+            left: 5px;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg)
+        }
+
+        ul li.checked .check:before {
+            width: 4px;
+            height: 14px;
+            border-radius: 1px;
+            z-index: 2;
+            left: 5px;
+            top: -10px
+        }
+
+        ul li.checked.focus:before {
+            background: #888
+        }
     </style>
-    <style media="print">   abutton,label{cursor:pointer}article,aside,details,figcaption,figure,footer,header,hgroup,label,menu,nav,section{display:block}a,button,input[type=submit]:focus,input[type=button]:focus{outline:0}ol,ul{list-style:none}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}body{line-height:1;background:#fff;font:14px/21px HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;color:#444;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;max-width:80%;margin:0 auto}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}ol,p,ul{margin:0 0 20px}ol,ul{padding:0 0 0 2.5em;margin-bottom:20px}label{padding:0 25px 10px}button{border:0}input[type=submit]::-moz-focus-inner,input[type=button]::-moz-focus-inner{border:0}body,html{height:100%}h1,h2,h3,h4,h5,h6{font-weight:400}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}h1,strong{font-weight:700}h1{font-size:46px;line-height:50px;margin-bottom:14px}h2{font-size:35px;line-height:40px;margin-bottom:10px}h3{font-size:28px;line-height:34px;margin-bottom:8px}h4{font-size:21px;line-height:30px;margin-bottom:4px}h5{font-size:17px;line-height:24px}h6{font-size:14px;line-height:21px}em{font-style:italic}small{font-size:80%}blockquote,blockquote p{font-size:17px;line-height:24px;color:#777;font-style:italic}blockquote{margin:0 0 20px;padding:9px 20px 0 19px;border-left:1px solid #ddd}blockquote cite{display:block;font-size:12px;color:#555}blockquote cite:before{content:"\2014 \0020"}blockquote cite a,blockquote cite a:visited{color:#555}hr{border:solid #ddd;border-width:1px 0 0;clear:both;margin:10px 0 30px;height:0}a{color:#333;text-decoration:underline}p a{line-height:inherit}input,textarea{font-size:1em;font-family:Helvetica,Arial,sans-serif;-webkit-transition:border-color .2s ease-out,-webkit-box-shadow .2s ease-out;-moz-transition:border-color .2s ease-out,-moz-box-shadow .2s ease-out;background:#fff;border:1px solid #ddd;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;color:#666}ol ol,ol ul,ul ol,ul ul{margin:4px 0 5px 30px;font-size:90%}ol ol li,ol ul li,ul ol li,ul ul li{margin-bottom:6px}nav{display:none}.checklist header{border-bottom:3px solid #eee;font-weight:700}ul{margin:0;padding:10px 0}li{line-height:18px;margin-bottom:12px;border-bottom:1px solid #eee;position:relative}input{position:absolute;left:0;top:0}
+    <style media="print">
+        abutton,
+        label {
+            cursor: pointer
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        label,
+        menu,
+        nav,
+        section {
+            display: block
+        }
+
+        a,
+        button,
+        input[type=submit]:focus,
+        input[type=button]:focus {
+            outline: 0
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        a,
+        abbr,
+        acronym,
+        address,
+        applet,
+        article,
+        aside,
+        audio,
+        b,
+        big,
+        blockquote,
+        body,
+        canvas,
+        caption,
+        center,
+        cite,
+        code,
+        dd,
+        del,
+        details,
+        dfn,
+        div,
+        dl,
+        dt,
+        em,
+        embed,
+        fieldset,
+        figcaption,
+        figure,
+        footer,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        header,
+        hgroup,
+        html,
+        i,
+        iframe,
+        img,
+        ins,
+        kbd,
+        label,
+        legend,
+        li,
+        mark,
+        menu,
+        nav,
+        object,
+        ol,
+        output,
+        p,
+        pre,
+        q,
+        ruby,
+        s,
+        samp,
+        section,
+        small,
+        span,
+        strike,
+        strong,
+        sub,
+        summary,
+        sup,
+        table,
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        time,
+        tr,
+        tt,
+        u,
+        ul,
+        var,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            vertical-align: baseline
+        }
+
+        body {
+            line-height: 1;
+            background: #fff;
+            font: 14px/21px HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #444;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: 100%;
+            max-width: 80%;
+            margin: 0 auto
+        }
+
+        blockquote,
+        q {
+            quotes: none
+        }
+
+        blockquote:after,
+        blockquote:before,
+        q:after,
+        q:before {
+            content: '';
+            content: none
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        ol,
+        p,
+        ul {
+            margin: 0 0 20px
+        }
+
+        ol,
+        ul {
+            padding: 0 0 0 2.5em;
+            margin-bottom: 20px
+        }
+
+        label {
+            padding: 0 25px 10px
+        }
+
+        button {
+            border: 0
+        }
+
+        input[type=submit]::-moz-focus-inner,
+        input[type=button]::-moz-focus-inner {
+            border: 0
+        }
+
+        body,
+        html {
+            height: 100%
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400
+        }
+
+        h1 a,
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a {
+            font-weight: inherit
+        }
+
+        h1,
+        strong {
+            font-weight: 700
+        }
+
+        h1 {
+            font-size: 46px;
+            line-height: 50px;
+            margin-bottom: 14px
+        }
+
+        h2 {
+            font-size: 35px;
+            line-height: 40px;
+            margin-bottom: 10px
+        }
+
+        h3 {
+            font-size: 28px;
+            line-height: 34px;
+            margin-bottom: 8px
+        }
+
+        h4 {
+            font-size: 21px;
+            line-height: 30px;
+            margin-bottom: 4px
+        }
+
+        h5 {
+            font-size: 17px;
+            line-height: 24px
+        }
+
+        h6 {
+            font-size: 14px;
+            line-height: 21px
+        }
+
+        em {
+            font-style: italic
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        blockquote,
+        blockquote p {
+            font-size: 17px;
+            line-height: 24px;
+            color: #777;
+            font-style: italic
+        }
+
+        blockquote {
+            margin: 0 0 20px;
+            padding: 9px 20px 0 19px;
+            border-left: 1px solid #ddd
+        }
+
+        blockquote cite {
+            display: block;
+            font-size: 12px;
+            color: #555
+        }
+
+        blockquote cite:before {
+            content: "\2014 \0020"
+        }
+
+        blockquote cite a,
+        blockquote cite a:visited {
+            color: #555
+        }
+
+        hr {
+            border: solid #ddd;
+            border-width: 1px 0 0;
+            clear: both;
+            margin: 10px 0 30px;
+            height: 0
+        }
+
+        a {
+            color: #333;
+            text-decoration: underline
+        }
+
+        p a {
+            line-height: inherit
+        }
+
+        input,
+        textarea {
+            font-size: 1em;
+            font-family: Helvetica, Arial, sans-serif;
+            -webkit-transition: border-color .2s ease-out, -webkit-box-shadow .2s ease-out;
+            -moz-transition: border-color .2s ease-out, -moz-box-shadow .2s ease-out;
+            background: #fff;
+            border: 1px solid #ddd;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            color: #666
+        }
+
+        ol ol,
+        ol ul,
+        ul ol,
+        ul ul {
+            margin: 4px 0 5px 30px;
+            font-size: 90%
+        }
+
+        ol ol li,
+        ol ul li,
+        ul ol li,
+        ul ul li {
+            margin-bottom: 6px
+        }
+
+        nav {
+            display: none
+        }
+
+        .checklist header {
+            border-bottom: 3px solid #eee;
+            font-weight: 700
+        }
+
+        ul {
+            margin: 0;
+            padding: 10px 0
+        }
+
+        li {
+            line-height: 18px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #eee;
+            position: relative
+        }
+
+        input {
+            position: absolute;
+            left: 0;
+            top: 0
+        }
     </style>
-    
-	<!--[if lt IE 9]>
+
+    <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
 	<![endif]-->
     <script src="https://use.typekit.net/iyy0knd.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
 </head>
-<body>    
-<div class="container">
-	<header class="main">
-        <br><br>
-		<h1>Website pre &amp; post launch checklist </h1>
-        <p>Alok's curated checklist for launching a website. Feel free to use this for yourself, as it is published under a <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Sharealike License</a> by a reputed web company. I made some changes to keep it more recent.</p>
-    </header>
-	
-	<div class="checklist">
-		<div>
-    <header>Content</header>
-
-    <ul>
-        <li>
-            <input type="checkbox" name="item_0" id="item_0"><label for="item_0">All text free from spelling errors</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_1" id="item_1"><label for="item_1">Page and content formatting appropriate on all pages</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_2" id="item_2"><label for="item_2">Placeholder text removed</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_3" id="item_3"><label for="item_3">All pages have content</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_99" id="item_99"><label for="item_99">Privacy Policy is included</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_4" id="item_4"><label for="item_4">Print stylesheet exists and tested</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_6" id="item_6"><label for="item_6">Favicon created and displays correctly (retina included)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_7" id="item_7"><label for="item_7">Device icons created and display correctly</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_8" id="item_8"><label for="item_8">Footer includes copyright statement</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_9" id="item_9"><label for="item_9">404 page exists and informative</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_11" id="item_11"><label for="item_11">Correct author is attributed to pages and posts (as required)</label><span class="input"><span class="check"></span></span>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <header>SEO &amp; Analytics</header>
-
-    <ul>
-
-        <li>
-            <input type="checkbox" name="item_13" id="item_13"><label for="item_13">Page titles are descriptive and SEO friendly</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_14" id="item_14"><label for="item_14">All page titles are unique</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_15" id="item_15"><label for="item_15">Meta data included and appropriate</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_16" id="item_16"><label for="item_16">H1s used for page titles and only one H1 per page</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_17" id="item_17"><label for="item_17">XML sitemap has been generated and added to root of website</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_18" id="item_18"><label for="item_18">robots.txt is generated and added to root of website</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_20" id="item_20"><label for="item_20">301 redirects for existing website are prepared and in place</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_22" id="item_22"><label for="item_22">Website can be accessed by search engines (remove noindex, nofollow for pages)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_77" id="item_77"><label for="item_77">Google Analytics and relevant analytics/tracking tools installed</label><span class="input"><span class="check"></span></span>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <header>Social</header>
-    <ul>
-        <li>
-            <input type="checkbox" name="item_75" id="item_75"><label for="item_75">Open Graph tags included across website and appropriate? (including images where possible)</label><span class="input"><span class="check"></span></span>
-        </li>
-        <li>
-            <input type="checkbox" name="item_76" id="item_76"><label for="item_76">Social accounts integrated, linking to correct URLs and use API for integrations</label><span class="input"><span class="check"></span></span>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <header>Markup</header>
-
-    <ul>
-        <li>
-            <input type="checkbox" name="item_23" id="item_23"><label for="item_23">HTML has passed validation (or known issues noted)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_24" id="item_24"><label for="item_24">CSS has passed validation (or known issues noted)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_25" id="item_25"><label for="item_25">Bonus: CSS tested on <a href="http://csslint.net/" target="_blank">CSS Lint</a> (to hurt your feelings)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_26" id="item_26"><label for="item_26">Site links have been tested and resolve correctly</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_27" id="item_27"><label for="item_27">JavaScript is error free</label><span class="input"><span class="check"></span></span>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <header>Accessibility</header>
-
-    <ul>
-        <li>
-            <input type="checkbox" name="item_78" id="item_78"><label for="item_78">Website meets appropriate level of WCAG compliance</label><span class="input"><span class="check"></span></span>
-        </li>
-        <li>
-            <input type="checkbox" name="item_101" id="item_101"><label for="item_101">ARIA Landmark Roles specified</label><span class="input"><span class="check"></span></span>
-        </li>
-        <li>
-            <input type="checkbox" name="item_102" id="item_102"><label for="item_102">Semantic headings and structure used</label><span class="input"><span class="check"></span></span>
-        </li>
-        <li>
-            <input type="checkbox" name="item_103" id="item_103"><label for="item_103">Links are clearly recognisable and have :focus state</label><span class="input"><span class="check"></span></span>
-        </li>
-        <li>
-            <input type="checkbox" name="item_104" id="item_104"><label for="item_104">Images use appropriate ALT text</label><span class="input"><span class="check"></span></span>
-        </li>
-        <li>
-            <input type="checkbox" name="item_105" id="item_105"><label for="item_105">Alternatives provided for users with Javascript disabled</label><span class="input"><span class="check"></span></span>
-        </li>
-        <li>
-            <input type="checkbox" name="item_106" id="item_106"><label for="item_106">Forms have logical layout</label><span class="input"><span class="check"></span></span>
-        </li>
-        <li>
-            <input type="checkbox" name="item_107" id="item_107"><label for="item_107">Associated label for all form controls</label><span class="input"><span class="check"></span></span>
-        </li>
-        <li>
-            <input type="checkbox" name="item_108" id="item_108"><label for="item_108">Colour contrast tested</label><span class="input"><span class="check"></span></span>
-        </li>
-        <li>
-            <input type="checkbox" name="item_28" id="item_28"><label for="item_28">Website accessibility has been checked with Total Validator Pro or <a href="http://wave.webaim.org/" target="_blank">WAVE</a> and issues resolved (exceptions noted)</label><span class="input"><span class="check"></span></span>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <header>Rendering</header>
-
-    <ul>
-        <li>
-            <input type="checkbox" name="item_30" id="item_30"><label for="item_30">Displays &amp; functions correctly in IE9</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_31" id="item_31"><label for="item_31">Displays &amp; functions correctly in IE10</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_32" id="item_32"><label for="item_32">Displays &amp; functions correctly in IE11</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_33" id="item_33"><label for="item_33">Displays &amp; functions correctly in Firefox (Windows)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_34" id="item_34"><label for="item_34">Displays &amp; functions correctly in Firefox (Mac)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_35" id="item_35"><label for="item_35">Displays &amp; functions correctly in Chrome (Windows)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_36" id="item_36"><label for="item_36">Displays &amp; functions correctly in Chrome (Mac)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_37" id="item_37"><label for="item_37">Displays &amp; functions correctly in Safari (Mac)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_38" id="item_38"><label for="item_38">Displays &amp; functions correctly in Safari (iOS – Mobile)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_39" id="item_39"><label for="item_39">Displays &amp; functions correctly in Safari (iOS – iPad)</label><span class="input"><span class="check"></span></span>
-        </li>
-        
-
-        <li>
-            <input type="checkbox" name="item_123" id="item_123"><label for="item_123">Displays &amp; functions correctly in Chrome (iOS – Mobile)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_124" id="item_124"><label for="item_124">Displays &amp; functions correctly in Chrome (iOS – iPad)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_40" id="item_40"><label for="item_40">Displays &amp; functions correctly in Chrome (Android – Mobile)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_41" id="item_41"><label for="item_41">Displays &amp; functions correctly in Chrome (Android – Tablet)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_42" id="item_42"><label for="item_42">Displays &amp; functions correctly in stock browser  (Android)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_125" id="item_125"><label for="item_125">Displays &amp; functions correctly in Microsoft Edge</label><span class="input"><span class="check"></span></span>
-        </li>
-        
-
-        <li>
-            <input type="checkbox" name="item_44" id="item_44"><label for="item_44">Displays &amp; functions correctly on large resolutions</label><span class="input"><span class="check"></span></span>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <header>Functionality</header>
-
-    <ul>
-        <li>
-            <input type="checkbox" name="item_45" id="item_45"><label for="item_45">Forms have been tested and processed correctly</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_46" id="item_46"><label for="item_46">Required fields have been tested</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_79" id="item_79"><label for="item_79">Review input validation (min/max lengths, character limits)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_47" id="item_47"><label for="item_47">Forms send to the correct recipient</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_48" id="item_48"><label for="item_48">Forms have confirmation URL or event tracking so submissions can be tracked</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_80" id="item_80"><label for="item_80">Forms process correctly with JavaScript disabled
-</label><span class="input"><span class="check"></span></span>
-        </li>
-
-
-        <li>
-            <input type="checkbox" name="item_50" id="item_50"><label for="item_50">Website search and search results function correctly</label><span class="input"><span class="check"></span></span>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <header>Optimisation</header>
-
-    <ul>
-        <li>
-            <input type="checkbox" name="item_51" id="item_51"><label for="item_51">Images have been optimised</label><span class="input"><span class="check"></span></span>
-        </li>
-        
-        <li>
-            <input type="checkbox" name="item_53" id="item_53"><label for="item_53">CSS is minified and combined</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_55" id="item_55"><label for="item_55">JavaScript is minified and combined (as much as possible)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_57" id="item_57"><label for="item_57">Enable gzip compression</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_81" id="item_81"><label for="item_81">Ensure only necessary fonts, weights and character sets are installed</label><span class="input"><span class="check"></span></span>
-        </li>
-
-
-        <li>
-            <input type="checkbox" name="item_58" id="item_58"><label for="item_58">Run <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">Google speed test</a> and optimise accordingly (record score and known issues)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_59" id="item_59"><label for="item_59">Run <a href="http://www.webpagetest.org/" target="_blank">Web page test</a> and optimise accordingly (record results)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_82" id="item_82"><label for="item_82">Incorporate CDN / Caching as required</label><span class="input"><span class="check"></span></span>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <header>Security</header>
-
-    <ul>
-        <li>
-            <input type="checkbox" name="item_60" id="item_60"><label for="item_60">Secure areas are locked down and not accessible by search engines</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_61" id="item_61"><label for="item_61">Default CMS login URL is changed</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_62" id="item_62"><label for="item_62">Default CMS username is changed</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_83" id="item_83"><label for="item_83">SSL Certificate is requested</label><span class="input"><span class="check"></span></span>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <header>Post Launch</header>
-
-    <ul>
-
-        <li>
-            <input type="checkbox" name="item_64" id="item_64"><label for="item_64">Ensure site is visible to search engines</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_66" id="item_66"><label for="item_66">SSL certificates successfully installed</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_67" id="item_67"><label for="item_67">Images, media and links reference live URL</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_68" id="item_68"><label for="item_68">Webfonts integrated and working correctly on live site</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_69" id="item_69"><label for="item_69">Webfonts set to production (as required)</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_70" id="item_70"><label for="item_70">301 redirects are in place and working correctly</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_71" id="item_71"><label for="item_71">Website URL has been <a href="https://www.google.com/webmasters/tools/submit-url?pli=1" target="_blank">submitted</a> to Google</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_72" id="item_72"><label for="item_72">Generate a new sitemap.xml and upload to root</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_73" id="item_73"><label for="item_73">Site added to Google Webmaster tools and sitemap submitted</label><span class="input"><span class="check"></span></span>
-        </li>
-
-        <li>
-            <input type="checkbox" name="item_74" id="item_74"><label for="item_74">Analytics has been setup and integrated into website</label><span class="input"><span class="check"></span></span>
-        </li>
-    </ul>
- </div>
-	
-	</div><!--checklist-->
-	
-	<footer>
-		<p>Hey, you made it! Best of luck with your site launch :)</p>
-	</footer>
-</div><!--container -->
-<script src="assets/vendor/jquery/jquery-1.12.3.min.js" type="text/javascript"></script>
-<script type="text/javascript">$(document).ready(function() {
-	$(".checklist").contents().find(":checkbox").bind('change', function(){        
-        val = this.checked; //<---
-        $(this).parent().toggleClass('checked');
-	});
-	$(".checklist").contents().find(":checkbox").bind('focus', function(){        
-        val = this.focused; //<---
-        $('.focus').removeClass('focus');
-        $(this).parent().addClass('focus');
-	});
-		
-});</script>    
+
+<body>
+    <div class="container">
+        <header class="main">
+            <br><br>
+            <h1>Website pre &amp; post launch checklist </h1>
+            <p>Alok's curated checklist for launching a website. Feel free to use this for yourself, as it is published
+                under a <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons
+                    Sharealike License</a> by a reputed web company. I made some changes to keep it more recent.</p>
+        </header>
+
+        <div class="checklist">
+            <div>
+                <header>Content</header>
+
+                <ul>
+                    <li>
+                        <input type="checkbox" name="item_0" id="item_0"><label for="item_0">All text free from spelling
+                            errors</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_1" id="item_1"><label for="item_1">Page and content formatting
+                            appropriate on all pages</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_2" id="item_2"><label for="item_2">Placeholder text
+                            removed</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_3" id="item_3"><label for="item_3">All pages have
+                            content</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_99" id="item_99"><label for="item_99">Privacy Policy is
+                            included</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_4" id="item_4"><label for="item_4">Print stylesheet exists and
+                            tested</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_6" id="item_6"><label for="item_6">Favicon created and
+                            displays correctly (retina included)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_7" id="item_7"><label for="item_7">Device icons created and
+                            display correctly</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_8" id="item_8"><label for="item_8">Footer includes copyright
+                            statement</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_9" id="item_9"><label for="item_9">404 page exists and
+                            informative</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_11" id="item_11"><label for="item_11">Correct author is
+                            attributed to pages and posts (as required)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <header>SEO &amp; Analytics</header>
+
+                <ul>
+
+                    <li>
+                        <input type="checkbox" name="item_13" id="item_13"><label for="item_13">Page titles are
+                            descriptive and SEO friendly</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_14" id="item_14"><label for="item_14">All page titles are
+                            unique</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_15" id="item_15"><label for="item_15">Meta data included and
+                            appropriate</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_16" id="item_16"><label for="item_16">H1s used for page titles
+                            and only one H1 per page</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_17" id="item_17"><label for="item_17">XML sitemap has been
+                            generated and added to root of website</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_18" id="item_18"><label for="item_18">robots.txt is generated
+                            and added to root of website</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_20" id="item_20"><label for="item_20">301 redirects for
+                            existing website are prepared and in place</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_22" id="item_22"><label for="item_22">Website can be accessed
+                            by search engines (remove noindex, nofollow for pages)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_77" id="item_77"><label for="item_77">Google Analytics and
+                            relevant analytics/tracking tools installed</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <header>Social</header>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="item_75" id="item_75"><label for="item_75">Open Graph tags included
+                            across website and appropriate? (including images where possible)</label><span
+                            class="input"><span class="check"></span></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item_76" id="item_76"><label for="item_76">Social accounts
+                            integrated, linking to correct URLs and use API for integrations</label><span
+                            class="input"><span class="check"></span></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <header>Markup</header>
+
+                <ul>
+                    <li>
+                        <input type="checkbox" name="item_23" id="item_23"><label for="item_23">HTML has passed
+                            validation (or known issues noted)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_24" id="item_24"><label for="item_24">CSS has passed
+                            validation (or known issues noted)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_25" id="item_25"><label for="item_25">Bonus: CSS tested on <a
+                                href="http://csslint.net/" target="_blank">CSS Lint</a> (to hurt your
+                            feelings)</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_26" id="item_26"><label for="item_26">Site links have been
+                            tested and resolve correctly</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_27" id="item_27"><label for="item_27">JavaScript is error
+                            free</label><span class="input"><span class="check"></span></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <header>Accessibility</header>
+
+                <ul>
+                    <li>
+                        <input type="checkbox" name="item_78" id="item_78"><label for="item_78">Website meets
+                            appropriate level of WCAG compliance</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item_101" id="item_101"><label for="item_101">ARIA Landmark Roles
+                            specified</label><span class="input"><span class="check"></span></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item_102" id="item_102"><label for="item_102">Semantic headings and
+                            structure used</label><span class="input"><span class="check"></span></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item_103" id="item_103"><label for="item_103">Links are clearly
+                            recognisable and have :focus state</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item_104" id="item_104"><label for="item_104">Images use
+                            appropriate ALT text</label><span class="input"><span class="check"></span></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item_105" id="item_105"><label for="item_105">Alternatives provided
+                            for users with Javascript disabled</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item_106" id="item_106"><label for="item_106">Forms have logical
+                            layout</label><span class="input"><span class="check"></span></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item_107" id="item_107"><label for="item_107">Associated label for
+                            all form controls</label><span class="input"><span class="check"></span></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item_108" id="item_108"><label for="item_108">Colour contrast
+                            tested</label><span class="input"><span class="check"></span></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item_28" id="item_28"><label for="item_28">Website accessibility
+                            has been checked with Total Validator Pro or <a href="http://wave.webaim.org/"
+                                target="_blank">WAVE</a> and issues resolved (exceptions noted)</label><span
+                            class="input"><span class="check"></span></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <header>Rendering</header>
+
+                <ul>
+                    <li>
+                        <input type="checkbox" name="item_30" id="item_30"><label for="item_30">Displays &amp; functions
+                            correctly in IE9</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_31" id="item_31"><label for="item_31">Displays &amp; functions
+                            correctly in IE10</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_32" id="item_32"><label for="item_32">Displays &amp; functions
+                            correctly in IE11</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_33" id="item_33"><label for="item_33">Displays &amp; functions
+                            correctly in Firefox (Windows)</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_34" id="item_34"><label for="item_34">Displays &amp; functions
+                            correctly in Firefox (Mac)</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_35" id="item_35"><label for="item_35">Displays &amp; functions
+                            correctly in Chrome (Windows)</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_36" id="item_36"><label for="item_36">Displays &amp; functions
+                            correctly in Chrome (Mac)</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_37" id="item_37"><label for="item_37">Displays &amp; functions
+                            correctly in Safari (Mac)</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_38" id="item_38"><label for="item_38">Displays &amp; functions
+                            correctly in Safari (iOS – Mobile)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_39" id="item_39"><label for="item_39">Displays &amp; functions
+                            correctly in Safari (iOS – iPad)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+
+                    <li>
+                        <input type="checkbox" name="item_123" id="item_123"><label for="item_123">Displays &amp;
+                            functions correctly in Chrome (iOS – Mobile)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_124" id="item_124"><label for="item_124">Displays &amp;
+                            functions correctly in Chrome (iOS – iPad)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_40" id="item_40"><label for="item_40">Displays &amp; functions
+                            correctly in Chrome (Android – Mobile)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_41" id="item_41"><label for="item_41">Displays &amp; functions
+                            correctly in Chrome (Android – Tablet)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_42" id="item_42"><label for="item_42">Displays &amp; functions
+                            correctly in stock browser (Android)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_125" id="item_125"><label for="item_125">Displays &amp;
+                            functions correctly in Microsoft Edge</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+
+                    <li>
+                        <input type="checkbox" name="item_44" id="item_44"><label for="item_44">Displays &amp; functions
+                            correctly on large resolutions</label><span class="input"><span class="check"></span></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <header>Functionality</header>
+
+                <ul>
+                    <li>
+                        <input type="checkbox" name="item_45" id="item_45"><label for="item_45">Forms have been tested
+                            and processed correctly</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_46" id="item_46"><label for="item_46">Required fields have
+                            been tested</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_79" id="item_79"><label for="item_79">Review input validation
+                            (min/max lengths, character limits)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_47" id="item_47"><label for="item_47">Forms send to the
+                            correct recipient</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_48" id="item_48"><label for="item_48">Forms have confirmation
+                            URL or event tracking so submissions can be tracked</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_80" id="item_80"><label for="item_80">Forms process correctly
+                            with JavaScript disabled</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+
+                    <li>
+                        <input type="checkbox" name="item_50" id="item_50"><label for="item_50">Website search and
+                            search results function correctly</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_109" id="item_109"><label for="item_109">Website is PWA ready.
+                            Check <a href="https://pwabuilder.com">PWAbuilder</a> and <a
+                                href="https://realfavicongenerator.net">Favicon generator</a> and check for
+                            issues.</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_110" id="item_110"><label for="item_110">Website PWA is
+                            installable.</label><span class="input"><span class="check"></span></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <header>Optimisation</header>
+
+                <ul>
+                    <li>
+                        <input type="checkbox" name="item_51" id="item_51"><label for="item_51">Images have been
+                            optimised</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_53" id="item_53"><label for="item_53">CSS is minified and
+                            combined</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_55" id="item_55"><label for="item_55">JavaScript is minified
+                            and combined (as much as possible)</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_57" id="item_57"><label for="item_57">Enable gzip
+                            compression</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_81" id="item_81"><label for="item_81">Ensure only necessary
+                            fonts, weights and character sets are installed</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+
+                    <li>
+                        <input type="checkbox" name="item_58" id="item_58"><label for="item_58">Run <a
+                                href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">Google
+                                speed test</a> and optimise accordingly (record score and known issues)</label><span
+                            class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_59" id="item_59"><label for="item_59">Run <a
+                                href="http://www.webpagetest.org/" target="_blank">Web page test</a> and optimise
+                            accordingly (record results)</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_82" id="item_82"><label for="item_82">Incorporate CDN /
+                            Caching as required</label><span class="input"><span class="check"></span></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <header>Security</header>
+
+                <ul>
+                    <li>
+                        <input type="checkbox" name="item_60" id="item_60"><label for="item_60">Secure areas are locked
+                            down and not accessible by search engines</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_61" id="item_61"><label for="item_61">Default CMS login URL is
+                            changed</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_62" id="item_62"><label for="item_62">Default CMS username is
+                            changed</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_83" id="item_83"><label for="item_83">SSL Certificate is
+                            requested</label><span class="input"><span class="check"></span></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <header>Post Launch</header>
+
+                <ul>
+
+                    <li>
+                        <input type="checkbox" name="item_64" id="item_64"><label for="item_64">Ensure site is visible
+                            to search engines</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_66" id="item_66"><label for="item_66">SSL certificates
+                            successfully installed</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_67" id="item_67"><label for="item_67">Images, media and links
+                            reference live URL</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_68" id="item_68"><label for="item_68">Webfonts integrated and
+                            working correctly on live site</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_69" id="item_69"><label for="item_69">Webfonts set to
+                            production (as required)</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_70" id="item_70"><label for="item_70">301 redirects are in
+                            place and working correctly</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_71" id="item_71"><label for="item_71">Website URL has been <a
+                                href="https://www.google.com/webmasters/tools/submit-url?pli=1"
+                                target="_blank">submitted</a> to Google</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_72" id="item_72"><label for="item_72">Generate a new
+                            sitemap.xml and upload to root</label><span class="input"><span class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_73" id="item_73"><label for="item_73">Site added to Google
+                            Webmaster tools and sitemap submitted</label><span class="input"><span
+                                class="check"></span></span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="item_74" id="item_74"><label for="item_74">Analytics has been setup
+                            and integrated into website</label><span class="input"><span class="check"></span></span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--checklist-->
+
+        <footer>
+            <p>Hey, you made it! Best of luck with your site launch :)</p>
+        </footer>
+    </div>
+    <!--container -->
+    <script src="assets/vendor/jquery/jquery-1.12.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".checklist").contents().find(":checkbox").bind('change', function () {
+                val = this.checked; //<---
+                $(this).parent().toggleClass('checked');
+            });
+            $(".checklist").contents().find(":checkbox").bind('focus', function () {
+                val = this.focused; //<---
+                $('.focus').removeClass('focus');
+                $(this).parent().addClass('focus');
+            });
+
+        });
+    </script>
 </body>
-</html>    
+
+</html>
