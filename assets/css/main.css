@@ -35,11 +35,15 @@ e.	Others
    	2. Flipper
    	3. Selection
    	4. Cover Anim
-   	5. Button
+   	5. Button draw
    	6. Color Picker
 f.  Search
 g.  Photogallery
-i.  Featurette
+h.  Featurette
+i.  text and color transformations
+j.  contact form
+k.  search new
+l.  Social Handles
 
 =====================================================================  */
 
@@ -2012,7 +2016,7 @@ i.  Featurette
 	}
 
 
-/*i.  Featurette*/
+/*h.  Featurette*/
 .frow {
     overflow: hidden;
 }
@@ -2057,7 +2061,7 @@ h2, h4{
 }
 
 /******************************************
-    text and color transformations
+ i.   text and color transformations
 *******************************************/
 
 .textupper{ text-transform: uppercase;}
@@ -2124,7 +2128,7 @@ h2, h4{
     line-height: inherit;
 }
 
-/*contact form*/
+/*j. contact form*/
 .contact-letter form label{
 		color: inherit;
 		display: inline-flex;
@@ -2183,7 +2187,7 @@ h2, h4{
     border-bottom-right-radius: 1em;
 }
 
-/*search*/
+/*k.  search new*/
 .search--form {
   position: relative;
   width: 50px;
