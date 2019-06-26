@@ -2259,7 +2259,6 @@ input[type="search"] {
 .social-platform-container {
 	position: relative;
 	width: 50%;
-	/*background-color: red; to classes for each social media*/
   }
   
   .social-icon-block {
@@ -2298,3 +2297,15 @@ input[type="search"] {
 	text-align: center;
   }
   
+.behance-color{			background-color: #1769ff !default;}
+.bitbucket-color{		background-color: #205081 !default;}
+.dribbble-color{		background-color: #ea4c89 !default;}
+.facebook-color{		background-color: #3b5998 !default;}
+.github-color{			background-color: #171516 !default;}
+.gitlab-color{			background-color: #e24329 !default;}
+.instagram-color{		background-color: #517fa4 !default;}
+.linkedin-color{		background-color: #007bb6 !default;}
+.reddit-color{			background-color: #ff4500 !default;}
+.stackoverflow-color{	background-color: #fe7a15 !default;}
+.twitter-color{			background-color: #55acee !default;}
+.youtube-color{			background-color: #bb0000 !default;}
