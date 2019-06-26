@@ -1,70 +1,231 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Privacy Policy</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link href="favicon.ico" rel="icon" type="image/x-icon">
-    <meta name="theme-color" content="#f74770"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/vendor/fab/fab.min.css" />
+  <title>Privacy Policy</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <meta name="theme-color" content="#f74770" />
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/vendor/fab/fab.min.css" />
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    body {
+      display: grid;
+      grid-template-areas:
+        "header info info"
+        "article article article"
+        "footer footer footer";
+      /*grid-template-rows: 80px 1fr 70px;*/
+      grid-template-columns: 2.5fr 4fr 1.5fr;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      margin: 0;
+      padding-top: 2rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    header,
+    footer,
+    article,
+    div {
+      padding: 1.2em;
+      /*background: rgb(202, 202, 201);*/
+    }
+
+    #pageHeader {
+      grid-area: header;
+      font-size: larger;
+      background-color: #f74770;
+      text-align-last: end;
+    }
+
+    #pageHeader h1 {
+      display: inline-block;
+      color: #fff;
+      vertical-align: text-top;
+    }
+
+    #pageFooter {
+      grid-area: footer;
+      text-align: center;
+    }
+
+    #mainArticle {
+      grid-area: article;
+    }
+
+    #info {
+      grid-area: info;
+      display: grid;
+      grid-template-areas:
+        "pic names";
+      /*grid-template-rows: 80px 1fr 70px;*/
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      padding: 0 0 0 0;
+    }
+
+    #sitePic {
+      grid-area: pic;
+      padding: 0 0 0 0;
+      text-align: right;
+    }
+
+    #sitePic img {
+      border-radius: 90%;
+      border-style: solid;
+    }
+
+    #nameContact {
+      grid-area: names;
+      text-align: left;
+      align-items: stretch;
+    }
+
+    /* Stack the layout on small devices/viewports. */
+    @media all and (max-width: 650px) {
+      body {
+        grid-template-areas:
+          "header"
+          "info"
+          "article"
+          "footer";
+        /*grid-template-rows: 80px 1fr 70px 1fr 70px;*/
+        grid-template-columns: 1fr;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      #info {
+        grid-area: info;
+        display: grid;
+        grid-template-areas:
+          "names pic";
+        /*grid-template-rows: 80px 1fr 70px;*/
+        grid-template-columns: 2fr 1fr;
+      }
+
+      #sitePic {
+        grid-area: pic;
+        padding: 0 0 0 0;
+        text-align: left;
+      }
+
+      #pageHeader {
+        grid-area: header;
+        text-align-last: start;
+      }
+    }
+
+    @media all and (min-width: 650px) and (max-width: 800px) {
+      #info {
+        grid-area: info;
+        display: grid;
+        grid-template-areas:
+          "pic"
+          "names";
+        /*grid-template-rows: 80px 1fr 70px;*/
+        grid-template-columns: 1fr;
+      }
+
+      #sitePic {
+        grid-area: pic;
+        padding: 0 0 0 0;
+        text-align: left;
+      }
+    }
+
+    @media all and (max-width: 400px) {
+      html {
+        font-size: x-small;
+      }
+    }
+
+    a {
+      text-decoration: underline !important;
+    }
+  </style>
 </head>
+
 <body>
-    <a name="top"></a>
-    <ul id="menu" class="mfb-component--bl   mfb-slidein-spring " data-mfb-toggle="click" style="display: block;">
-      <li class="mfb-component__wrap">
-        <a href="#" class="mfb-component__button--main">
-          <i class="mfb-component__main-icon--resting fa fa-plus"></i>
-          <i class="mfb-component__main-icon--active fa fa-close"></i>
-        </a>
-        <ul class="mfb-component__list">
-          <li>
-            <a href="index.html" data-mfb-label="Go Back" class="mfb-component__button--child">
-              <i class="mfb-component__child-icon fa fa-reply"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#top" data-mfb-label="Go to Top" class="mfb-component__button--child">
-              <i class="mfb-component__child-icon fa fa-arrow-up"></i>
-            </a>
-          </li>
+  <a name="top"></a>
+  <ul id="menu" class="mfb-component--bl   mfb-slidein-spring " data-mfb-toggle="click" style="display: block;">
+    <li class="mfb-component__wrap">
+      <a href="#" class="mfb-component__button--main">
+        <i class="mfb-component__main-icon--resting fa fa-plus"></i>
+        <i class="mfb-component__main-icon--active fa fa-close"></i>
+      </a>
+      <ul class="mfb-component__list">
+        <li>
+          <a href="index.html" data-mfb-label="Go Back" class="mfb-component__button--child">
+            <i class="mfb-component__child-icon fa fa-reply"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#top" data-mfb-label="Go to Top" class="mfb-component__button--child">
+            <i class="mfb-component__child-icon fa fa-arrow-up"></i>
+          </a>
+        </li>
 
-          <li>
-            <a href="mailto:i@alokprateek.in" data-mfb-label="Hire Me" class="mfb-component__button--child">
-              <i class="mfb-component__child-icon fa fa-envelope-open-o"></i>
-            </a>
-          </li>
-        </ul>
-      </li>
+        <li>
+          <a href="mailto:i@alokprateek.in" data-mfb-label="Hire Me" class="mfb-component__button--child">
+            <i class="mfb-component__child-icon fa fa-envelope-open-o"></i>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <header id="pageHeader">
+    <h1>Privacy Policy</h1>
+  </header>
+  <div id="info">
+    <div id="nameContact">
+      <h3>ALOK PRATEEK</h3>
+      <h5><a href="mailto:i@alokprateek.in">i@alokprateek.in</a></h5>
+      <h5><a href="tel:+919968035588">+91-9968-03-5588</a> | <a href="tel:+919315852108">+91-9315-85-2108</a></h5>
+    </div>
+    <div id="sitePic"><img src="avatar2.png" width="170px"></div>
+  </div>
+  <article id="mainArticle">
+    <hr>
+    <p>Like many other web sites owners, I use Google Analytics on this site.</p>
+    <p>Google Analytics is a piece of software provided by Google that records various data about visitors (you) to this
+      site.</p>
+
+    <h3>What does Google Analytics record?</h3>
+    <p>I use Google Analytics to collect non-personal data to answer questions such as:</p>
+    <ul>
+      <li>What kind of browser &amp; operating system you visited the site on?</li>
+      <li>How long you stay on the site?</li>
+      <li>What pages on the site you visit?</li>
+      <li>What area of the world you are located in?</li>
     </ul>
-    <div class="container major frow" style="margin-left: 10em; margin-top: 3em; margin-right: 3em; word-wrap: normal">
-       
-        
-            <h1>Privacy Policy</h1>
-                <p>Like many other web sites owners, I use Google Analytics on this site.</p>
-                <p>Google Analytics is a piece of software provided by Google that records various data about visitors (you) to this site.</p>
+    <h3>How is this data is used?</h3>
+    <p>The data gathered allow me to better understand the visitors to this site and how it is viewed, this allows me to
+      make better decisions about the site and any future additions to it.</p>
+    <p>Occasionally we will compile aggregate statistics on various usage and/or user metrics for the site. No
+      personally identifying data is included in this type of reporting.</p>
+    <p>None of the data gathered through Google Analytics is shared with any 3rd party.</p>
+    <p>All of our activity falls within the bounds of the Google Analytics Terms of Service.</p>
+    <h3>How to opt out of tracking</h3>
+    <p>You can opt out of the tracking conducted by Google Analytics by using the browser plugin provided by Google that
+      prevents your data from being used by Google Analytics.</p>
 
-            <h3>What does Google Analytics record?</h3>
-                <p>I use Google Analytics to collect non-personal data to answer questions such as:</p>
-                <ul>
-                    <li>What kind of browser &amp; operating system you visited the site on?</li>
-                    <li>How long you stay on the site?</li>
-                    <li>What pages on the site you visit?</li>
-                    <li>What area of the world you are located in?</li>
-                </ul>
-            <h3>How is this data is used?</h3>
-                <p>The data gathered allow me to better understand the visitors to this site and how it is viewed, this allows me to make better decisions about the site and any future additions to it.</p>
-                <p>Occasionally we will compile aggregate statistics on various usage and/or user metrics for the site. No personally identifying data is included in this type of reporting.</p>
-                <p>None of the data gathered through Google Analytics is shared with any 3rd party.</p>
-                <p>All of our activity falls within the bounds of the Google Analytics Terms of Service.</p>
-            <h3>How to opt out of tracking</h3>
-                <p>You can opt out of the tracking conducted by Google Analytics by using the browser plugin provided by Google that prevents your data from being used by Google Analytics.</p>
-            
-       
-    </div>  
+
+    </div>
     <script src="assets/vendor/fab/fab.min.js"></script>
     <script async src="assets/js/storescroll.js"></script>
 </body>
+
 </html>
