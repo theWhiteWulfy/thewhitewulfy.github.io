@@ -1403,13 +1403,13 @@ i.  Featurette
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #222;
-				color: #fff;
+				background: #f74770;
+				color: #222;
 				min-width: 320px;
 			}
 
 				#titleBar .title {
-					color: #fff;
+					color: #222;
 					display: block;
 					font-weight: 700;
 					height: 44px;
