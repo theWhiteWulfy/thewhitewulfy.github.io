@@ -11,6 +11,150 @@
     <meta name="theme-color" content="#f74770" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/vendor/fab/fab.min.css" />
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        body {
+            display: grid;
+            grid-template-areas:
+                "header info info"
+                "article article article"
+                "footer footer footer";
+            /*grid-template-rows: 80px 1fr 70px;*/
+            grid-template-columns: 2.5fr 4fr 1.5fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            margin: 0;
+            padding-top: 2rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        header,
+        footer,
+        article,
+        div {
+            padding: 1.2em;
+            /*background: rgb(202, 202, 201);*/
+        }
+
+        #pageHeader {
+            grid-area: header;
+            font-size: larger;
+            background-color: #f74770;
+            text-align-last: end;
+        }
+
+        #pageHeader h1 {
+            display: inline-block;
+            color: #fff;
+            vertical-align: text-top;
+        }
+
+        #pageFooter {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        #mainArticle {
+            grid-area: article;
+        }
+
+        #info {
+            grid-area: info;
+            display: grid;
+            grid-template-areas:
+                "pic names";
+            /*grid-template-rows: 80px 1fr 70px;*/
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            padding: 0 0 0 0;
+        }
+
+        #sitePic {
+            grid-area: pic;
+            padding: 0 0 0 0;
+            text-align: right;
+        }
+
+        #sitePic img {
+            border-radius: 90%;
+            border-style: solid;
+        }
+
+        #nameContact {
+            grid-area: names;
+            text-align: left;
+            align-items: stretch;
+        }
+
+        /* Stack the layout on small devices/viewports. */
+        @media all and (max-width: 650px) {
+            body {
+                grid-template-areas:
+                    "header"
+                    "info"
+                    "article"
+                    "footer";
+                /*grid-template-rows: 80px 1fr 70px 1fr 70px;*/
+                grid-template-columns: 1fr;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            #info {
+                grid-area: info;
+                display: grid;
+                grid-template-areas:
+                    "names pic";
+                /*grid-template-rows: 80px 1fr 70px;*/
+                grid-template-columns: 2fr 1fr;
+            }
+
+            #sitePic {
+                grid-area: pic;
+                padding: 0 0 0 0;
+                text-align: left;
+            }
+
+            #pageHeader {
+                grid-area: header;
+                text-align-last: start;
+            }
+        }
+
+        @media all and (min-width: 650px) and (max-width: 800px) {
+            #info {
+                grid-area: info;
+                display: grid;
+                grid-template-areas:
+                    "pic"
+                    "names";
+                /*grid-template-rows: 80px 1fr 70px;*/
+                grid-template-columns: 1fr;
+            }
+
+            #sitePic {
+                grid-area: pic;
+                padding: 0 0 0 0;
+                text-align: left;
+            }
+        }
+
+        @media all and (max-width: 400px) {
+            html {
+                font-size: x-small;
+            }
+        }
+
+        a {
+            text-decoration: underline !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,70 +162,125 @@
     <ul id="menu" class="mfb-component--bl   mfb-slidein-spring " data-mfb-toggle="click" style="display: block;">
         <li class="mfb-component__wrap">
             <a href="#" class="mfb-component__button--main">
-          <i class="mfb-component__main-icon--resting fa fa-plus"></i>
-          <i class="mfb-component__main-icon--active fa fa-close"></i>
-        </a>
+                <i class="mfb-component__main-icon--resting fa fa-plus"></i>
+                <i class="mfb-component__main-icon--active fa fa-close"></i>
+            </a>
             <ul class="mfb-component__list">
                 <li>
                     <a href="index.html" data-mfb-label="Go Back" class="mfb-component__button--child">
-              <i class="mfb-component__child-icon fa fa-reply"></i>
-            </a>
+                        <i class="mfb-component__child-icon fa fa-reply"></i>
+                    </a>
                 </li>
                 <li>
                     <a href="#top" data-mfb-label="Go to Top" class="mfb-component__button--child">
-              <i class="mfb-component__child-icon fa fa-arrow-up"></i>
-            </a>
+                        <i class="mfb-component__child-icon fa fa-arrow-up"></i>
+                    </a>
                 </li>
 
                 <li>
                     <a href="mailto:i@alokprateek.in" data-mfb-label="Hire Me" class="mfb-component__button--child">
-              <i class="mfb-component__child-icon fa fa-envelope-open-o"></i>
-            </a>
+                        <i class="mfb-component__child-icon fa fa-envelope-open-o"></i>
+                    </a>
                 </li>
             </ul>
         </li>
     </ul>
-    <div class="container major frow" style="margin-left: 10em; margin-top: 3em; margin-right: 8em; word-wrap: normal">
-        <h2>Terms of Service</h2>
+    <header id="pageHeader">
+        <h1>Terms of Service</h1>
+    </header>
+    <div id="info">
+        <div id="nameContact">
+            <h3>ALOK PRATEEK</h3>
+            <h5><a href="mailto:i@alokprateek.in">i@alokprateek.in</a></h5>
+            <h5><a href="tel:+919968035588">+91-9968-03-5588</a> | <a href="tel:+919315852108">+91-9315-85-2108</a></h5>
+        </div>
+        <div id="sitePic"><img src="avatar2.png" width="170px"></div>
+    </div>
+    <article id="mainArticle">
+        <hr>
         <h3>1. Terms</h3>
-        <p>By accessing the website at <a href="https://alokprateek.in">https://alokprateek.in</a>, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>
+        <p>By accessing the website at <a href="https://alokprateek.in">https://alokprateek.in</a>, you are agreeing to
+            be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible
+            for compliance with any applicable local laws. If you do not agree with any of these terms, you are
+            prohibited from using or accessing this site. The materials contained in this website are protected by
+            applicable copyright and trademark law.</p>
         <h3>2. Use License</h3>
         <ol type="a">
-            <li>Permission is granted to temporarily download one copy of the materials (information or software) on my portfolio website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+            <li>Permission is granted to temporarily download one copy of the materials (information or software) on my
+                portfolio website for personal, non-commercial transitory viewing only. This is the grant of a license,
+                not a transfer of title, and under this license you may not:
                 <ol type="i">
                     <li>modify or copy the materials;</li>
-                    <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
+                    <li>use the materials for any commercial purpose, or for any public display (commercial or
+                        non-commercial);</li>
                     <li>attempt to decompile or reverse engineer any software contained on my portfolio website;</li>
                     <li>remove any copyright or other proprietary notations from the materials; or</li>
                     <li>transfer the materials to another person or "mirror" the materials on any other server.</li>
                 </ol>
             </li>
-            <li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by Alok Prateek at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>
-            <li>For purpose of displaying content found on this website, appropriate content can be found on <a href="pressdoc.html">Press Resources page</a>. You should preferably use these resources by linking it. If it is not possible, a download button has been provided to download these resources. </li>
+            <li>This license shall automatically terminate if you violate any of these restrictions and may be
+                terminated by Alok Prateek at any time. Upon terminating your viewing of these materials or upon the
+                termination of this license, you must destroy any downloaded materials in your possession whether in
+                electronic or printed format.</li>
+            <li>For purpose of displaying content found on this website, appropriate content can be found on <a
+                    href="pressdoc.html">Press Resources page</a>. You should preferably use these resources by linking
+                it. If it is not possible, a download button has been provided to download these resources. </li>
         </ol>
         <h3>3. Disclaimer</h3>
         <ol type="a">
-            <li>The materials on my portfolio website are provided on an 'as is' basis. Alok Prateek makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>
-            <li>Further, Alok Prateek does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>
+            <li>The materials on my portfolio website are provided on an 'as is' basis. Alok Prateek makes no
+                warranties, expressed or implied, and hereby disclaims and negates all other warranties including,
+                without limitation, implied warranties or conditions of merchantability, fitness for a particular
+                purpose, or non-infringement of intellectual property or other violation of rights.</li>
+            <li>Further, Alok Prateek does not warrant or make any representations concerning the accuracy, likely
+                results, or reliability of the use of the materials on its website or otherwise relating to such
+                materials or on any sites linked to this site.</li>
         </ol>
         <h3>4. Limitations</h3>
-        <p>In no event shall Alok Prateek be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on my portfolio website, even if Alok Prateek or an authorized representative has been notified orally or in writing of the possibility of such damage. Because jurisdiction of Indian Courts does not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations apply to you.</p>
+        <p>In no event shall Alok Prateek be liable for any damages (including, without limitation, damages for loss of
+            data or profit, or due to business interruption) arising out of the use or inability to use the materials on
+            my portfolio website, even if Alok Prateek or an authorized representative has been notified orally or in
+            writing of the possibility of such damage. Because jurisdiction of Indian Courts does not allow limitations
+            on implied warranties, or limitations of liability for consequential or incidental damages, these
+            limitations apply to you.</p>
         <h3>5. Accuracy of materials</h3>
-        <p>The materials appearing on my portfolio website could include technical, typographical, or photographic errors. Alok Prateek does not warrant that any of the materials on its website are accurate, complete or current. Alok Prateek may make changes to the materials contained on its website at any time without notice. However Alok Prateek does not make any commitment to update the materials.</p>
+        <p>The materials appearing on my portfolio website could include technical, typographical, or photographic
+            errors. Alok Prateek does not warrant that any of the materials on its website are accurate, complete or
+            current. Alok Prateek may make changes to the materials contained on its website at any time without notice.
+            However Alok Prateek does not make any commitment to update the materials.</p>
         <h3>6. Links</h3>
-        <p>Alok Prateek has reviewed all of the sites linked to its website and but is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Alok Prateek of the site. Use of any such linked website is at the user's own risk.</p>
+        <p>Alok Prateek has reviewed all of the sites linked to its website and but is not responsible for the contents
+            of any such linked site. The inclusion of any link does not imply endorsement by Alok Prateek of the site.
+            Use of any such linked website is at the user's own risk.</p>
         <h3>7. Modifications</h3>
-        <p>Alok Prateek may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>
+        <p>Alok Prateek may revise these terms of service for its website at any time without notice. By using this
+            website you are agreeing to be bound by the then current version of these terms of service.</p>
         <h3>8. Governing Law</h3>
-        <p>These terms and conditions are governed by and construed in accordance with the laws of India and you irrevocably submit to the exclusive jurisdiction of the courts in the State of India.</p>
+        <p>These terms and conditions are governed by and construed in accordance with the laws of India and you
+            irrevocably submit to the exclusive jurisdiction of the courts in the State of India.</p>
         <h3>Google Analytics</h3>
-        <p>This website uses Google Analytics, a web analytics service provided by Google, Inc. (“Google”). Google Analytics uses “cookies”, which are text files placed on your computer, to help the website analyze how users use the site.</p>
-        <p>The information generated by the cookie about your use of the website (including your IP address) will be transmitted to and stored by Google on servers in the United States. In case of activation of the IP anonymization, Google will truncate/anonymize the last octet of the IP address for Member States of the European Union as well as for other parties to the Agreement on the European Economic Area. Only in exceptional cases, the full IP address is sent to and shortened by Google servers in the USA. On behalf of the website provider Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity for website operators and providing other services relating to website activity and internet usage to the website provider. Google will not associate your IP address with any other data held by Google.</p>
-        <p>You may refuse the use of cookies by selecting the appropriate settings on your browser. However, please note that if you do this, you may not be able to use the full functionality of this website. Furthermore you can prevent Google’s collection and use of data (cookies and IP address) by downloading and installing the <a href="https://tools.google.com/dlpage/gaoptout?hl=en-GB" target="_blank">browser plug-in</a> available under <a href="https://tools.google.com/dlpage/gaoptout?hl=en-GB" target="_blank">https://tools.google.com/dlpage/gaoptout?hl=en-GB</a>.</p>
+        <p>This website uses Google Analytics, a web analytics service provided by Google, Inc. (“Google”). Google
+            Analytics uses “cookies”, which are text files placed on your computer, to help the website analyze how
+            users use the site.</p>
+        <p>The information generated by the cookie about your use of the website (including your IP address) will be
+            transmitted to and stored by Google on servers in the United States. In case of activation of the IP
+            anonymization, Google will truncate/anonymize the last octet of the IP address for Member States of the
+            European Union as well as for other parties to the Agreement on the European Economic Area. Only in
+            exceptional cases, the full IP address is sent to and shortened by Google servers in the USA. On behalf of
+            the website provider Google will use this information for the purpose of evaluating your use of the website,
+            compiling reports on website activity for website operators and providing other services relating to website
+            activity and internet usage to the website provider. Google will not associate your IP address with any
+            other data held by Google.</p>
+        <p>You may refuse the use of cookies by selecting the appropriate settings on your browser. However, please note
+            that if you do this, you may not be able to use the full functionality of this website. Furthermore you can
+            prevent Google’s collection and use of data (cookies and IP address) by downloading and installing the <a
+                href="https://tools.google.com/dlpage/gaoptout?hl=en-GB" target="_blank">browser plug-in</a> available
+            under <a href="https://tools.google.com/dlpage/gaoptout?hl=en-GB"
+                target="_blank">https://tools.google.com/dlpage/gaoptout?hl=en-GB</a>.</p>
         <p><strong><em>This policy is effective as of 2<sup>nd</sup> of June, 2018.</em></strong></p>
-    </div>
-    <script src="assets/vendor/fab/fab.min.js"></script>
-    <script async src="assets/js/storescroll.js"></script>
+        </div>
+        <script src="assets/vendor/fab/fab.min.js"></script>
+        <script async src="assets/js/storescroll.js"></script>
 </body>
 
 </html>
