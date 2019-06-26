@@ -116,15 +116,14 @@ var colorPicker = (function() {
 			[46, 204, 113],
 			[52, 152, 219],
 			[155, 89, 182],
-			[241, 196, 15],
-			[230, 126, 34],
-			[231, 76, 60]
+			[231, 76, 60],
+			[247, 71, 112]
 		],
 		lightModifier: 20,
 		darkModifier: 0,
 		transitionDuration: 200,
 		transitionDelay: 25,
-		variationTotal: 7
+		variationTotal: 6
 	};
 
 	var state = {
