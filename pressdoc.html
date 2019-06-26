@@ -16,7 +16,146 @@
             max-width: 100%;
             height: auto;
         }
+
+        body {
+            display: grid;
+            grid-template-areas:
+                "header info info"
+                "article article article"
+                "footer footer footer";
+            /*grid-template-rows: 80px 1fr 70px;*/
+            grid-template-columns: 2.5fr 4fr 1.5fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            margin: 0;
+            padding-top: 2rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        header,
+        footer,
+        article,
+        div {
+            padding: 1.2em;
+            /*background: rgb(202, 202, 201);*/
+        }
+
+        #pageHeader {
+            grid-area: header;
+            font-size: larger;
+            background-color: #f74770;
+            text-align-last: end;
+        }
+
+        #pageHeader h1 {
+            display: inline-block;
+            color: #fff;
+            vertical-align: text-top;
+        }
+
+        #pageFooter {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        #mainArticle {
+            grid-area: article;
+        }
+
+        #info {
+            grid-area: info;
+            display: grid;
+            grid-template-areas:
+                "pic names";
+            /*grid-template-rows: 80px 1fr 70px;*/
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            padding: 0 0 0 0;
+        }
+
+        #sitePic {
+            grid-area: pic;
+            padding: 0 0 0 0;
+            text-align: right;
+        }
+
+        #sitePic img {
+            border-radius: 90%;
+            border-style: solid;
+        }
+
+        #nameContact {
+            grid-area: names;
+            text-align: left;
+            align-items: stretch;
+        }
+
+        /* Stack the layout on small devices/viewports. */
+        @media all and (max-width: 650px) {
+            body {
+                grid-template-areas:
+                    "header"
+                    "info"
+                    "article"
+                    "footer";
+                /*grid-template-rows: 80px 1fr 70px 1fr 70px;*/
+                grid-template-columns: 1fr;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            #info {
+                grid-area: info;
+                display: grid;
+                grid-template-areas:
+                    "names pic";
+                /*grid-template-rows: 80px 1fr 70px;*/
+                grid-template-columns: 2fr 1fr;
+            }
+
+            #sitePic {
+                grid-area: pic;
+                padding: 0 0 0 0;
+                text-align: left;
+            }
+
+            #pageHeader {
+                grid-area: header;
+                text-align-last: start;
+            }
+        }
+
+        @media all and (min-width: 650px) and (max-width: 800px) {
+            #info {
+                grid-area: info;
+                display: grid;
+                grid-template-areas:
+                    "pic"
+                    "names";
+                /*grid-template-rows: 80px 1fr 70px;*/
+                grid-template-columns: 1fr;
+            }
+
+            #sitePic {
+                grid-area: pic;
+                padding: 0 0 0 0;
+                text-align: left;
+            }
+        }
+
+        @media all and (max-width: 400px) {
+            html {
+                font-size: x-small;
+            }
+        }
+
+        a {
+            text-decoration: underline !important;
+        }
     </style>
+
 </head>
 
 <body>
@@ -24,104 +163,63 @@
     <ul id="menu" class="mfb-component--bl   mfb-slidein-spring " data-mfb-toggle="click" style="display: block;">
         <li class="mfb-component__wrap">
             <a href="#" class="mfb-component__button--main">
-          <i class="mfb-component__main-icon--resting fa fa-plus"></i>
-          <i class="mfb-component__main-icon--active fa fa-close"></i>
-        </a>
+                <i class="mfb-component__main-icon--resting fa fa-plus"></i>
+                <i class="mfb-component__main-icon--active fa fa-close"></i>
+            </a>
             <ul class="mfb-component__list">
                 <li>
                     <a href="index.html" data-mfb-label="Go Back" class="mfb-component__button--child">
-              <i class="mfb-component__child-icon fa fa-reply"></i>
-            </a>
+                        <i class="mfb-component__child-icon fa fa-reply"></i>
+                    </a>
                 </li>
                 <li>
                     <a href="#top" data-mfb-label="Go to Top" class="mfb-component__button--child">
-              <i class="mfb-component__child-icon fa fa-arrow-up"></i>
-            </a>
+                        <i class="mfb-component__child-icon fa fa-arrow-up"></i>
+                    </a>
                 </li>
 
                 <li>
                     <a href="mailto:i@alokprateek.in" data-mfb-label="Hire Me" class="mfb-component__button--child">
-              <i class="mfb-component__child-icon fa fa-envelope-open-o"></i>
-            </a>
+                        <i class="mfb-component__child-icon fa fa-envelope-open-o"></i>
+                    </a>
                 </li>
             </ul>
         </li>
     </ul>
-    <div class="container major" style="margin-left: 10em; margin-top: 3em; margin-right: 5em; word-wrap: normal">
+    <header id="pageHeader">
         <h1>Media Images</h1>
-        <p>&nbsp;</p>
-        <hr>
-        <div class="frow">
-            <div class="fcol fcol-4">
-                <h3>Logo(Small)</h3>
-                <a href="" class="button" target="_blank">Download This file</a>
-            </div>
-            <div class="fcol fcol-8">
-                <img src="res/gen/android-chrome-256x256.png">
-            </div>
+    </header>
+    <div id="info">
+        <div id="nameContact">
+            <h3>ALOK PRATEEK</h3>
+            <h5><a href="mailto:i@alokprateek.in">i@alokprateek.in</a></h5>
+            <h5><a href="tel:+919968035588">+91-9968-03-5588</a> | <a href="tel:+919315852108">+91-9315-85-2108</a></h5>
         </div>
-        <br><hr>
-        <div class="frow">
-            <div class="fcol fcol-4">
-                <h3>Logo(Large)</h3>
-                <a href="" class="button" target="_blank">Download This file</a>
-            </div>
-            <div class="fcol fcol-8">
-                <img src="assets/RAW/personal-logo-color-black.png">
-            </div>
-        </div>
-        <br><hr>
-        <div class="frow">
-            <div class="fcol fcol-4">
-                <h3>Profile Image</h3>
-                <a href="" class="button" target="_blank">Download This file</a>
-            </div>
-            <div class="fcol fcol-8">
-                <img src="images/avatar2.png">
-            </div>
-        </div> 
-        <br><hr>
-        <div class="frow">
-            <div class="fcol fcol-4">
-                <h3>Screenshot Sidebar</h3>
-                <a href="" class="button" target="_blank">Download This file</a>
-            </div>
-            <div class="fcol fcol-8">
-                <img src="images/screens/sidebar.png">
-            </div>
-        </div>
-        <br><hr>
-        <div class="frow">
-            <div class="fcol fcol-4">
-                <h3>Screenshot Introduction</h3>
-                <a href="" class="button" target="_blank">Download This file</a>
-            </div>
-            <div class="fcol fcol-8">
-                <img src="images/screens/intro.png">
-            </div>
-        </div>
-        <br><hr>
-        <div class="frow">
-            <div class="fcol fcol-4">
-                <h3>Screenshot My Skills</h3>
-                <a href="" class="button" target="_blank">Download This file</a>
-            </div>
-            <div class="fcol fcol-8">
-                <img src="images/screens/skills.png">
-            </div>
-        </div>
-        <br><hr>
-        <div class="frow">
-            <div class="fcol fcol-4">
-                <h3>Screenshot Portfolio, contact and footer</h3>
-                <a href="" class="button" target="_blank">Download This file</a>
-            </div>
-            <div class="fcol fcol-8">
-                <img src="images/screens/bottom.png">
-            </div>
-        </div>
-
+        <div id="sitePic"><img src="avatar2.png" width="170px"></div>
     </div>
+    <article id="mainArticle">
+        <hr>
+        <h3>Profile Image</h3>
+        <a href="" class="button" target="_blank">Download This file</a>
+        <br>
+        <img src="images/avatar2.png">
+
+        <br>
+        <hr>
+
+        <h3>Logo(Small)</h3>
+        <a href="" class="button" target="_blank">Download This file</a>
+        <br>
+        <img src="res/gen/android-chrome-256x256.png">
+
+        <br>
+        <hr>
+
+        <h3>Logo(Large)</h3>
+        <a href="" class="button" target="_blank">Download This file</a>
+        <br>
+        <img src="assets/RAW/personal-logo-color-black.png">
+    </article>
     <script src="assets/vendor/fab/fab.min.js"></script>
     <script async src="assets/js/storescroll.js"></script>
 </body>
