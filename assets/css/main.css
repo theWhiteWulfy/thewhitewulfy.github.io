@@ -2256,7 +2256,47 @@ input[type="search"] {
   border-bottom-left-radius: 0;
 }
 
-mark{
-    background: orange;
-    color: black;
-}
+/*l.  SOCIAL HANDLES */
+
+.social-platform-container {
+	position: relative;
+	width: 50%;
+	/*background-color: red; to classes for each social media*/
+  }
+  
+  .social-icon-block {
+	display: block;
+	width: auto;
+	height: auto;
+	padding: 2rem;
+	text-align: center;
+  }
+  
+  .social-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+  }
+  
+  .social-platform-container:hover .social-overlay {
+	height: 50%;
+  }
+  
+  .social-handle {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
