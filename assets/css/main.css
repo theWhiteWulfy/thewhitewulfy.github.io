@@ -2319,3 +2319,23 @@ input[type="search"] {
 .spotify-color{			background-color: #1ed761  ;}
 .codepen-color{			background-color: #fcd000  ;}
 .devto-color{			background-color: #000000  ;}
+
+.social-icon-block svg {
+	height: 5rem;
+}
+
+@media all and (max-width: 650px) {
+	.social-handle {
+		font-size: 10px;
+	}
+	.social-icon-block {
+		padding: 3rem;
+	}
+	.fa-5x {
+		font-size: 3em !important;
+	}
+
+	.social-icon-block svg {
+		height: 3rem;
+	}
+}		
