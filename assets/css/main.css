@@ -2265,7 +2265,7 @@ input[type="search"] {
 	display: block;
 	width: auto;
 	height: auto;
-	padding: 2rem;
+	padding: 3.5rem;
 	color: white;
 	text-align: center;
   }
@@ -2283,7 +2283,7 @@ input[type="search"] {
   }
   
   .social-platform-container:hover .social-overlay {
-	height: 50%;
+	height: 28%;
   }
   
   .social-handle {
@@ -2308,7 +2308,7 @@ input[type="search"] {
 .facebook-color{		background-color: #3b5998  ;}
 .github-color{			background-color: #171516  ;}
 .gitlab-color{			background-color: #e24329  ;}
-.instagram-color{		background: #d6249f;	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); }
+.instagram-color{		background: #d6249f;	background: radial-gradient(circle at 15% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); }
 .linkedin-color{		background-color: #007bb6  ;}
 .reddit-color{			background-color: #ff4500  ;}
 .stackoverflow-color{	background-color: #fe7a15  ;}
@@ -2316,3 +2316,6 @@ input[type="search"] {
 .youtube-color{			background-color: #bb0000  ;}
 .whatsapp-color{		background-color: #25D366  ;}
 .telegram-color{		background-color: #0088cc  ;}
+.spotify-color{			background-color: #1ed761  ;}
+.codepen-color{			background-color: #fcd000  ;}
+.devto-color{			background-color: #000000  ;}
