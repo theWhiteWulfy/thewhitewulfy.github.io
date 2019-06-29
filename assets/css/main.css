@@ -2339,3 +2339,18 @@ input[type="search"] {
 		height: 3rem;
 	}
 }		
+
+@media all and (max-width: 480px) {
+	.social-icon-block {
+		padding: 2.5rem;
+	}
+	.fa-5x {
+		font-size: 2.5em !important;
+	}
+
+	.social-icon-block svg {
+		height: 2.5rem;
+		width: 1.28571em;
+		text-align: center
+	}
+}	
