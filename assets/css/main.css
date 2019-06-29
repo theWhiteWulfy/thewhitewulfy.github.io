@@ -1039,7 +1039,7 @@ l.  Social Handles
 			}
 
 			#header > header p {
-				color: #303030;
+				color: #eee;
 				font-style: normal;
 				margin: 0.1em 0 0 0;
 			}
@@ -1408,12 +1408,12 @@ l.  Social Handles
 				width: 100%;
 				z-index: 10001;
 				background: #4b0966;
-				color: #222;
+				color: #ffffff;
 				min-width: 320px;
 			}
 
 				#titleBar .title {
-					color: #222;
+					color: #ffffff;
 					display: block;
 					font-weight: 700;
 					height: 44px;
@@ -1691,7 +1691,6 @@ l.  Social Handles
 /*Clearing*/
 	.console{
 			font-family: 'Inconsolata', monospace;
-			margin: 0 0.25em;
 	}
 
 	.smconsole{
