@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Media Images</title>
@@ -7,8 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link href="favicon.ico?v=6a" rel="icon" type="image/x-icon">
+    <link rel="manifest" type="application/manifest+json" href="manifest.json">
     <meta name="theme-color" content="#4b0966" />
+
+    <meta name="author" content="Alok Prateek">
+    <meta name="description" content="Alok Prateek, a full-stack web developer and graphic artist from Delhi, India.">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" name="title" content="Alok Prateek">
+    <meta property="og:url" name="url" content="https://alokprateek.in/cv/">
+    <meta property="og:site_name" name="sit_name" content="Alok Prateek">
+    <meta property="og:description" name="aboutSite"
+        content="Alok Prateek, a full-stack web developer and graphic artist from Delhi, India.">
+    <meta property="og:img" name="img" content="images/avatar2.png">
+    <meta property="og:image" name="imgfb" content="images/avatar2.png">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/vendor/fab/fab.min.css" />
     <style>
@@ -162,35 +174,39 @@
     <a name="top"></a>
     <ul id="menu" class="mfb-component--bl   mfb-slidein-spring " data-mfb-toggle="click" style="display: block;">
         <li class="mfb-component__wrap">
-            <a href="#" class="mfb-component__button--main">
+            <a href="#" class="mfb-component__button--main" aria-label="FAB button to open and close menu">
                 <i class="mfb-component__main-icon--resting fa fa-plus"></i>
                 <i class="mfb-component__main-icon--active fa fa-close"></i>
             </a>
             <ul class="mfb-component__list">
                 <li>
-                    <a href="index.html" data-mfb-label="Go Back" class="mfb-component__button--child">
+                    <a href="index.html" data-mfb-label="Go Back" class="mfb-component__button--child"
+                        aria-label="FAB button to go back">
                         <i class="mfb-component__child-icon fa fa-reply"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#top" data-mfb-label="Go to Top" class="mfb-component__button--child">
+                    <a href="#top" data-mfb-label="Go to Top" class="mfb-component__button--child"
+                        aria-label="FAB button to go to top">
                         <i class="mfb-component__child-icon fa fa-arrow-up"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="mailto:i@alokprateek.in" data-mfb-label="Hire Me" class="mfb-component__button--child">
+                    <a href="mailto:i@alokprateek.in" data-mfb-label="Hire Me" class="mfb-component__button--child"
+                        aria-label="Send a mail to hire me.">
                         <i class="mfb-component__child-icon fa fa-envelope-open-o"></i>
                     </a>
                 </li>
             </ul>
         </li>
     </ul>
+
     <header id="pageHeader">
         <h1>Media Images</h1>
     </header>
     <div id="info">
-        
+
     </div>
     <article id="mainArticle">
         <hr>
@@ -215,6 +231,7 @@
         <br>
         <img src="assets/RAW/personal-logo-color-black.png">
     </article>
+    <script src="assets/vendor/jquery/jquery-1.12.3.min.js"></script>
     <script src="assets/vendor/fab/fab.min.js"></script>
     <script async src="assets/js/storescroll.js"></script>
 </body>
