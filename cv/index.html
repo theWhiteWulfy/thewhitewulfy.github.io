@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>CURRICULUM VITAE</title>
@@ -9,6 +9,16 @@
   <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
   <link href="favicon.ico" rel="icon" type="image/x-icon">
   <meta name="theme-color" content="#4b0966" />
+  <meta name="author" content="Alok Prateek">
+  <meta name="description" content="Alok Prateek, a full-stack web developer and graphic artist from Delhi, India.">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" name="title" content="Alok Prateek">
+  <meta property="og:url" name="url" content="https://alokprateek.in/cv/">
+  <meta property="og:site_name" name="sit_name" content="Alok Prateek">
+  <meta property="og:description" name="aboutSite"
+    content="Alok Prateek, a full-stack web developer and graphic artist from Delhi, India.">
+  <meta property="og:img" name="img" content="../images/avatar2.png">
+  <meta property="og:image" name="imgfb" content="../images/avatar2.png">
   <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/vendor/fab/fab.min.css" />
   <style>
@@ -150,6 +160,7 @@
     a {
       text-decoration: underline !important;
     }
+    .info-link-contact{color: #000000;}
   </style>
 
 </head>
@@ -158,29 +169,29 @@
   <a name="top"></a>
   <ul id="menu" class="mfb-component--bl   mfb-slidein-spring " data-mfb-toggle="click" style="display: block;">
     <li class="mfb-component__wrap">
-      <a href="#" class="mfb-component__button--main">
+      <a href="#" class="mfb-component__button--main" aria-label="FAB button to open and close menu">
         <i class="mfb-component__main-icon--resting fa fa-plus"></i>
         <i class="mfb-component__main-icon--active fa fa-close"></i>
       </a>
       <ul class="mfb-component__list">
         <li>
-          <a href="index.html" data-mfb-label="Go Back" class="mfb-component__button--child">
+          <a href="index.html" data-mfb-label="Go Back" class="mfb-component__button--child" aria-label="FAB button to go back">
             <i class="mfb-component__child-icon fa fa-reply"></i>
           </a>
         </li>
         <li>
-          <a href="#top" data-mfb-label="Go to Top" class="mfb-component__button--child">
+          <a href="#top" data-mfb-label="Go to Top" class="mfb-component__button--child" aria-label="FAB button to go to top">
             <i class="mfb-component__child-icon fa fa-arrow-up"></i>
           </a>
         </li>
 
         <li>
-          <a href="mailto:i@alokprateek.in" data-mfb-label="Hire Me" class="mfb-component__button--child">
+          <a href="mailto:i@alokprateek.in" data-mfb-label="Hire Me" class="mfb-component__button--child" aria-label="Send a mail to hire me."> 
             <i class="mfb-component__child-icon fa fa-envelope-open-o"></i>
           </a>
         </li>
         <li>
-          <a href="/cv/Alok_Prateek_CV.pdf" data-mfb-label="Download as PDF" class="mfb-component__button--child">
+          <a href="/cv/Alok_Prateek_CV.pdf" data-mfb-label="Download as PDF" class="mfb-component__button--child" aria-label="Download my CV as PDF">
             <i class="mfb-component__child-icon fa fa-file-pdf-o"></i>
           </a>
         </li>
@@ -194,10 +205,10 @@
   <div id="info">
     <div id="nameContact">
       <h3>ALOK PRATEEK</h3>
-      <h5><a href="mailto:i@alokprateek.in">i@alokprateek.in</a></h5>
-      <h5><a href="tel:+919968035588">+91-9968-03-5588</a> | <a href="tel:+919315852108">+91-9315-85-2108</a></h5>
+      <h5><a href="mailto:i@alokprateek.in" class="info-link-contact">i@alokprateek.in</a></h5>
+      <h5><a href="tel:+919968035588" class="info-link-contact">+91-9968-03-5588</a> | <a href="tel:+919315852108" class="info-link-contact">+91-9315-85-2108</a></h5>
     </div>
-    <div id="sitePic"><img src="../avatar2.png" width="170px"></div>
+    <div id="sitePic"><img src="../avatar2.png" width="170px" alt="My Photo"></div>
   </div>
 
   <nav id="mainNav">
@@ -290,8 +301,9 @@
         <li><b>Yashi Automations:</b>
           A installable plugin to monitor and service industrial automation products remotely.
           <br><i>Current Status: In operation.</i></li>
-
+        </ul>
         <br>
+        <ul>
         <li>I was <b>core-coordinator</b> for college fest <b>IEC Innovision 2K18</b>, held in March ‘18. I developed
           the website and posters for each event.
           <br><i>Website:</i> <a href="https://iecinnovision.com">iecinnovision.com</a></li>
@@ -335,7 +347,7 @@
     Crafted by Alok
   </footer>
 
-
+  <script src="../assets/vendor/jquery/jquery-1.12.3.min.js"></script>
   <script src="../assets/vendor/fab/fab.min.js"></script>
   <script async src="../assets/js/storescroll.js"></script>
 </body>
