@@ -87,7 +87,7 @@ l.  Social Handles
 		}
 
 	strong, b {
-		color: #777;
+		color: #333;
 		font-weight: 700;
 	}
 
@@ -797,7 +797,7 @@ l.  Social Handles
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #989898;
+		background-color: #363636;
 		border-radius: 5px;
 		border: 0;
 		color: #ffffff !important;
@@ -1039,7 +1039,7 @@ l.  Social Handles
 			}
 
 			#header > header p {
-				color: #d1f1e9;
+				color: #303030;
 				font-style: normal;
 				margin: 0.1em 0 0 0;
 			}
@@ -2104,7 +2104,8 @@ h2, h4{
     padding-right: 0.4em;
     padding-bottom: 0.5em;
     padding-top: 0.5em;   
-    font-size: smaller;
+	font-size: smaller;
+	color: #000;
 }
 .privacypolicy{
     text-decoration: none; 
