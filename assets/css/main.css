@@ -2340,7 +2340,7 @@ input[type="search"] {
 	}
 }		
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 525px) {
 	.social-icon-block {
 		padding: 2.5rem;
 	}
@@ -2350,5 +2350,31 @@ input[type="search"] {
 
 	.social-icon-block svg {
 		height: 2.5rem;
+	}
+}	
+
+@media all and (max-width: 435px) {
+	.social-icon-block {
+		padding: 2rem;
+	}
+	.fa-5x {
+		font-size: 2em !important;
+	}
+
+	.social-icon-block svg {
+		height: 2rem;
+	}
+}	
+
+@media all and (max-width: 350px) {
+	.social-icon-block {
+		padding: 1.75rem;
+	}
+	.fa-5x {
+		font-size: 1.75em !important;
+	}
+
+	.social-icon-block svg {
+		height: 1.75rem;
 	}
 }	
