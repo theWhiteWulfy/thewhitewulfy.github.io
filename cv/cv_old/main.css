@@ -97,7 +97,7 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #f74770;
+  background: #4b0966;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -628,19 +628,19 @@ td.gutter {
 }
 
 /*Selection*/
-  ::selection       {background: #f74770; color: #fff; }
-  ::-moz-selection  {background: #f74770; color: #fff; }
-  img::selection       {background: #f74770;}
-  img::-moz-selection  {background: #f74770;}
-  body {-webkit-tap-highlight-color: #f74770;}
+  ::selection       {background: #4b0966; color: #fff; }
+  ::-moz-selection  {background: #4b0966; color: #fff; }
+  img::selection       {background: #4b0966;}
+  img::-moz-selection  {background: #4b0966;}
+  body {-webkit-tap-highlight-color: #4b0966;}
 
 
 
-  #journal::selection     {background: #f74770; color: #000000; }
-  #journal::-moz-selection   {background: #f74770; color: #000000; }
+  #journal::selection     {background: #4b0966; color: #000000; }
+  #journal::-moz-selection   {background: #4b0966; color: #000000; }
 
-  #reg::selection      {background: #f74770; color: #000000; }
-  #reg::-moz-selection    {background: #f74770; color: #000000; }
+  #reg::selection      {background: #4b0966; color: #000000; }
+  #reg::-moz-selection    {background: #4b0966; color: #000000; }
 
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #fff;

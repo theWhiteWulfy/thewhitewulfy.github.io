@@ -83,7 +83,7 @@ l.  Social Handles
 
 		a:hover :not(.btn-draw){
 			border-bottom-color: transparent;
-			/*color: #f74770;*/
+			/*color: #4b0966;*/
 		}
 
 	strong, b {
@@ -302,7 +302,7 @@ l.  Social Handles
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #f74770;
+			border-color: #4b0966;
 		}
 
 	.select-wrapper {
@@ -413,7 +413,7 @@ l.  Social Handles
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #f74770;
+			border-color: #4b0966;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -610,7 +610,7 @@ l.  Social Handles
 				}
 
 				ul.feature-icons li:before {
-					background: #f74770;
+					background: #4b0966;
 					border-radius: 100%;
 					color: #ffffff;
 					display: block;
@@ -988,8 +988,8 @@ l.  Social Handles
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		/*background: linear-gradient(150deg,#f74770,#f96c8d);*/
-		background-color: #f74770;
+		/*background: linear-gradient(150deg,#4b0966,#f96c8d);*/
+		background-color: #4b0966;
 		color: #d1f1e9;
 		height: 100%;
 		overflow-y: auto;
@@ -1097,7 +1097,7 @@ l.  Social Handles
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color: #f74770 !important;
+							color: #4b0966 !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -1407,7 +1407,7 @@ l.  Social Handles
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #f74770;
+				background: #4b0966;
 				color: #222;
 				min-width: 320px;
 			}
@@ -1807,19 +1807,19 @@ l.  Social Handles
 	}	
 
 /*Selection*/
-	::selection       {background: #f74770; color: #fff; }
-	::-moz-selection  {background: #f74770; color: #fff; }
-	img::selection       {background: #f74770;}
-	img::-moz-selection  {background: #f74770;}
-	body {-webkit-tap-highlight-color: #f74770;}
+	::selection       {background: #4b0966; color: #fff; }
+	::-moz-selection  {background: #4b0966; color: #fff; }
+	img::selection       {background: #4b0966;}
+	img::-moz-selection  {background: #4b0966;}
+	body {-webkit-tap-highlight-color: #4b0966;}
 
 
 
-	#journal::selection     {background: #f74770; color: #000000; }
-	#journal::-moz-selection   {background: #f74770; color: #000000; }
+	#journal::selection     {background: #4b0966; color: #000000; }
+	#journal::-moz-selection   {background: #4b0966; color: #000000; }
 
-	#reg::selection      {background: #f74770; color: #000000; }
-	#reg::-moz-selection    {background: #f74770; color: #000000; }
+	#reg::selection      {background: #4b0966; color: #000000; }
+	#reg::-moz-selection    {background: #4b0966; color: #000000; }
 
 /*Typewriter*/
 	#intro div.container {	height: 20em;}
@@ -1869,7 +1869,7 @@ l.  Social Handles
 	}
 
 	.devicon-list li i:hover {
-		color: #f74770;
+		color: #4b0966;
 	}
 
 /*button Draw*/
@@ -2169,7 +2169,7 @@ h2, h4{
 		textarea:focus {
 			border-bottom-style: solid;
             border-bottom-width: 3px;
-            border-bottom-color: #f74770;
+            border-bottom-color: #4b0966;
 		}
 .contact-letter form input[type="text"],
     input[type="tel"],
