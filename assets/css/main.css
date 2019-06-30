@@ -1145,7 +1145,8 @@ l.  Social Handles
 		animation: squishy 35s ease-in 5s 1 alternate infinite;
 		background-position: top right;
 		background-repeat: no-repeat;
-		background-size: cover; background: linear-gradient(126deg, #c31432, #240b36);
+		background-size: cover; 
+		background: linear-gradient(126deg, #c31432, #240b36);
         background-size: 400% 400%;
 
         -webkit-animation: header-gradient-anim 5s ease infinite;
