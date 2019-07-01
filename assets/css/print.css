@@ -1,5 +1,5 @@
 
-#header, svg, #menu, .search, #intro, #three, #footer, .contact-letter, .notif-blue, head, script, .btn-draw {
+.bottom-social, #header, svg, #menu, .search, #intro, #three, #footer, .contact-letter, .notif-blue, head, script, .btn-draw {
     display: none !important;
     z-index: -100 !important;
 }
@@ -36,3 +36,7 @@ ul, ol, .devicon-list, #four, section{
 @page {
       margin: 2cm;
    }
+
+body{
+    margin: 4ch;
+}
