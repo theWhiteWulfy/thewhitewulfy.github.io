@@ -28,7 +28,9 @@
       display: grid;
       grid-template-areas:
         "header info info"
+        "brief brief brief"
         "nav article article"
+        "more-details more-details more-details"
         "footer footer footer";
       /*grid-template-rows: 80px 1fr 70px;*/
       grid-template-columns: 2.5fr 4fr 1.5fr;
@@ -64,15 +66,23 @@
 
     #pageFooter {
       grid-area: footer;
+    }
+    .withlove{
       text-align: center;
     }
-
     #mainArticle {
       grid-area: article;
     }
 
     #mainNav {
       grid-area: nav;
+    }
+    #brief{
+      grid-area: brief;
+    }
+
+    #more-details{
+      grid-area: more-details;
     }
 
     #info {
@@ -103,6 +113,10 @@
       text-align: left;
       align-items: stretch;
     }
+    a {
+      text-decoration: underline !important;
+    }
+    .info-link-contact{color: #000000;}
 
     /* Stack the layout on small devices/viewports. */
     @media all and (max-width: 650px) {
@@ -110,8 +124,10 @@
         grid-template-areas:
           "header"
           "info"
+          "brief"
           "nav"
           "article"
+          "more-details"
           "footer";
         /*grid-template-rows: 80px 1fr 70px 1fr 70px;*/
         grid-template-columns: 1fr;
@@ -159,16 +175,13 @@
     @media all and (max-width: 400px) {
       html{ font-size: x-small;}
     }
-    a {
-      text-decoration: underline !important;
-    }
-    .info-link-contact{color: #000000;}
+   
   </style>
-
+  <link rel="stylesheet" href="cv.css" media="print">
 </head>
 
 <body>
-  <a name="top"></a>
+  
   <ul id="menu" class="mfb-component--bl   mfb-slidein-spring " data-mfb-toggle="click" style="display: block;">
     <li class="mfb-component__wrap">
       <a href="#" class="mfb-component__button--main" aria-label="FAB button to open and close menu">
