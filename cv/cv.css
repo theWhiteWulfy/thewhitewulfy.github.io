@@ -1,0 +1,23 @@
+@page {
+    margin: 4ch;
+  }
+
+  h2 {
+    break-before: page;
+  }
+
+  h2, h3 {
+    break-after: avoid-page;
+  }
+  h2, h3{
+    page-break-after: avoid;
+  }
+
+  p {
+    page-break-inside: avoid;
+
+  }
+
+  body{
+    font-size: small;
+  }
