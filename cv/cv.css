@@ -2,22 +2,25 @@
     margin: 4ch;
   }
 
-  h2 {
-    break-before: page;
-  }
-
-  h2, h3 {
-    break-after: avoid-page;
-  }
-  h2, h3{
-    page-break-after: avoid;
-  }
-
-  p {
+  a {
+    page-break-inside:avoid
+}
+blockquote {
     page-break-inside: avoid;
-
-  }
+}
+h1, h2, h3, h4, h5, h6 { page-break-after:avoid; 
+     page-break-inside:avoid }
+img { page-break-inside:avoid; 
+     page-break-after:avoid; }
+table, pre { page-break-inside:avoid }
+ul, ol, dl  { page-break-before:avoid }
 
   body{
     font-size: small;
+  }
+  
+  figure, p{
+    page-break-inside: avoid;
+    orphans: 2;
+    widows: 2;
   }
