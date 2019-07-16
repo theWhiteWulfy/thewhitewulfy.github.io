@@ -1136,7 +1136,7 @@ l.  Social Handles
 		background-size: cover;
 		content: '';
 		display: block;
-		height: 28em;
+		height: 60vh;
 		width: 100%;
 	}
 
@@ -1822,7 +1822,7 @@ l.  Social Handles
 	#reg::-moz-selection    {background: #4b0966; color: #000000; }
 
 /*Typewriter*/
-	#intro div.container {	height: 20em;}
+	#intro div.container {	height: 40vh;}
 	.line-1{
 	    position: relative;
 	    top: 50%;  
